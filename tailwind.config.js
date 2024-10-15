@@ -1,16 +1,28 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./index.html", // Asegúrate de incluir el archivo HTML principal
-    "./assets/**/*.{html,js}", // Incluye cualquier HTML o JS dentro de assets
-    "./css/**/*.{html,js}", // Si tienes archivos HTML o JS en css (aunque usualmente aquí solo hay CSS)
-    "./fonts/**/*.{html,js}", // No es común tener JS aquí, pero por si acaso
-    "./js/**/*.{html,js}", // Incluye archivos JS dentro de js
-    "./pages/**/*.{html,js}", // Incluye archivos HTML o JS dentro de pages
-    "./src/**/*.{html,js}", // Incluye archivos dentro de src,
+    './index.html',
+    './assets/**/*.{html,js}',
+    './css/**/*.{html,js}',
+    './fonts/**/*.{html,js}',
+    './js/**/*.{html,js}',
+    './pages/**/*.{html,js}',
+    './src/**/*.{html,js}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#F9F1A5',
+        secondary: '#1ADD13',
+        accent: '#F9AAB0',
+        black: '#0e0d0e',
+        white: '#f2f2f2',
+      },
+      fontFamily: {
+        sans: ['Open Sans', 'sans-serif'],
+        mono: ['Cascadia Mono', 'monospace'],
+      },
+    },
   },
   plugins: [],
 };
