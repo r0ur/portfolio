@@ -12,15 +12,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#FF9EFF',
-        secondary: '#FFA3D6',
-        accent: '#E4007C',
+        primary: '#E6E6E6',
+        secondary: '#2C2C2E',
+        accent: '#e4007c',
+        darker: '70003E',
         black: '#141517',
         white: '#F4ECEC',
       },
       fontFamily: {
-        sans: ['Open Sans', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
         mono: ['Cascadia Mono', 'monospace'],
+        serif: ['Lora', 'serif'],
+      },
+      screens: {
+        mobile: '640px',
+        tablet: '1600px',
+        laptop: '1920px',
+        desktop: '2560px',
       },
     },
   },

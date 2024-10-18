@@ -154,7 +154,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Open Sans, sans-serif;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -558,12 +558,32 @@ video {
   display: flex;
 }
 
-.max-w-3xl {
-  max-width: 48rem;
+.h-32 {
+  height: 8rem;
+}
+
+.h-\[480px\] {
+  height: 480px;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
+.w-\[508px\] {
+  width: 508px;
+}
+
+.w-\[540px\] {
+  width: 540px;
 }
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -590,24 +610,35 @@ video {
   gap: 0.5rem;
 }
 
-.gap-4 {
-  gap: 1rem;
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-6 {
   gap: 1.5rem;
 }
 
-.gap-8 {
-  gap: 2rem;
-}
-
 .gap-10 {
   gap: 2.5rem;
 }
 
-.gap-px {
-  gap: 1px;
+.border-2 {
+  border-width: 2px;
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(20 21 23 / var(--tw-border-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 236 236 / var(--tw-bg-opacity));
+}
+
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -615,31 +646,45 @@ video {
   background-color: rgb(20 21 23 / var(--tw-bg-opacity));
 }
 
-.pb-6 {
-  padding-bottom: 1.5rem;
+.p-4 {
+  padding: 1rem;
 }
 
-.pt-16 {
-  padding-top: 4rem;
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.px-40 {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.font-inter {
+  font-family: Inter, sans-serif;
 }
 
 .font-mono {
   font-family: Cascadia Mono, monospace;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.font-serif {
+  font-family: Lora, serif;
 }
 
 .text-3xl {
@@ -647,9 +692,9 @@ video {
   line-height: 2.25rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-medium {
@@ -660,17 +705,68 @@ video {
   font-weight: 600;
 }
 
-.font-bold {
-  font-weight: 700;
+.text-accent {
+  --tw-text-opacity: 1;
+  color: rgb(228 0 124 / var(--tw-text-opacity));
 }
 
-.text-white {
+.text-black {
   --tw-text-opacity: 1;
-  color: rgb(244 236 236 / var(--tw-text-opacity));
+  color: rgb(20 21 23 / var(--tw-text-opacity));
 }
 
 @font-face {
   font-family: 'Cascadia Mono';
 
   src: url('./fonts/CascadiaMono.ttf') format('truetype');
+}
+
+.hover\:bg-slate-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
+.hover\:text-accent:hover {
+  --tw-text-opacity: 1;
+  color: rgb(228 0 124 / var(--tw-text-opacity));
+}
+
+.hover\:line-through:hover {
+  text-decoration-line: line-through;
+}
+
+.hover\:opacity-90:hover {
+  opacity: 0.9;
+}
+
+@media (min-width: 1600px) {
+  .tablet\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .tablet\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .tablet\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 2560px) {
+  .desktop\:gap-20 {
+    gap: 5rem;
+  }
+
+  .desktop\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .desktop\:text-9xl {
+    font-size: 8rem;
+    line-height: 1;
+  }
 }
