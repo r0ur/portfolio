@@ -25,10 +25,7 @@ module.exports = {
         serif: ['Lora', 'serif'],
       },
       screens: {
-        mobile: '640px',
-        tablet: '1600px',
-        laptop: '1920px',
-        desktop: '2560px',
+        supermd: '400px',
       },
     },
   },

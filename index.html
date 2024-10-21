@@ -32,12 +32,15 @@
       functionality of this site.
     </noscript>
   </head>
-  <body class="bg-white px-10 py-10 font-inter font-semibold text-black">
+  <body class="bg-white px-4 py-4 font-inter font-semibold text-black">
     <div class="flex flex-col justify-center">
-      <!-- Sidebar -->
+      <!-- Navigation -->
       <header>
         <nav>
-          <div class="flex items-center justify-between py-4">
+          <!-- Desktop -->
+          <div
+            class="hidden items-center justify-between py-4 lg:visible lg:flex"
+          >
             <div>
               <img
                 src="/assets/images/Favicon.ico"
@@ -61,6 +64,18 @@
               <a href="#" class="text-accent hover:line-through">Contact</a>
             </div>
           </div>
+          <!-- Mobile -->
+          <div class="flex items-center justify-between py-4 lg:hidden">
+            <div>
+              <img
+                src="/assets/images/Favicon.ico"
+                alt="Armando Rojano"
+                width="50px"
+                height="50px"
+              />
+            </div>
+            <button class="">Menu</button>
+          </div>
         </nav>
       </header>
       <!-- Content -->
@@ -70,11 +85,11 @@
             <!-- Hero -->
             <section>
               <div
-                class="tablet:text-7xl desktop:text-9xl tablet:gap-10 desktop:gap-20 desktop:py-20 tablet:py-10 flex flex-col"
+                class="flex flex-col gap-4 py-4 text-3xl supermd:text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl"
               >
                 <h1>
-                  <span class="text-accent">Hello!</span>, I'm Armando Rojano
-                  <span class="text-accent">—</span> a multidisciplinary
+                  <span class="text-accent">Hello!</span>, I'm Armando
+                  Rojano<span class="text-accent">—</span>a multidisciplinary
                   designer with 3+ years of experience based in México.
                 </h1>
                 <h2>
@@ -87,18 +102,14 @@
             <hr class="border-2 border-black" />
             <!-- UX Research -->
             <section>
-              <div
-                class="tablet:text-7xl desktop:text-9xl desktop:py-20 tablet:py-10 flex flex-col gap-2"
-              >
+              <div class="flex flex-col gap-2 py-20 text-3xl">
                 <h3 class="text-accent">UX research</h3>
                 <p>
                   These case studies are part of my work as a UX researcher.
                 </p>
               </div>
               <div class="flex flex-wrap gap-10">
-                <div
-                  class="flex w-[540px] flex-col gap-2 p-4 hover:bg-slate-100"
-                >
+                <div class="flex w-[540px] flex-col gap-2 p-4">
                   <h4 class="text-5xl">Maestro Malta</h4>
                   <div class="flex justify-between font-medium">
                     <p>App</p>
@@ -159,299 +170,327 @@
             <!-- UX Design -->
             <section>
               <div class="flex flex-col gap-6">
-                <div class="flex flex-col gap-1 font-mono font-medium">
-                  <h2 class="font-inter text-3xl">UX Design</h2>
+                <div class="flex flex-col gap-2 py-20 text-3xl">
+                  <h3 class="text-accent">UX design</h3>
                   <p>
-                    > These snapshots are just a sneak peek of my work as a UX
+                    These snapshots are just a sneak peek of my work as a UX
                     designer and the other roles I've had to take on.
                   </p>
                 </div>
-                <div class="flex flex-col gap-2">
-                  <img
-                    src="/assets/images/snapshots/TOMA24.webp"
-                    alt="Streaming Platform Screenshot"
-                    width="1440px"
-                    height="auto"
-                  />
-                  <div class="flex flex-col">
-                    <div class="flex items-center justify-between">
-                      <h2>Personal Project</h2>
-                      <p>2024</p>
+                <div class="font-normal">
+                  <div class="flex flex-col gap-2">
+                    <img
+                      src="/assets/images/snapshots/TOMA24.webp"
+                      alt="Streaming Platform Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <div class="flex flex-col">
+                      <div class="flex items-center justify-between">
+                        <h2>Personal Project</h2>
+                        <p>2024</p>
+                      </div>
+                      <p>Streaming Platform</p>
                     </div>
-                    <p>Streaming Platform</p>
                   </div>
-                </div>
-                <div class="flex flex-col gap-2">
-                  <img
-                    src="/assets/images/snapshots/OXBI37.webp"
-                    alt="Website System Screenshot"
-                    width="1440px"
-                    height="auto"
-                  />
-                  <img
-                    src="/assets/images/snapshots/OXBI36.webp"
-                    alt="Website System Screenshot"
-                    width="1440px"
-                    height="auto"
-                  />
-                  <img
-                    src="/assets/images/snapshots/OXBI35.webp"
-                    alt="Website System Screenshot"
-                    width="1440px"
-                    height="auto"
-                  />
-                  <div class="flex flex-col">
-                    <div class="flex items-center justify-between">
-                      <h2>Professional Project</h2>
-                      <p>2024</p>
+                  <div class="flex flex-col gap-2">
+                    <img
+                      src="/assets/images/snapshots/OXBI37.webp"
+                      alt="Website System Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <img
+                      src="/assets/images/snapshots/OXBI36.webp"
+                      alt="Website System Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <img
+                      src="/assets/images/snapshots/OXBI35.webp"
+                      alt="Website System Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <div class="flex flex-col">
+                      <div class="flex items-center justify-between">
+                        <h2>Professional Project</h2>
+                        <p>2024</p>
+                      </div>
+                      <p>
+                        Supplier Relationship Management | Verónica Ramírez
+                        (Visual Design), Oscar Delgado (UX Research), and
+                        Armando Rojano (UX Design, UX Writing)
+                      </p>
                     </div>
-                    <p>
-                      Supplier Relationship Management | Verónica Ramírez
-                      (Visual Design), Oscar Delgado (UX Research), and Armando
-                      Rojano (UX Design, UX Writing)
-                    </p>
                   </div>
-                </div>
-                <div class="flex flex-col gap-2">
-                  <img
-                    src="/assets/images/snapshots/Immer43.webp"
-                    alt="Virtual Reality Landing Page Screenshot"
-                    width="1440px"
-                    height="auto"
-                  />
-                  <div class="flex flex-col">
-                    <div class="flex items-center justify-between">
-                      <h2>Professional Project</h2>
-                      <p>2024</p>
+                  <div class="flex flex-col gap-2">
+                    <img
+                      src="/assets/images/snapshots/Immer43.webp"
+                      alt="Virtual Reality Landing Page Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <div class="flex flex-col">
+                      <div class="flex items-center justify-between">
+                        <h2>Professional Project</h2>
+                        <p>2024</p>
+                      </div>
+                      <p>
+                        Landing Page | Verónica Ramírez (Visual Design), and
+                        Armando Rojano (UX Design, UX Writing)
+                      </p>
                     </div>
-                    <p>
-                      Landing Page | Verónica Ramírez (Visual Design), and
-                      Armando Rojano (UX Design, UX Writing)
-                    </p>
                   </div>
-                </div>
-                <div class="flex flex-col gap-2">
-                  <img
-                    src="/assets/images/snapshots/CyberP47.webp"
-                    alt="PC Part Picker Tool from CyberPuerta Screenshot"
-                    width="1440px"
-                    height="auto"
-                  />
-                  <img
-                    src="/assets/images/snapshots/CyberP46.webp"
-                    alt="PC Part Picker Tool from CyberPuerta Screenshot"
-                    width="1440px"
-                    height="auto"
-                  />
-                  <div class="flex flex-col">
-                    <div class="flex items-center justify-between">
-                      <h2>Personal Project</h2>
-                      <p>2024</p>
+                  <div class="flex flex-col gap-2">
+                    <img
+                      src="/assets/images/snapshots/CyberP47.webp"
+                      alt="PC Part Picker Tool from CyberPuerta Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <img
+                      src="/assets/images/snapshots/CyberP46.webp"
+                      alt="PC Part Picker Tool from CyberPuerta Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <div class="flex flex-col">
+                      <div class="flex items-center justify-between">
+                        <h2>Personal Project</h2>
+                        <p>2024</p>
+                      </div>
+                      <p>PC Part Picker Redesign</p>
                     </div>
-                    <p>PC Part Picker Redesign</p>
                   </div>
-                </div>
-                <div class="flex flex-col gap-2">
-                  <img
-                    src="/assets/images/snapshots/Binca33.webp"
-                    alt="Credit Cards Landing Page Screenshot"
-                    width="1440px"
-                    height="auto"
-                  />
-                  <img
-                    src="/assets/images/snapshots/Binca34.webp"
-                    alt="Credit Cards Landing Page Screenshot"
-                    width="1440px"
-                    height="auto"
-                  />
-                  <div class="flex flex-col">
-                    <div class="flex items-center justify-between">
-                      <h2>Professional Project</h2>
-                      <p>2024</p>
+                  <div class="flex flex-col gap-2">
+                    <img
+                      src="/assets/images/snapshots/Binca33.webp"
+                      alt="Credit Cards Landing Page Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <img
+                      src="/assets/images/snapshots/Binca34.webp"
+                      alt="Credit Cards Landing Page Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <div class="flex flex-col">
+                      <div class="flex items-center justify-between">
+                        <h2>Professional Project</h2>
+                        <p>2024</p>
+                      </div>
+                      <p>
+                        Landing Page | Madness (Visual Design), and Armando
+                        Rojano (UX Design, UX Writing)
+                      </p>
                     </div>
-                    <p>
-                      Landing Page | Madness (Visual Design), and Armando Rojano
-                      (UX Design, UX Writing)
-                    </p>
                   </div>
-                </div>
-                <div class="flex flex-col gap-2">
-                  <img
-                    src="/assets/images/snapshots/Bike27.webp"
-                    alt="Dasboard Screenshot"
-                    width="1440px"
-                    height="auto"
-                  />
-                  <img
-                    src="/assets/images/snapshots/Bike28.webp"
-                    alt="Dasboard Screenshot"
-                    width="1440px"
-                    height="auto"
-                  />
-                  <div class="flex flex-col">
-                    <div class="flex items-center justify-between">
-                      <h2>Personal Project</h2>
-                      <p>2024</p>
+                  <div class="flex flex-col gap-2">
+                    <img
+                      src="/assets/images/snapshots/Bike27.webp"
+                      alt="Dasboard Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <img
+                      src="/assets/images/snapshots/Bike28.webp"
+                      alt="Dasboard Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <div class="flex flex-col">
+                      <div class="flex items-center justify-between">
+                        <h2>Personal Project</h2>
+                        <p>2024</p>
+                      </div>
+                      <p>Dashboard</p>
                     </div>
-                    <p>Dashboard</p>
                   </div>
-                </div>
-                <div class="flex flex-col gap-2">
-                  <img
-                    src="/assets/images/snapshots/Disrupto2.webp"
-                    alt="Organization Landing Page Screenshot"
-                    width="1440px"
-                    height="auto"
-                  />
-                  <img
-                    src="/assets/images/snapshots/Disrupto3.webp"
-                    alt="Organization Landing Page Screenshot"
-                    width="1440px"
-                    height="auto"
-                  />
-                  <div class="flex flex-col">
-                    <div class="flex items-center justify-between">
-                      <h2>Professional Project</h2>
-                      <p>2023</p>
+                  <div class="flex flex-col gap-2">
+                    <img
+                      src="/assets/images/snapshots/Disrupto2.webp"
+                      alt="Organization Landing Page Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <img
+                      src="/assets/images/snapshots/Disrupto3.webp"
+                      alt="Organization Landing Page Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <div class="flex flex-col">
+                      <div class="flex items-center justify-between">
+                        <h2>Professional Project</h2>
+                        <p>2023</p>
+                      </div>
+                      <p>Landing Page | Armando Rojano (UX Design)</p>
                     </div>
-                    <p>Landing Page | Armando Rojano (UX Design)</p>
                   </div>
-                </div>
-                <div class="flex flex-col gap-2">
-                  <img
-                    src="/assets/images/snapshots/Yuni42.webp"
-                    alt="Marketplace Landing Page and App Screenshot"
-                    width="1440px"
-                    height="auto"
-                  />
-                  <div class="flex flex-col">
-                    <div class="flex items-center justify-between">
-                      <h2>Professional Project</h2>
-                      <p>2023</p>
+                  <div class="flex flex-col gap-2">
+                    <img
+                      src="/assets/images/snapshots/Yuni42.webp"
+                      alt="Marketplace Landing Page and App Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <div class="flex flex-col">
+                      <div class="flex items-center justify-between">
+                        <h2>Professional Project</h2>
+                        <p>2023</p>
+                      </div>
+                      <p>
+                        Landing Page + Mobile App | Madness (Visual Design),
+                        Verónica Ramírez and Armando Rojano (UX Design, UX
+                        Research)
+                      </p>
                     </div>
-                    <p>
-                      Landing Page + Mobile App | Madness (Visual Design),
-                      Verónica Ramírez and Armando Rojano (UX Design, UX
-                      Research)
-                    </p>
                   </div>
-                </div>
-                <div class="flex flex-col gap-2">
-                  <img
-                    src="/assets/images/snapshots/Doia13.webp"
-                    alt="Snapshot 1"
-                    width="1440px"
-                    height="auto"
-                  />
-                  <img
-                    src="/assets/images/snapshots/Doia14.webp"
-                    alt="Snapshot 1"
-                    width="1440px"
-                    height="auto"
-                  />
-                  <img
-                    src="/assets/images/snapshots/Doia38.webp"
-                    alt="Snapshot 1"
-                    width="1440px"
-                    height="auto"
-                  />
-                  <img
-                    src="/assets/images/snapshots/Doia39.webp"
-                    alt="Snapshot 1"
-                    width="1440px"
-                    height="auto"
-                  />
-                  <div class="flex flex-col">
-                    <div class="flex items-center justify-between">
-                      <h2>Professional Project</h2>
-                      <p>2022</p>
+                  <div class="flex flex-col gap-2">
+                    <img
+                      src="/assets/images/snapshots/Doia13.webp"
+                      alt="Snapshot 1"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <img
+                      src="/assets/images/snapshots/Doia14.webp"
+                      alt="Snapshot 1"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <img
+                      src="/assets/images/snapshots/Doia38.webp"
+                      alt="Snapshot 1"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <img
+                      src="/assets/images/snapshots/Doia39.webp"
+                      alt="Snapshot 1"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <div class="flex flex-col">
+                      <div class="flex items-center justify-between">
+                        <h2>Professional Project</h2>
+                        <p>2022</p>
+                      </div>
+                      <p>
+                        Website | Madness (Visual Design), Verónica Ramírez and
+                        Armando Rojano (UX Design, UX Research)
+                      </p>
                     </div>
-                    <p>
-                      Website | Madness (Visual Design), Verónica Ramírez and
-                      Armando Rojano (UX Design, UX Research)
-                    </p>
                   </div>
-                </div>
-                <div class="flex flex-col gap-2">
-                  <img
-                    src="/assets/images/snapshots/Mait40.webp"
-                    alt="Snapshot 1"
-                    width="1440px"
-                    height="auto"
-                  />
-                  <img
-                    src="/assets/images/snapshots/Mait41.webp"
-                    alt="Snapshot 1"
-                    width="1440px"
-                    height="auto"
-                  />
-                  <div class="flex flex-col">
-                    <div class="flex items-center justify-between">
-                      <h2>Professional Project</h2>
-                      <p>2022</p>
+                  <div class="flex flex-col gap-2">
+                    <img
+                      src="/assets/images/snapshots/Mait40.webp"
+                      alt="Snapshot 1"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <img
+                      src="/assets/images/snapshots/Mait41.webp"
+                      alt="Snapshot 1"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <div class="flex flex-col">
+                      <div class="flex items-center justify-between">
+                        <h2>Professional Project</h2>
+                        <p>2022</p>
+                      </div>
+                      <p>
+                        Landing Page + Mobile App | Madness (Visual Design),
+                        Verónica Ramírez and Armando Rojano (UX Design, UX
+                        Research)
+                      </p>
                     </div>
-                    <p>
-                      Landing Page + Mobile App | Madness (Visual Design),
-                      Verónica Ramírez and Armando Rojano (UX Design, UX
-                      Research)
-                    </p>
                   </div>
-                </div>
-                <div class="flex flex-col gap-2">
-                  <img
-                    src="/assets/images/snapshots/Ilum45.webp"
-                    alt="Snapshot 1"
-                    width="1440px"
-                    height="auto"
-                  />
-                  <div class="flex flex-col">
-                    <div class="flex items-center justify-between">
-                      <h2>Professional Project</h2>
-                      <p>2022</p>
+                  <div class="flex flex-col gap-2">
+                    <img
+                      src="/assets/images/snapshots/Ilum45.webp"
+                      alt="Snapshot 1"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <div class="flex flex-col">
+                      <div class="flex items-center justify-between">
+                        <h2>Professional Project</h2>
+                        <p>2022</p>
+                      </div>
+                      <p>
+                        Landing Page | Madness (Visual Design), Verónica Ramírez
+                        and Armando Rojano (UX Design)
+                      </p>
                     </div>
-                    <p>
-                      Landing Page | Madness (Visual Design), Verónica Ramírez
-                      and Armando Rojano (UX Design)
-                    </p>
                   </div>
-                </div>
-                <div class="flex flex-col gap-2">
-                  <img
-                    src="/assets/images/snapshots/OXLogi30.webp"
-                    alt="Snapshot 1"
-                    width="1440px"
-                    height="auto"
-                  />
-                  <img
-                    src="/assets/images/snapshots/OXLogi31.webp"
-                    alt="Snapshot 1"
-                    width="1440px"
-                    height="auto"
-                  />
-                  <img
-                    src="/assets/images/snapshots/OXLogi32.webp"
-                    alt="Snapshot 1"
-                    width="1440px"
-                    height="auto"
-                  />
-                  <div class="flex flex-col">
-                    <div class="flex items-center justify-between">
-                      <h2>Professional Project</h2>
-                      <p>2021</p>
+                  <div class="flex flex-col gap-2">
+                    <img
+                      src="/assets/images/snapshots/OXLogi30.webp"
+                      alt="Snapshot 1"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <img
+                      src="/assets/images/snapshots/OXLogi31.webp"
+                      alt="Snapshot 1"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <img
+                      src="/assets/images/snapshots/OXLogi32.webp"
+                      alt="Snapshot 1"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <div class="flex flex-col">
+                      <div class="flex items-center justify-between">
+                        <h2>Professional Project</h2>
+                        <p>2021</p>
+                      </div>
+                      <p>
+                        Supplier Relationship Management | Madness (Visual
+                        Design), Verónica Ramírez (UX Research), and Armando
+                        Rojano (UX Design)
+                      </p>
                     </div>
-                    <p>
-                      Supplier Relationship Management | Madness (Visual
-                      Design), Verónica Ramírez (UX Research), and Armando
-                      Rojano (UX Design)
-                    </p>
                   </div>
                 </div>
               </div>
             </section>
-            <hr />
+            <hr class="border-2 border-black" />
             <!-- Web Development -->
             <div>
-              <section></section>
+              <section>
+                <div>
+                  <div class="flex flex-col gap-2 py-20 text-3xl">
+                    <h3 class="text-accent">Web development</h3>
+                    <p>
+                      This is where I'd put my repositories as a web
+                      developer... if I had any.
+                    </p>
+                  </div>
+                  <div class="flex flex-wrap gap-10">
+                    <div class="flex w-[540px] flex-col gap-2 p-4">
+                      <h4 class="text-5xl">Maestro Malta</h4>
+                      <div class="flex justify-between font-medium">
+                        <p>App</p>
+                        <p>Personal Project</p>
+                        <p>2023</p>
+                      </div>
+                      <div class="h-[480px] w-[508px] bg-black"></div>
+                      <p class="font-medium">
+                        Explora cervezas artesanales locales e importadas,
+                        aprendiendo sobre sus sabores, precios, orígenes y
+                        alternativas.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
           </div>
         </main>
