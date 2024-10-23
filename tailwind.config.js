@@ -17,7 +17,7 @@ module.exports = {
         accent: '#e4007c',
         darker: '70003E',
         black: '#141517',
-        white: '#F4ECEC',
+        white: '#fff',
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
@@ -25,7 +25,7 @@ module.exports = {
         serif: ['Lora', 'serif'],
       },
       screens: {
-        supermd: '400px',
+        mdxl: '400px',
       },
     },
   },
