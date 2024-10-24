@@ -32,15 +32,17 @@
       functionality of this site.
     </noscript>
   </head>
-  <body>
-    <div class="bg-white px-4 py-4 font-inter font-semibold text-black">
+  <body class="bg-white text-black">
+    <div
+      class="mxl:px-5 mx-auto px-4 font-inter font-semibold md:px-8 lg:max-w-[1120px]"
+    >
       <div class="flex flex-col">
         <!-- Navigation -->
         <header>
           <nav>
             <!-- Desktop -->
             <div
-              class="hidden items-center justify-between py-4 lg:visible lg:flex"
+              class="hidden items-center justify-between py-6 lg:visible lg:flex"
             >
               <div>
                 <img
@@ -68,36 +70,43 @@
               </div>
             </div>
             <!-- Mobile -->
-            <div class="flex items-center justify-between py-4 lg:hidden">
+            <div
+              class="mxl:py-6 flex items-center justify-between py-4 lg:hidden"
+            >
               <div>
                 <img
                   src="/assets/images/Favicon.ico"
                   alt="Armando Rojano"
-                  width="50px"
-                  height="50px"
+                  width="40px"
+                  height="40px"
                 />
               </div>
-              <button class="text-3xl">Menu</button>
+              <button class="text-2xl">Menu</button>
             </div>
           </nav>
         </header>
         <!-- Content -->
-        <div class="">
+        <div>
           <main>
-            <div class="flex flex-col gap-10 md:gap-14 xl:gap-20">
+            <div class="flex flex-col gap-8 md:gap-10 lg:gap-16">
               <!-- Hero -->
               <section>
                 <div
-                  class="mdxl:text-4xl mdxl:gap-6 flex flex-col gap-4 text-3xl sm:gap-8 sm:text-4xl md:gap-10 md:text-5xl lg:text-6xl xl:gap-16 xl:text-7xl 2xl:text-8xl"
+                  class="mxl:text-4xl flex flex-col gap-5 pt-10 text-3xl md:gap-8 md:text-5xl lg:gap-10 lg:text-6xl"
                 >
                   <h1>
-                    <span class="text-accent">Hello!</span> I'm Armando
-                    Rojano<span class="text-accent">—</span>a transdisciplinary
-                    designer with 3+ years of experience based in México.
+                    Hello, I'm <span class="text-accent">Armando Rojano</span>—a
+                    multidisciplinary
+                    <span class="text-accent">designer</span> with over 3 years
+                    of experience based in México.
                   </h1>
                   <h2>
-                    I work as a <span class="text-accent">UX designer</span> at
-                    Ilum Prosperity Sherpas, creating design solutions for the
+                    I work as a
+                    <span class="text-accent"
+                      >UX designer
+                      <span class="text-black">and</span> researcher</span
+                    >
+                    at Ilum Prosperity Sherpas, developing solutions for the
                     ideas that emerge within the company.
                   </h2>
                 </div>
@@ -105,78 +114,70 @@
               <hr class="border-black" />
               <!-- UX Research -->
               <section>
-                <div class="flex flex-col gap-8">
+                <div class="flex flex-col gap-5 lg:gap-8">
                   <div class="flex flex-col gap-2">
                     <h3
-                      class="mdxl:text-4xl 2xl:text-8xlt text-3xl text-accent sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
+                      class="mxl:text-4xl text-3xl text-accent md:text-5xl lg:text-6xl"
                     >
                       UX research
                     </h3>
-                    <p class="text-5xl">
+                    <p class="mxl:text-2xl text-xl md:text-3xl lg:text-4xl">
                       These case studies are part of my work as a UX researcher.
                     </p>
                   </div>
-                  <div class="flex flex-wrap gap-12">
-                    <div class="flex w-[400px] flex-col">
-                      <div class="h-[400px] w-auto bg-[#7AC84A]"></div>
-                      <div class="flex flex-col gap-4 py-4">
-                        <h4 class="text-4xl">Maestro Malta</h4>
-                        <p class="font-normal">
+                  <div
+                    class="flex flex-wrap justify-between gap-8 md:gap-10 lg:justify-normal"
+                  >
+                    <div class="w-full md:w-[316px] lg:w-[340px]">
+                      <div
+                        class="mxl:h-[400px] flex h-[288px] flex-col-reverse bg-[#EDD000] p-4 md:h-[316px] lg:h-[340px]"
+                      >
+                        <h4 class="mxl:text-4xl text-3xl">Maestro Malta</h4>
+                      </div>
+                      <div class="flex flex-col gap-4 py-2">
+                        <p class="font-medium">
                           Explora cervezas artesanales locales e importadas,
                           aprendiendo sobre sus sabores, precios, orígenes y
                           alternativas.
                         </p>
                         <div class="flex justify-between font-medium">
-                          <p>App</p>
-                          <p>Personal Project</p>
+                          <p>App Mobile</p>
                           <p>2023</p>
                         </div>
                       </div>
                     </div>
-                    <div class="flex w-[400px] flex-col">
-                      <div class="h-[400px] w-auto bg-[#7AC84A]"></div>
-                      <div class="flex flex-col gap-4 py-4">
-                        <h4 class="text-4xl">Maestro Malta</h4>
-                        <p class="font-normal">
+                    <div class="w-full md:w-[316px] lg:w-[340px]">
+                      <div
+                        class="mxl:h-[400px] flex h-[288px] flex-col-reverse bg-[#EDD000] p-4 md:h-[316px] lg:h-[340px]"
+                      >
+                        <h4 class="mxl:text-4xl text-3xl">Maestro Malta</h4>
+                      </div>
+                      <div class="flex flex-col gap-4 py-2">
+                        <p class="font-medium">
                           Explora cervezas artesanales locales e importadas,
                           aprendiendo sobre sus sabores, precios, orígenes y
                           alternativas.
                         </p>
                         <div class="flex justify-between font-medium">
-                          <p>App</p>
-                          <p>Personal Project</p>
+                          <p>App Mobile</p>
                           <p>2023</p>
                         </div>
                       </div>
                     </div>
-                    <div class="flex w-[400px] flex-col">
-                      <div class="h-[400px] w-auto bg-[#7AC84A]"></div>
-                      <div class="flex flex-col gap-4 py-4">
-                        <h4 class="text-4xl">Maestro Malta</h4>
-                        <p class="font-normal">
-                          Explora cervezas artesanales locales e importadas,
-                          aprendiendo sobre sus sabores, precios, orígenes y
-                          alternativas.
-                        </p>
-                        <div class="flex justify-between font-medium">
-                          <p>App</p>
-                          <p>Personal Project</p>
-                          <p>2023</p>
-                        </div>
+                    <div class="w-full md:w-[316px] lg:w-[340px]">
+                      <div
+                        class="mxl:h-[400px] flex h-[288px] flex-col-reverse bg-[#EDD000] p-4 md:h-[316px] lg:h-[340px]"
+                      >
+                        <h4 class="mxl:text-4xl text-3xl">Maestro Malta</h4>
                       </div>
-                    </div>
-                    <div class="flex w-[400px] flex-col">
-                      <div class="h-[400px] w-auto bg-[#7AC84A]"></div>
-                      <div class="flex flex-col gap-4 py-4">
-                        <h4 class="text-4xl">Maestro Malta</h4>
-                        <p class="font-normal">
+                      <div class="flex flex-col gap-4 py-2">
+                        <p class="font-medium">
                           Explora cervezas artesanales locales e importadas,
                           aprendiendo sobre sus sabores, precios, orígenes y
                           alternativas.
                         </p>
                         <div class="flex justify-between font-medium">
-                          <p>App</p>
-                          <p>Personal Project</p>
+                          <p>App Mobile</p>
                           <p>2023</p>
                         </div>
                       </div>
@@ -187,32 +188,29 @@
               <hr class="border-black" />
               <!-- UX Design -->
               <section>
-                <div class="flex flex-col gap-8">
-                  <div
-                    class="mdxl:text-4xl flex flex-col gap-2 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl"
-                  >
-                    <h3 class="text-accent">UX design</h3>
-                    <p>
-                      These snapshots are just a sneak peek of my work as a UX
+                <div class="flex flex-col gap-5 lg:gap-8">
+                  <div class="flex flex-col gap-2">
+                    <h3
+                      class="mxl:text-4xl text-3xl text-accent md:text-5xl lg:text-6xl"
+                    >
+                      UX design
+                    </h3>
+                    <p class="mxl:text-2xl text-xl md:text-3xl lg:text-4xl">
+                      These snapshots are a sneak peek of my work as a UX
                       designer and the other roles I've had to take on.
                     </p>
                   </div>
-                  <div class="flex flex-col gap-10 font-normal">
-                    <div class="flex max-w-screen-xl flex-col gap-2">
+                  <div class="flex flex-col gap-5 text-sm font-medium">
+                    <div class="flex max-w-screen-xl flex-col gap-1">
                       <img
                         src="/assets/images/snapshots/TOMA24.webp"
                         alt="Streaming Platform Screenshot"
-                        class="h-auto max-w-full object-contain"
+                        width="1440px"
+                        height="auto"
                       />
-                      <div class="flex flex-col">
-                        <div class="flex items-center justify-between">
-                          <h2>Personal Project</h2>
-                          <p>2024</p>
-                        </div>
-                        <p>Streaming Platform</p>
-                      </div>
+                      <p>Streaming Platform</p>
                     </div>
-                    <div class="flex flex-col gap-2">
+                    <div class="flex flex-col gap-1">
                       <img
                         src="/assets/images/snapshots/OXBI37.webp"
                         alt="Website System Screenshot"
@@ -231,37 +229,25 @@
                         width="1440px"
                         height="auto"
                       />
-                      <div class="flex flex-col">
-                        <div class="flex items-center justify-between">
-                          <h2>Professional Project</h2>
-                          <p>2024</p>
-                        </div>
-                        <p>
-                          Supplier Relationship Management | Verónica Ramírez
-                          (Visual Design), Oscar Delgado (UX Research), and
-                          Armando Rojano (UX Design, UX Writing)
-                        </p>
-                      </div>
+                      <p>
+                        Supplier Relationship Management | Verónica Ramírez
+                        (Visual Design), Oscar Delgado (UX Research), and
+                        Armando Rojano (UX Design, UX Writing)
+                      </p>
                     </div>
-                    <div class="flex flex-col gap-2">
+                    <div class="flex flex-col gap-1">
                       <img
                         src="/assets/images/snapshots/Immer43.webp"
                         alt="Virtual Reality Landing Page Screenshot"
                         width="1440px"
                         height="auto"
                       />
-                      <div class="flex flex-col">
-                        <div class="flex items-center justify-between">
-                          <h2>Professional Project</h2>
-                          <p>2024</p>
-                        </div>
-                        <p>
-                          Landing Page | Verónica Ramírez (Visual Design), and
-                          Armando Rojano (UX Design, UX Writing)
-                        </p>
-                      </div>
+                      <p>
+                        Landing Page | Verónica Ramírez (Visual Design), and
+                        Armando Rojano (UX Design, UX Writing)
+                      </p>
                     </div>
-                    <div class="flex flex-col gap-2">
+                    <div class="flex flex-col gap-1">
                       <img
                         src="/assets/images/snapshots/CyberP47.webp"
                         alt="PC Part Picker Tool from CyberPuerta Screenshot"
@@ -274,15 +260,9 @@
                         width="1440px"
                         height="auto"
                       />
-                      <div class="flex flex-col">
-                        <div class="flex items-center justify-between">
-                          <h2>Personal Project</h2>
-                          <p>2024</p>
-                        </div>
-                        <p>PC Part Picker Redesign</p>
-                      </div>
+                      <p>PC Part Picker Redesign</p>
                     </div>
-                    <div class="flex flex-col gap-2">
+                    <div class="flex flex-col gap-1">
                       <img
                         src="/assets/images/snapshots/Binca33.webp"
                         alt="Credit Cards Landing Page Screenshot"
@@ -295,18 +275,12 @@
                         width="1440px"
                         height="auto"
                       />
-                      <div class="flex flex-col">
-                        <div class="flex items-center justify-between">
-                          <h2>Professional Project</h2>
-                          <p>2024</p>
-                        </div>
-                        <p>
-                          Landing Page | Madness (Visual Design), and Armando
-                          Rojano (UX Design, UX Writing)
-                        </p>
-                      </div>
+                      <p>
+                        Landing Page | Madness (Visual Design), and Armando
+                        Rojano (UX Design, UX Writing)
+                      </p>
                     </div>
-                    <div class="flex flex-col gap-2">
+                    <div class="flex flex-col gap-1">
                       <img
                         src="/assets/images/snapshots/Bike27.webp"
                         alt="Dasboard Screenshot"
@@ -319,15 +293,9 @@
                         width="1440px"
                         height="auto"
                       />
-                      <div class="flex flex-col">
-                        <div class="flex items-center justify-between">
-                          <h2>Personal Project</h2>
-                          <p>2024</p>
-                        </div>
-                        <p>Dashboard</p>
-                      </div>
+                      <p>Dashboard</p>
                     </div>
-                    <div class="flex flex-col gap-2">
+                    <div class="flex flex-col gap-1">
                       <img
                         src="/assets/images/snapshots/Disrupto2.webp"
                         alt="Organization Landing Page Screenshot"
@@ -340,34 +308,22 @@
                         width="1440px"
                         height="auto"
                       />
-                      <div class="flex flex-col">
-                        <div class="flex items-center justify-between">
-                          <h2>Professional Project</h2>
-                          <p>2023</p>
-                        </div>
-                        <p>Landing Page | Armando Rojano (UX Design)</p>
-                      </div>
+                      <p>Landing Page | Armando Rojano (UX Design)</p>
                     </div>
-                    <div class="flex flex-col gap-2">
+                    <div class="flex flex-col gap-1">
                       <img
                         src="/assets/images/snapshots/Yuni42.webp"
                         alt="Marketplace Landing Page and App Screenshot"
                         width="1440px"
                         height="auto"
                       />
-                      <div class="flex flex-col">
-                        <div class="flex items-center justify-between">
-                          <h2>Professional Project</h2>
-                          <p>2023</p>
-                        </div>
-                        <p>
-                          Landing Page + Mobile App | Madness (Visual Design),
-                          Verónica Ramírez and Armando Rojano (UX Design, UX
-                          Research)
-                        </p>
-                      </div>
+                      <p>
+                        Landing Page + Mobile App | Madness (Visual Design),
+                        Verónica Ramírez and Armando Rojano (UX Design, UX
+                        Research)
+                      </p>
                     </div>
-                    <div class="flex flex-col gap-2">
+                    <div class="flex flex-col gap-1">
                       <img
                         src="/assets/images/snapshots/Doia13.webp"
                         alt="Snapshot 1"
@@ -392,18 +348,12 @@
                         width="1440px"
                         height="auto"
                       />
-                      <div class="flex flex-col">
-                        <div class="flex items-center justify-between">
-                          <h2>Professional Project</h2>
-                          <p>2022</p>
-                        </div>
-                        <p>
-                          Website | Madness (Visual Design), Verónica Ramírez
-                          and Armando Rojano (UX Design, UX Research)
-                        </p>
-                      </div>
+                      <p>
+                        Website | Madness (Visual Design), Verónica Ramírez and
+                        Armando Rojano (UX Design, UX Research)
+                      </p>
                     </div>
-                    <div class="flex flex-col gap-2">
+                    <div class="flex flex-col gap-1">
                       <img
                         src="/assets/images/snapshots/Mait40.webp"
                         alt="Snapshot 1"
@@ -416,37 +366,25 @@
                         width="1440px"
                         height="auto"
                       />
-                      <div class="flex flex-col">
-                        <div class="flex items-center justify-between">
-                          <h2>Professional Project</h2>
-                          <p>2022</p>
-                        </div>
-                        <p>
-                          Landing Page + Mobile App | Madness (Visual Design),
-                          Verónica Ramírez and Armando Rojano (UX Design, UX
-                          Research)
-                        </p>
-                      </div>
+                      <p>
+                        Landing Page + Mobile App | Madness (Visual Design),
+                        Verónica Ramírez and Armando Rojano (UX Design, UX
+                        Research)
+                      </p>
                     </div>
-                    <div class="flex flex-col gap-2">
+                    <div class="flex flex-col gap-1">
                       <img
                         src="/assets/images/snapshots/Ilum45.webp"
                         alt="Snapshot 1"
                         width="1440px"
                         height="auto"
                       />
-                      <div class="flex flex-col">
-                        <div class="flex items-center justify-between">
-                          <h2>Professional Project</h2>
-                          <p>2022</p>
-                        </div>
-                        <p>
-                          Landing Page | Madness (Visual Design), Verónica
-                          Ramírez and Armando Rojano (UX Design)
-                        </p>
-                      </div>
+                      <p>
+                        Landing Page | Madness (Visual Design), Verónica Ramírez
+                        and Armando Rojano (UX Design)
+                      </p>
                     </div>
-                    <div class="flex flex-col gap-2">
+                    <div class="flex flex-col gap-1">
                       <img
                         src="/assets/images/snapshots/OXLogi30.webp"
                         alt="Snapshot 1"
@@ -465,17 +403,11 @@
                         width="1440px"
                         height="auto"
                       />
-                      <div class="flex flex-col">
-                        <div class="flex items-center justify-between">
-                          <h2>Professional Project</h2>
-                          <p>2021</p>
-                        </div>
-                        <p>
-                          Supplier Relationship Management | Madness (Visual
-                          Design), Verónica Ramírez (UX Research), and Armando
-                          Rojano (UX Design)
-                        </p>
-                      </div>
+                      <p>
+                        Supplier Relationship Management | Madness (Visual
+                        Design), Verónica Ramírez (UX Research), and Armando
+                        Rojano (UX Design)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -484,93 +416,76 @@
               <!-- Web Development -->
               <div>
                 <section>
-                  <div>
-                    <div
-                      class="mdxl:text-4xl mdxl:gap-6 flex flex-col gap-4 text-3xl sm:gap-8 sm:text-4xl md:gap-10 md:text-5xl lg:text-6xl xl:gap-16 xl:text-7xl 2xl:text-8xl"
-                    >
-                      <h3 class="text-accent">Web development</h3>
-                      <p>
+                  <div class="flex flex-col gap-5 lg:gap-8">
+                    <div class="flex flex-col gap-2 text-3xl">
+                      <h3
+                        class="mxl:text-4xl text-3xl text-accent md:text-5xl lg:text-6xl"
+                      >
+                        Web development
+                      </h3>
+                      <p class="mxl:text-2xl text-xl md:text-3xl lg:text-4xl">
                         This is where I'd put my repositories as a web
                         developer... if I had any.
                       </p>
                     </div>
-                    <div class="flex flex-wrap gap-10">
-                      <div class="flex w-[288px] flex-col">
+                    <div class="flex flex-wrap justify-between gap-8">
+                      <div class="w-full md:w-[200px]">
                         <div
-                          class="flex h-[400px] w-auto flex-col-reverse bg-[#7AC84A] p-4"
+                          class="mxl:h-[400px] flex h-[288px] flex-col-reverse bg-[#F8A775] p-4 md:h-[200px]"
                         >
-                          <div class="">
-                            <h4 class="text-4xl">Budget Tracker</h4>
-                          </div>
+                          <h4 class="mxl:text-4xl text-3xl md:text-2xl">
+                            Online Learning Platform
+                          </h4>
                         </div>
-                        <div class="flex flex-col gap-4 py-4">
-                          <p class="font-normal">
+                        <div class="flex flex-col gap-4 py-2">
+                          <p class="font-medium">
                             A simple message board where users can leave short
                             messages. Data are stored in MongoDB Atlas. This is
                             a full stack project.
                           </p>
                           <div class="flex justify-between font-medium">
-                            <p>Personal Project</p>
+                            <p>App Mobile</p>
                             <p>2023</p>
                           </div>
                         </div>
                       </div>
-                      <div class="flex w-[288px] flex-col">
+                      <div class="w-full md:w-[200px]">
                         <div
-                          class="flex h-[400px] w-auto flex-col-reverse bg-[#7AC84A] p-4"
+                          class="mxl:h-[400px] flex h-[288px] flex-col-reverse bg-[#30534E] p-4 md:h-[200px]"
                         >
-                          <div class="">
-                            <h4 class="text-4xl">Budget Tracker</h4>
-                          </div>
+                          <h4
+                            class="mxl:text-4xl text-3xl text-white md:text-2xl"
+                          >
+                            Task Manager
+                          </h4>
                         </div>
-                        <div class="flex flex-col gap-4 py-4">
-                          <p class="font-normal">
-                            A simple message board where users can leave short
-                            messages. Data are stored in MongoDB Atlas. This is
-                            a full stack project.
+                        <div class="flex flex-col gap-4 py-2">
+                          <p class="font-medium">
+                            An app to keep track of tasks with reminders and
+                            priority levels. Built using React and Firebase.
                           </p>
                           <div class="flex justify-between font-medium">
-                            <p>Personal Project</p>
+                            <p>App Mobile</p>
                             <p>2023</p>
                           </div>
                         </div>
                       </div>
-                      <div class="flex w-[288px] flex-col">
+                      <div class="w-full md:w-[200px]">
                         <div
-                          class="flex h-[400px] w-auto flex-col-reverse bg-[#7AC84A] p-4"
+                          class="mxl:h-[400px] flex h-[288px] flex-col-reverse bg-[#FF0000] p-4 md:h-[200px]"
                         >
-                          <div class="">
-                            <h4 class="text-4xl">Budget Tracker</h4>
-                          </div>
+                          <h4 class="mxl:text-4xl text-3xl md:text-2xl">
+                            Budget Tracker
+                          </h4>
                         </div>
-                        <div class="flex flex-col gap-4 py-4">
-                          <p class="font-normal">
-                            A simple message board where users can leave short
-                            messages. Data are stored in MongoDB Atlas. This is
-                            a full stack project.
+                        <div class="flex flex-col gap-4 py-2">
+                          <p class="font-medium">
+                            A cooking app with a wide range of recipes and
+                            cooking tips. Integrated with Spoonacular API for
+                            recipe suggestions.
                           </p>
                           <div class="flex justify-between font-medium">
-                            <p>Personal Project</p>
-                            <p>2023</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex w-[288px] flex-col">
-                        <div
-                          class="flex h-[400px] w-auto flex-col-reverse bg-[#7AC84A] p-4"
-                        >
-                          <div class="">
-                            <h4 class="text-4xl">Budget Tracker</h4>
-                          </div>
-                        </div>
-                        <div class="flex flex-col gap-4 py-4">
-                          <p class="font-normal">
-                            A simple message board where users can leave short
-                            messages. Data are stored in MongoDB Atlas. This is
-                            a full stack project.
-                          </p>
-                          <div class="flex justify-between font-medium">
-                            <p>Personal Project</p>
+                            <p>App Mobile</p>
                             <p>2023</p>
                           </div>
                         </div>
@@ -581,29 +496,29 @@
               </div>
               <!-- Contact -->
               <section>
-                <div>
-                  <img src="/assets/images/Contact.png" alt="" />
-                </div>
+                <!--                 <div class="py-0 pb-8">
+                  <h1 class="animate text-8xl">armando_rour@outlook.com</h1>
+                </div> -->
               </section>
             </div>
           </main>
         </div>
       </div>
       <footer>
-        <div class="flex justify-between font-normal">
-          <div>
-            <p>© 2024</p>
+        <div
+          class="flex flex-col items-center gap-6 py-8 font-normal md:flex md:flex-row md:justify-between md:gap-4"
+        >
+          <div
+            class="flex flex-col items-center justify-between gap-4 font-medium md:flex-row"
+          >
+            <a class="font-normal md:order-last">Scroll up ↑</a>
+            <a href="https://www.linkedin.com/in/armandorour/" target="_blank"
+              >LinkedIn</a
+            >
+            <a href="https://github.com/r0ur" target="_blank">GitHub</a>
+            <a href="https://sixelf.com/rour" target="_blank">Sixelf</a>
           </div>
-          <div class="flex justify-between gap-4">
-            <div class="flex justify-between gap-4 font-medium">
-              <a href="https://www.linkedin.com/in/armandorour/" target="_blank"
-                >LinkedIn</a
-              >
-              <a href="https://github.com/r0ur" target="_blank">GitHub</a>
-              <a href="https://sixelf.com/rour" target="_blank">Sixelf</a>
-            </div>
-            <a class="top">Scroll up ↑</a>
-          </div>
+          <p class="md:order-first">© 2024</p>
         </div>
       </footer>
     </div>
