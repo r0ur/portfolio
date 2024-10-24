@@ -860,6 +860,11 @@ video {
     font-size: 3rem;
     line-height: 1;
   }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -879,6 +884,18 @@ video {
     height: 320px;
   }
 
+  .lg\:h-\[244px\] {
+    height: 244px;
+  }
+
+  .lg\:h-\[210px\] {
+    height: 210px;
+  }
+
+  .lg\:h-\[220px\] {
+    height: 220px;
+  }
+
   .lg\:w-\[340px\] {
     width: 340px;
   }
@@ -893,6 +910,22 @@ video {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-\[244px\] {
+    width: 244px;
+  }
+
+  .lg\:w-\[210px\] {
+    width: 210px;
+  }
+
+  .lg\:w-\[220px\] {
+    width: 220px;
+  }
+
+  .lg\:w-\[204px\] {
+    width: 204px;
   }
 
   .lg\:max-w-\[1120px\] {
@@ -928,6 +961,10 @@ video {
     padding-right: 0px;
   }
 
+  .lg\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -937,11 +974,28 @@ video {
     font-size: 3.75rem;
     line-height: 1;
   }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 1280px) {
+  .xl\:h-\[244px\] {
+    height: 244px;
+  }
+
   .xl\:w-\[1120px\] {
     width: 1120px;
+  }
+
+  .xl\:w-\[244px\] {
+    width: 244px;
+  }
+
+  .xl\:gap-14 {
+    gap: 3.5rem;
   }
 
   .xl\:px-0 {
