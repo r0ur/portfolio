@@ -34,16 +34,13 @@
   </head>
   <body class="bg-white text-black">
     <div
-      class="mxl:px-5 mx-auto px-4 font-inter font-semibold md:px-8 xl:w-[1120px] xl:px-0"
+      class="mxl:px-5 mx-auto w-full px-4 font-inter font-semibold md:px-8 xl:w-[1120px] xl:px-0"
     >
       <div class="flex flex-col">
         <!-- Navigation -->
-        <header>
+        <header class="mxl:py-4 sticky top-0 z-50 bg-white py-2 md:py-6">
           <nav>
-            <!-- Desktop -->
-            <div
-              class="hidden items-center justify-between py-6 lg:visible lg:flex"
-            >
+            <div class="flex items-center justify-between">
               <div>
                 <img
                   src="/assets/images/Favicon.ico"
@@ -52,7 +49,7 @@
                   height="50px"
                 />
               </div>
-              <div class="flex gap-5">
+              <div class="hidden gap-5 lg:visible lg:flex">
                 <a href="#" class="hover:text-accent hover:line-through"
                   >UX research</a
                 >
@@ -68,79 +65,382 @@
                 >
                 <a href="#" class="text-accent hover:line-through">Contact</a>
               </div>
-            </div>
-            <!-- Mobile -->
-            <div
-              class="mxl:py-6 flex items-center justify-between py-4 lg:hidden"
-            >
-              <div>
-                <img
-                  src="/assets/images/Favicon.ico"
-                  alt="Armando Rojano"
-                  width="40px"
-                  height="40px"
-                />
+              <div class="lg:hidden">
+                <button class="text-2xl">Menu</button>
               </div>
-              <button class="text-2xl">Menu</button>
             </div>
           </nav>
         </header>
         <!-- Content -->
-        <div>
-          <main>
-            <div class="flex flex-col gap-8 md:gap-10 lg:gap-16">
-              <!-- Hero -->
-              <section>
-                <div
-                  class="mxl:text-4xl flex flex-col gap-5 text-3xl md:gap-8 md:text-5xl lg:gap-10 lg:pt-10 lg:text-6xl xl:text-[80px]"
-                >
-                  <h1>
-                    Hello, I'm <span class="text-accent">Armando Rojano</span>—a
-                    multidisciplinary
-                    <span class="text-accent">designer</span> with over 3 years
-                    of experience based in México.
-                  </h1>
-                  <h2>
-                    I work as a
-                    <span class="text-accent"
-                      >UX designer
-                      <span class="text-black">and</span> researcher</span
-                    >
-                    at Ilum Prosperity Sherpas, developing solutions for the
-                    ideas that emerge within the company.
-                  </h2>
+        <main class="relative">
+          <div class="flex flex-col gap-8 md:gap-10 lg:gap-16">
+            <!-- Hero -->
+            <section>
+              <div
+                class="mxl:text-4xl flex flex-col gap-5 text-3xl md:gap-8 md:text-5xl lg:gap-10 lg:pt-10 lg:text-6xl xl:text-[80px]"
+              >
+                <h1>
+                  Hello, I'm <span class="text-accent">Armando Rojano</span>—a
+                  multidisciplinary
+                  <span class="text-accent">designer</span> with over 3 years of
+                  experience based in México.
+                </h1>
+                <h2>
+                  I work as a
+                  <span class="text-accent"
+                    >UX designer
+                    <span class="text-black">and</span> researcher</span
+                  >
+                  at Ilum Prosperity Sherpas, developing solutions for the ideas
+                  that emerge within the company.
+                </h2>
+              </div>
+            </section>
+            <hr class="border-black" />
+            <!-- UX Research -->
+            <section>
+              <div class="flex flex-col gap-5 lg:gap-8">
+                <div class="flex flex-col gap-2">
+                  <h3
+                    class="mxl:text-4xl text-3xl text-accent md:text-5xl lg:text-6xl"
+                  >
+                    UX research
+                  </h3>
+                  <p class="mxl:text-2xl text-xl md:text-3xl lg:text-4xl">
+                    These case studies are part of my work as a UX researcher.
+                  </p>
                 </div>
-              </section>
-              <hr class="border-black" />
-              <!-- UX Research -->
+                <div
+                  class="flex flex-wrap justify-between gap-8 md:gap-10 lg:flex-nowrap lg:gap-12"
+                >
+                  <div class="w-full md:w-[316px] lg:w-[340px]">
+                    <div
+                      class="mxl:h-[400px] flex h-[288px] flex-col-reverse bg-[#EDD000] p-4 md:h-[316px] lg:h-[320px]"
+                    >
+                      <h4 class="mxl:text-4xl text-3xl lg:text-5xl">
+                        Maestro Malta
+                      </h4>
+                    </div>
+                    <div class="flex flex-col gap-4 py-2">
+                      <p class="font-medium">
+                        Explora cervezas artesanales locales e importadas,
+                        aprendiendo sobre sus sabores, precios, orígenes y
+                        alternativas.
+                      </p>
+                      <div class="flex justify-between font-medium">
+                        <p>App Mobile</p>
+                        <p>2023</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full md:w-[316px] lg:w-[340px]">
+                    <div
+                      class="mxl:h-[400px] flex h-[288px] flex-col-reverse bg-[#EDD000] p-4 md:h-[316px] lg:h-[320px]"
+                    >
+                      <h4 class="mxl:text-4xl text-3xl lg:text-5xl">
+                        Maestro Malta
+                      </h4>
+                    </div>
+                    <div class="flex flex-col gap-4 py-2">
+                      <p class="font-medium">
+                        Explora cervezas artesanales locales e importadas,
+                        aprendiendo sobre sus sabores, precios, orígenes y
+                        alternativas.
+                      </p>
+                      <div class="flex justify-between font-medium">
+                        <p>App Mobile</p>
+                        <p>2023</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full md:w-[316px] lg:w-[340px]">
+                    <div
+                      class="mxl:h-[400px] flex h-[288px] flex-col-reverse bg-[#EDD000] p-4 md:h-[316px] lg:h-[320px]"
+                    >
+                      <h4 class="mxl:text-4xl text-3xl lg:text-5xl">
+                        Maestro Malta
+                      </h4>
+                    </div>
+                    <div class="flex flex-col gap-4 py-2">
+                      <p class="font-medium">
+                        Explora cervezas artesanales locales e importadas,
+                        aprendiendo sobre sus sabores, precios, orígenes y
+                        alternativas.
+                      </p>
+                      <div class="flex justify-between font-medium">
+                        <p>App Mobile</p>
+                        <p>2023</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <hr class="border-black" />
+            <!-- UX Design -->
+            <section>
+              <div class="flex flex-col gap-5 lg:gap-8">
+                <div class="flex flex-col gap-2">
+                  <h3
+                    class="mxl:text-4xl text-3xl text-accent md:text-5xl lg:text-6xl"
+                  >
+                    UX design
+                  </h3>
+                  <p class="mxl:text-2xl text-xl md:text-3xl lg:text-4xl">
+                    These snapshots are a sneak peek of my work as a UX designer
+                    and the other roles I've had to take on.
+                  </p>
+                </div>
+                <div
+                  class="flex flex-col gap-6 text-sm font-medium lg:gap-10 xl:gap-14"
+                >
+                  <div class="flex max-w-screen-xl flex-col gap-2">
+                    <img
+                      src="/assets/images/snapshots/TOMA24.webp"
+                      alt="Streaming Platform Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <p class="md:text-base">Streaming Platform</p>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <img
+                      src="/assets/images/snapshots/OXBI37.webp"
+                      alt="Website System Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <img
+                      src="/assets/images/snapshots/OXBI36.webp"
+                      alt="Website System Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <img
+                      src="/assets/images/snapshots/OXBI35.webp"
+                      alt="Website System Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <p class="md:text-base">
+                      Supplier Relationship Management | Verónica Ramírez
+                      (Visual Design), Oscar Delgado (UX Research), and Armando
+                      Rojano (UX Design, UX Writing)
+                    </p>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <img
+                      src="/assets/images/snapshots/Immer43.webp"
+                      alt="Virtual Reality Landing Page Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <p class="md:text-base">
+                      Landing Page | Verónica Ramírez (Visual Design), and
+                      Armando Rojano (UX Design, UX Writing)
+                    </p>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <img
+                      src="/assets/images/snapshots/CyberP47.webp"
+                      alt="PC Part Picker Tool from CyberPuerta Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <img
+                      src="/assets/images/snapshots/CyberP46.webp"
+                      alt="PC Part Picker Tool from CyberPuerta Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <p class="md:text-base">PC Part Picker Redesign</p>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <img
+                      src="/assets/images/snapshots/Binca33.webp"
+                      alt="Credit Cards Landing Page Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <img
+                      src="/assets/images/snapshots/Binca34.webp"
+                      alt="Credit Cards Landing Page Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <p class="md:text-base">
+                      Landing Page | Madness (Visual Design), and Armando Rojano
+                      (UX Design, UX Writing)
+                    </p>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <img
+                      src="/assets/images/snapshots/Bike27.webp"
+                      alt="Dasboard Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <img
+                      src="/assets/images/snapshots/Bike28.webp"
+                      alt="Dasboard Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <p class="md:text-base">Dashboard</p>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <img
+                      src="/assets/images/snapshots/Disrupto2.webp"
+                      alt="Organization Landing Page Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <img
+                      src="/assets/images/snapshots/Disrupto3.webp"
+                      alt="Organization Landing Page Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <p class="md:text-base">
+                      Landing Page | Armando Rojano (UX Design)
+                    </p>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <img
+                      src="/assets/images/snapshots/Yuni42.webp"
+                      alt="Marketplace Landing Page and App Screenshot"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <p class="md:text-base">
+                      Landing Page + Mobile App | Madness (Visual Design),
+                      Verónica Ramírez and Armando Rojano (UX Design, UX
+                      Research)
+                    </p>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <img
+                      src="/assets/images/snapshots/Doia13.webp"
+                      alt="Snapshot 1"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <img
+                      src="/assets/images/snapshots/Doia14.webp"
+                      alt="Snapshot 1"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <img
+                      src="/assets/images/snapshots/Doia38.webp"
+                      alt="Snapshot 1"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <img
+                      src="/assets/images/snapshots/Doia39.webp"
+                      alt="Snapshot 1"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <p class="md:text-base">
+                      Website | Madness (Visual Design), Verónica Ramírez and
+                      Armando Rojano (UX Design, UX Research)
+                    </p>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <img
+                      src="/assets/images/snapshots/Mait40.webp"
+                      alt="Snapshot 1"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <img
+                      src="/assets/images/snapshots/Mait41.webp"
+                      alt="Snapshot 1"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <p class="md:text-base">
+                      Landing Page + Mobile App | Madness (Visual Design),
+                      Verónica Ramírez and Armando Rojano (UX Design, UX
+                      Research)
+                    </p>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <img
+                      src="/assets/images/snapshots/Ilum45.webp"
+                      alt="Snapshot 1"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <p class="md:text-base">
+                      Landing Page | Madness (Visual Design), Verónica Ramírez
+                      and Armando Rojano (UX Design)
+                    </p>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <img
+                      src="/assets/images/snapshots/OXLogi30.webp"
+                      alt="Snapshot 1"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <img
+                      src="/assets/images/snapshots/OXLogi31.webp"
+                      alt="Snapshot 1"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <img
+                      src="/assets/images/snapshots/OXLogi32.webp"
+                      alt="Snapshot 1"
+                      width="1440px"
+                      height="auto"
+                    />
+                    <p class="md:text-base">
+                      Supplier Relationship Management | Madness (Visual
+                      Design), Verónica Ramírez (UX Research), and Armando
+                      Rojano (UX Design)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <hr class="border-black" />
+            <!-- Web Development -->
+            <div>
               <section>
                 <div class="flex flex-col gap-5 lg:gap-8">
-                  <div class="flex flex-col gap-2">
+                  <div class="flex flex-col gap-2 text-3xl">
                     <h3
                       class="mxl:text-4xl text-3xl text-accent md:text-5xl lg:text-6xl"
                     >
-                      UX research
+                      Web development
                     </h3>
                     <p class="mxl:text-2xl text-xl md:text-3xl lg:text-4xl">
-                      These case studies are part of my work as a UX researcher.
+                      This is where I'd put my repositories as a web
+                      developer... if I had any.
                     </p>
                   </div>
                   <div
                     class="flex flex-wrap justify-between gap-8 md:gap-10 lg:flex-nowrap lg:gap-12"
                   >
-                    <div class="w-full md:w-[316px] lg:w-[340px]">
+                    <div class="w-full md:w-[200px] lg:w-[220px] xl:w-[244px]">
                       <div
-                        class="mxl:h-[400px] flex h-[288px] flex-col-reverse bg-[#EDD000] p-4 md:h-[316px] lg:h-[320px]"
+                        class="mxl:h-[400px] flex h-[288px] flex-col-reverse bg-[#F8A775] p-4 md:h-[200px] lg:h-[220px] xl:h-[244px]"
                       >
-                        <h4 class="mxl:text-4xl text-3xl lg:text-5xl">
-                          Maestro Malta
+                        <h4
+                          class="mxl:text-4xl text-3xl md:text-2xl lg:text-4xl"
+                        >
+                          Online Learning Platform
                         </h4>
                       </div>
                       <div class="flex flex-col gap-4 py-2">
                         <p class="font-medium">
-                          Explora cervezas artesanales locales e importadas,
-                          aprendiendo sobre sus sabores, precios, orígenes y
-                          alternativas.
+                          A simple message board where users can leave short
+                          messages. Data are stored in MongoDB Atlas. This is a
+                          full stack project.
                         </p>
                         <div class="flex justify-between font-medium">
                           <p>App Mobile</p>
@@ -148,19 +448,20 @@
                         </div>
                       </div>
                     </div>
-                    <div class="w-full md:w-[316px] lg:w-[340px]">
+                    <div class="w-full md:w-[200px] lg:w-[220px] xl:w-[244px]">
                       <div
-                        class="mxl:h-[400px] flex h-[288px] flex-col-reverse bg-[#EDD000] p-4 md:h-[316px] lg:h-[320px]"
+                        class="mxl:h-[400px] flex h-[288px] flex-col-reverse bg-[#30534E] p-4 md:h-[200px] lg:h-[220px] xl:h-[244px]"
                       >
-                        <h4 class="mxl:text-4xl text-3xl lg:text-5xl">
-                          Maestro Malta
+                        <h4
+                          class="mxl:text-4xl text-3xl text-white md:text-2xl lg:text-4xl"
+                        >
+                          Task Manager
                         </h4>
                       </div>
                       <div class="flex flex-col gap-4 py-2">
                         <p class="font-medium">
-                          Explora cervezas artesanales locales e importadas,
-                          aprendiendo sobre sus sabores, precios, orígenes y
-                          alternativas.
+                          An app to keep track of tasks with reminders and
+                          priority levels. Built using React and Firebase.
                         </p>
                         <div class="flex justify-between font-medium">
                           <p>App Mobile</p>
@@ -168,19 +469,43 @@
                         </div>
                       </div>
                     </div>
-                    <div class="w-full md:w-[316px] lg:w-[340px]">
+                    <div class="w-full md:w-[200px] lg:w-[220px] xl:w-[244px]">
                       <div
-                        class="mxl:h-[400px] flex h-[288px] flex-col-reverse bg-[#EDD000] p-4 md:h-[316px] lg:h-[320px]"
+                        class="mxl:h-[400px] flex h-[288px] flex-col-reverse bg-[#FF0000] p-4 md:h-[200px] lg:h-[220px] xl:h-[244px]"
                       >
-                        <h4 class="mxl:text-4xl text-3xl lg:text-5xl">
-                          Maestro Malta
+                        <h4
+                          class="mxl:text-4xl text-3xl md:text-2xl lg:text-4xl"
+                        >
+                          Budget Tracker
                         </h4>
                       </div>
                       <div class="flex flex-col gap-4 py-2">
                         <p class="font-medium">
-                          Explora cervezas artesanales locales e importadas,
-                          aprendiendo sobre sus sabores, precios, orígenes y
-                          alternativas.
+                          A cooking app with a wide range of recipes and cooking
+                          tips. Integrated with Spoonacular API for recipe
+                          suggestions.
+                        </p>
+                        <div class="flex justify-between font-medium">
+                          <p>App Mobile</p>
+                          <p>2023</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-full md:w-[200px] lg:w-[220px] xl:w-[244px]">
+                      <div
+                        class="mxl:h-[400px] flex h-[288px] flex-col-reverse bg-[#FF0000] p-4 md:h-[200px] lg:h-[220px] xl:h-[244px]"
+                      >
+                        <h4
+                          class="mxl:text-4xl text-3xl md:text-2xl lg:text-4xl"
+                        >
+                          Budget Tracker
+                        </h4>
+                      </div>
+                      <div class="flex flex-col gap-4 py-2">
+                        <p class="font-medium">
+                          A cooking app with a wide range of recipes and cooking
+                          tips. Integrated with Spoonacular API for recipe
+                          suggestions.
                         </p>
                         <div class="flex justify-between font-medium">
                           <p>App Mobile</p>
@@ -190,365 +515,16 @@
                     </div>
                   </div>
                 </div>
-              </section>
-              <hr class="border-black" />
-              <!-- UX Design -->
-              <section>
-                <div class="flex flex-col gap-5 lg:gap-8">
-                  <div class="flex flex-col gap-2">
-                    <h3
-                      class="mxl:text-4xl text-3xl text-accent md:text-5xl lg:text-6xl"
-                    >
-                      UX design
-                    </h3>
-                    <p class="mxl:text-2xl text-xl md:text-3xl lg:text-4xl">
-                      These snapshots are a sneak peek of my work as a UX
-                      designer and the other roles I've had to take on.
-                    </p>
-                  </div>
-                  <div
-                    class="flex flex-col gap-6 text-sm font-medium lg:gap-10 xl:gap-14"
-                  >
-                    <div class="flex max-w-screen-xl flex-col gap-2">
-                      <img
-                        src="/assets/images/snapshots/TOMA24.webp"
-                        alt="Streaming Platform Screenshot"
-                        width="1440px"
-                        height="auto"
-                      />
-                      <p class="md:text-base">Streaming Platform</p>
-                    </div>
-                    <div class="flex flex-col gap-2">
-                      <img
-                        src="/assets/images/snapshots/OXBI37.webp"
-                        alt="Website System Screenshot"
-                        width="1440px"
-                        height="auto"
-                      />
-                      <img
-                        src="/assets/images/snapshots/OXBI36.webp"
-                        alt="Website System Screenshot"
-                        width="1440px"
-                        height="auto"
-                      />
-                      <img
-                        src="/assets/images/snapshots/OXBI35.webp"
-                        alt="Website System Screenshot"
-                        width="1440px"
-                        height="auto"
-                      />
-                      <p class="md:text-base">
-                        Supplier Relationship Management | Verónica Ramírez
-                        (Visual Design), Oscar Delgado (UX Research), and
-                        Armando Rojano (UX Design, UX Writing)
-                      </p>
-                    </div>
-                    <div class="flex flex-col gap-2">
-                      <img
-                        src="/assets/images/snapshots/Immer43.webp"
-                        alt="Virtual Reality Landing Page Screenshot"
-                        width="1440px"
-                        height="auto"
-                      />
-                      <p class="md:text-base">
-                        Landing Page | Verónica Ramírez (Visual Design), and
-                        Armando Rojano (UX Design, UX Writing)
-                      </p>
-                    </div>
-                    <div class="flex flex-col gap-2">
-                      <img
-                        src="/assets/images/snapshots/CyberP47.webp"
-                        alt="PC Part Picker Tool from CyberPuerta Screenshot"
-                        width="1440px"
-                        height="auto"
-                      />
-                      <img
-                        src="/assets/images/snapshots/CyberP46.webp"
-                        alt="PC Part Picker Tool from CyberPuerta Screenshot"
-                        width="1440px"
-                        height="auto"
-                      />
-                      <p class="md:text-base">PC Part Picker Redesign</p>
-                    </div>
-                    <div class="flex flex-col gap-2">
-                      <img
-                        src="/assets/images/snapshots/Binca33.webp"
-                        alt="Credit Cards Landing Page Screenshot"
-                        width="1440px"
-                        height="auto"
-                      />
-                      <img
-                        src="/assets/images/snapshots/Binca34.webp"
-                        alt="Credit Cards Landing Page Screenshot"
-                        width="1440px"
-                        height="auto"
-                      />
-                      <p class="md:text-base">
-                        Landing Page | Madness (Visual Design), and Armando
-                        Rojano (UX Design, UX Writing)
-                      </p>
-                    </div>
-                    <div class="flex flex-col gap-2">
-                      <img
-                        src="/assets/images/snapshots/Bike27.webp"
-                        alt="Dasboard Screenshot"
-                        width="1440px"
-                        height="auto"
-                      />
-                      <img
-                        src="/assets/images/snapshots/Bike28.webp"
-                        alt="Dasboard Screenshot"
-                        width="1440px"
-                        height="auto"
-                      />
-                      <p class="md:text-base">Dashboard</p>
-                    </div>
-                    <div class="flex flex-col gap-2">
-                      <img
-                        src="/assets/images/snapshots/Disrupto2.webp"
-                        alt="Organization Landing Page Screenshot"
-                        width="1440px"
-                        height="auto"
-                      />
-                      <img
-                        src="/assets/images/snapshots/Disrupto3.webp"
-                        alt="Organization Landing Page Screenshot"
-                        width="1440px"
-                        height="auto"
-                      />
-                      <p class="md:text-base">
-                        Landing Page | Armando Rojano (UX Design)
-                      </p>
-                    </div>
-                    <div class="flex flex-col gap-2">
-                      <img
-                        src="/assets/images/snapshots/Yuni42.webp"
-                        alt="Marketplace Landing Page and App Screenshot"
-                        width="1440px"
-                        height="auto"
-                      />
-                      <p class="md:text-base">
-                        Landing Page + Mobile App | Madness (Visual Design),
-                        Verónica Ramírez and Armando Rojano (UX Design, UX
-                        Research)
-                      </p>
-                    </div>
-                    <div class="flex flex-col gap-2">
-                      <img
-                        src="/assets/images/snapshots/Doia13.webp"
-                        alt="Snapshot 1"
-                        width="1440px"
-                        height="auto"
-                      />
-                      <img
-                        src="/assets/images/snapshots/Doia14.webp"
-                        alt="Snapshot 1"
-                        width="1440px"
-                        height="auto"
-                      />
-                      <img
-                        src="/assets/images/snapshots/Doia38.webp"
-                        alt="Snapshot 1"
-                        width="1440px"
-                        height="auto"
-                      />
-                      <img
-                        src="/assets/images/snapshots/Doia39.webp"
-                        alt="Snapshot 1"
-                        width="1440px"
-                        height="auto"
-                      />
-                      <p class="md:text-base">
-                        Website | Madness (Visual Design), Verónica Ramírez and
-                        Armando Rojano (UX Design, UX Research)
-                      </p>
-                    </div>
-                    <div class="flex flex-col gap-2">
-                      <img
-                        src="/assets/images/snapshots/Mait40.webp"
-                        alt="Snapshot 1"
-                        width="1440px"
-                        height="auto"
-                      />
-                      <img
-                        src="/assets/images/snapshots/Mait41.webp"
-                        alt="Snapshot 1"
-                        width="1440px"
-                        height="auto"
-                      />
-                      <p class="md:text-base">
-                        Landing Page + Mobile App | Madness (Visual Design),
-                        Verónica Ramírez and Armando Rojano (UX Design, UX
-                        Research)
-                      </p>
-                    </div>
-                    <div class="flex flex-col gap-2">
-                      <img
-                        src="/assets/images/snapshots/Ilum45.webp"
-                        alt="Snapshot 1"
-                        width="1440px"
-                        height="auto"
-                      />
-                      <p class="md:text-base">
-                        Landing Page | Madness (Visual Design), Verónica Ramírez
-                        and Armando Rojano (UX Design)
-                      </p>
-                    </div>
-                    <div class="flex flex-col gap-2">
-                      <img
-                        src="/assets/images/snapshots/OXLogi30.webp"
-                        alt="Snapshot 1"
-                        width="1440px"
-                        height="auto"
-                      />
-                      <img
-                        src="/assets/images/snapshots/OXLogi31.webp"
-                        alt="Snapshot 1"
-                        width="1440px"
-                        height="auto"
-                      />
-                      <img
-                        src="/assets/images/snapshots/OXLogi32.webp"
-                        alt="Snapshot 1"
-                        width="1440px"
-                        height="auto"
-                      />
-                      <p class="md:text-base">
-                        Supplier Relationship Management | Madness (Visual
-                        Design), Verónica Ramírez (UX Research), and Armando
-                        Rojano (UX Design)
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <hr class="border-black" />
-              <!-- Web Development -->
-              <div>
-                <section>
-                  <div class="flex flex-col gap-5 lg:gap-8">
-                    <div class="flex flex-col gap-2 text-3xl">
-                      <h3
-                        class="mxl:text-4xl text-3xl text-accent md:text-5xl lg:text-6xl"
-                      >
-                        Web development
-                      </h3>
-                      <p class="mxl:text-2xl text-xl md:text-3xl lg:text-4xl">
-                        This is where I'd put my repositories as a web
-                        developer... if I had any.
-                      </p>
-                    </div>
-                    <div
-                      class="flex flex-wrap justify-between gap-8 md:gap-10 lg:flex-nowrap lg:gap-12"
-                    >
-                      <div
-                        class="w-full md:w-[200px] lg:w-[220px] xl:w-[244px]"
-                      >
-                        <div
-                          class="mxl:h-[400px] flex h-[288px] flex-col-reverse bg-[#F8A775] p-4 md:h-[200px] lg:h-[220px] xl:h-[244px]"
-                        >
-                          <h4
-                            class="mxl:text-4xl text-3xl md:text-2xl lg:text-4xl"
-                          >
-                            Online Learning Platform
-                          </h4>
-                        </div>
-                        <div class="flex flex-col gap-4 py-2">
-                          <p class="font-medium">
-                            A simple message board where users can leave short
-                            messages. Data are stored in MongoDB Atlas. This is
-                            a full stack project.
-                          </p>
-                          <div class="flex justify-between font-medium">
-                            <p>App Mobile</p>
-                            <p>2023</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="w-full md:w-[200px] lg:w-[220px] xl:w-[244px]"
-                      >
-                        <div
-                          class="mxl:h-[400px] flex h-[288px] flex-col-reverse bg-[#30534E] p-4 md:h-[200px] lg:h-[220px] xl:h-[244px]"
-                        >
-                          <h4
-                            class="mxl:text-4xl text-3xl text-white md:text-2xl lg:text-4xl"
-                          >
-                            Task Manager
-                          </h4>
-                        </div>
-                        <div class="flex flex-col gap-4 py-2">
-                          <p class="font-medium">
-                            An app to keep track of tasks with reminders and
-                            priority levels. Built using React and Firebase.
-                          </p>
-                          <div class="flex justify-between font-medium">
-                            <p>App Mobile</p>
-                            <p>2023</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="w-full md:w-[200px] lg:w-[220px] xl:w-[244px]"
-                      >
-                        <div
-                          class="mxl:h-[400px] flex h-[288px] flex-col-reverse bg-[#FF0000] p-4 md:h-[200px] lg:h-[220px] xl:h-[244px]"
-                        >
-                          <h4
-                            class="mxl:text-4xl text-3xl md:text-2xl lg:text-4xl"
-                          >
-                            Budget Tracker
-                          </h4>
-                        </div>
-                        <div class="flex flex-col gap-4 py-2">
-                          <p class="font-medium">
-                            A cooking app with a wide range of recipes and
-                            cooking tips. Integrated with Spoonacular API for
-                            recipe suggestions.
-                          </p>
-                          <div class="flex justify-between font-medium">
-                            <p>App Mobile</p>
-                            <p>2023</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="w-full md:w-[200px] lg:w-[220px] xl:w-[244px]"
-                      >
-                        <div
-                          class="mxl:h-[400px] flex h-[288px] flex-col-reverse bg-[#FF0000] p-4 md:h-[200px] lg:h-[220px] xl:h-[244px]"
-                        >
-                          <h4
-                            class="mxl:text-4xl text-3xl md:text-2xl lg:text-4xl"
-                          >
-                            Budget Tracker
-                          </h4>
-                        </div>
-                        <div class="flex flex-col gap-4 py-2">
-                          <p class="font-medium">
-                            A cooking app with a wide range of recipes and
-                            cooking tips. Integrated with Spoonacular API for
-                            recipe suggestions.
-                          </p>
-                          <div class="flex justify-between font-medium">
-                            <p>App Mobile</p>
-                            <p>2023</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </div>
-              <!-- Contact -->
-              <section>
-                <!--                 <div class="py-0 pb-8">
-                  <h1 class="animate text-8xl">armando_rour@outlook.com</h1>
-                </div> -->
               </section>
             </div>
-          </main>
-        </div>
+            <!-- Contact -->
+            <section>
+              <!--                 <div class="py-0 pb-8">
+                  <h1 class="animate text-8xl">armando_rour@outlook.com</h1>
+                </div> -->
+            </section>
+          </div>
+        </main>
       </div>
       <footer>
         <div
