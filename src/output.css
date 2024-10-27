@@ -758,6 +758,10 @@ video {
   color: rgb(244 236 236 / var(--tw-text-opacity));
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 @font-face {
   font-family: 'Cascadia Mono';
 
