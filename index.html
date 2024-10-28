@@ -53,15 +53,24 @@
                 </div>
               </a>
               <div class="hidden gap-5 lg:visible lg:flex">
-                <a href="#" class="hover:text-accent hover:line-through"
-                  >UX research</a
+                <p
+                  onclick="scrollToSection('ux-research')"
+                  class="cursor-pointer hover:text-accent hover:line-through"
                 >
-                <a href="#" class="hover:text-accent hover:line-through"
-                  >UX design</a
+                  UX research
+                </p>
+                <p
+                  onclick="scrollToSection('ux-design')"
+                  class="cursor-pointer hover:text-accent hover:line-through"
                 >
-                <a href="#" class="hover:text-accent hover:line-through"
-                  >Web development</a
+                  UX design
+                </p>
+                <p
+                  onclick="scrollToSection('web-dev')"
+                  class="cursor-pointer hover:text-accent hover:line-through"
                 >
+                  Web development
+                </p>
                 <p>|</p>
                 <a
                   href="pages/about.html"
@@ -81,7 +90,7 @@
         <main class="relative">
           <div class="flex flex-col gap-8 md:gap-10 lg:gap-16">
             <!-- Hero -->
-            <section>
+            <section id="hero">
               <div
                 class="flex flex-col gap-5 text-3xl mxl:text-4xl md:gap-8 md:text-5xl lg:gap-10 lg:pt-10 lg:text-6xl xl:text-[80px]"
               >
@@ -104,7 +113,7 @@
             </section>
             <hr class="border-black" />
             <!-- UX Research -->
-            <section>
+            <section id="ux-research">
               <div class="flex flex-col gap-5 lg:gap-8">
                 <div class="flex flex-col gap-2">
                   <h3
@@ -184,7 +193,7 @@
             </section>
             <hr class="border-black" />
             <!-- UX Design -->
-            <section>
+            <section id="ux-design">
               <div class="flex flex-col gap-5 lg:gap-8">
                 <div class="flex flex-col gap-2">
                   <h3
@@ -391,114 +400,106 @@
             </section>
             <hr class="border-black" />
             <!-- Web Development -->
-            <div>
-              <section>
-                <div class="flex flex-col gap-5 lg:gap-8">
-                  <div class="flex flex-col gap-2 text-3xl">
-                    <h3
-                      class="text-3xl text-accent mxl:text-4xl md:text-5xl lg:text-6xl"
-                    >
-                      Web development
-                    </h3>
-                    <p class="text-xl mxl:text-2xl md:text-3xl lg:text-4xl">
-                      This is where I'd put my repositories as a web
-                      developer... if I had any.
-                    </p>
-                  </div>
-                  <div
-                    class="flex flex-wrap justify-between gap-8 md:gap-10 lg:flex-nowrap lg:gap-12"
+            <section id="web-dev">
+              <div class="flex flex-col gap-5 lg:gap-8">
+                <div class="flex flex-col gap-2 text-3xl">
+                  <h3
+                    class="text-3xl text-accent mxl:text-4xl md:text-5xl lg:text-6xl"
                   >
-                    <div class="w-full md:w-[200px] lg:w-[220px] xl:w-[244px]">
-                      <div
-                        class="flex h-[288px] flex-col-reverse bg-[#F8A775] p-4 mxl:h-[400px] md:h-[200px] lg:h-[220px] xl:h-[244px]"
-                      >
-                        <h4
-                          class="text-3xl mxl:text-4xl md:text-2xl lg:text-4xl"
-                        >
-                          Online Learning Platform
-                        </h4>
-                      </div>
-                      <div class="flex flex-col gap-4 py-2">
-                        <p class="font-medium">
-                          A simple message board where users can leave short
-                          messages. Data are stored in MongoDB Atlas. This is a
-                          full stack project.
-                        </p>
-                        <div class="flex justify-between font-medium">
-                          <p>App Mobile</p>
-                          <p>2023</p>
-                        </div>
+                    Web development
+                  </h3>
+                  <p class="text-xl mxl:text-2xl md:text-3xl lg:text-4xl">
+                    This is where I'd put my repositories as a web developer...
+                    if I had any.
+                  </p>
+                </div>
+                <div
+                  class="flex flex-wrap justify-between gap-8 md:gap-10 lg:flex-nowrap lg:gap-12"
+                >
+                  <div class="w-full md:w-[200px] lg:w-[220px] xl:w-[244px]">
+                    <div
+                      class="flex h-[288px] flex-col-reverse bg-[#F8A775] p-4 mxl:h-[400px] md:h-[200px] lg:h-[220px] xl:h-[244px]"
+                    >
+                      <h4 class="text-3xl mxl:text-4xl md:text-2xl lg:text-4xl">
+                        Online Learning Platform
+                      </h4>
+                    </div>
+                    <div class="flex flex-col gap-4 py-2">
+                      <p class="font-medium">
+                        A simple message board where users can leave short
+                        messages. Data are stored in MongoDB Atlas. This is a
+                        full stack project.
+                      </p>
+                      <div class="flex justify-between font-medium">
+                        <p>App Mobile</p>
+                        <p>2023</p>
                       </div>
                     </div>
-                    <div class="w-full md:w-[200px] lg:w-[220px] xl:w-[244px]">
-                      <div
-                        class="flex h-[288px] flex-col-reverse bg-[#30534E] p-4 mxl:h-[400px] md:h-[200px] lg:h-[220px] xl:h-[244px]"
+                  </div>
+                  <div class="w-full md:w-[200px] lg:w-[220px] xl:w-[244px]">
+                    <div
+                      class="flex h-[288px] flex-col-reverse bg-[#30534E] p-4 mxl:h-[400px] md:h-[200px] lg:h-[220px] xl:h-[244px]"
+                    >
+                      <h4
+                        class="text-3xl text-white mxl:text-4xl md:text-2xl lg:text-4xl"
                       >
-                        <h4
-                          class="text-3xl text-white mxl:text-4xl md:text-2xl lg:text-4xl"
-                        >
-                          Task Manager
-                        </h4>
-                      </div>
-                      <div class="flex flex-col gap-4 py-2">
-                        <p class="font-medium">
-                          An app to keep track of tasks with reminders and
-                          priority levels. Built using React and Firebase.
-                        </p>
-                        <div class="flex justify-between font-medium">
-                          <p>App Mobile</p>
-                          <p>2023</p>
-                        </div>
+                        Task Manager
+                      </h4>
+                    </div>
+                    <div class="flex flex-col gap-4 py-2">
+                      <p class="font-medium">
+                        An app to keep track of tasks with reminders and
+                        priority levels. Built using React and Firebase.
+                      </p>
+                      <div class="flex justify-between font-medium">
+                        <p>App Mobile</p>
+                        <p>2023</p>
                       </div>
                     </div>
-                    <div class="w-full md:w-[200px] lg:w-[220px] xl:w-[244px]">
-                      <div
-                        class="flex h-[288px] flex-col-reverse bg-[#FF0000] p-4 mxl:h-[400px] md:h-[200px] lg:h-[220px] xl:h-[244px]"
-                      >
-                        <h4
-                          class="text-3xl mxl:text-4xl md:text-2xl lg:text-4xl"
-                        >
-                          Budget Tracker
-                        </h4>
-                      </div>
-                      <div class="flex flex-col gap-4 py-2">
-                        <p class="font-medium">
-                          A cooking app with a wide range of recipes and cooking
-                          tips. Integrated with Spoonacular API for recipe
-                          suggestions.
-                        </p>
-                        <div class="flex justify-between font-medium">
-                          <p>App Mobile</p>
-                          <p>2023</p>
-                        </div>
+                  </div>
+                  <div class="w-full md:w-[200px] lg:w-[220px] xl:w-[244px]">
+                    <div
+                      class="flex h-[288px] flex-col-reverse bg-[#FF0000] p-4 mxl:h-[400px] md:h-[200px] lg:h-[220px] xl:h-[244px]"
+                    >
+                      <h4 class="text-3xl mxl:text-4xl md:text-2xl lg:text-4xl">
+                        Budget Tracker
+                      </h4>
+                    </div>
+                    <div class="flex flex-col gap-4 py-2">
+                      <p class="font-medium">
+                        A cooking app with a wide range of recipes and cooking
+                        tips. Integrated with Spoonacular API for recipe
+                        suggestions.
+                      </p>
+                      <div class="flex justify-between font-medium">
+                        <p>App Mobile</p>
+                        <p>2023</p>
                       </div>
                     </div>
-                    <div class="w-full md:w-[200px] lg:w-[220px] xl:w-[244px]">
-                      <div
-                        class="flex h-[288px] flex-col-reverse bg-[#FF0000] p-4 mxl:h-[400px] md:h-[200px] lg:h-[220px] xl:h-[244px]"
-                      >
-                        <h4
-                          class="text-3xl mxl:text-4xl md:text-2xl lg:text-4xl"
-                        >
-                          Budget Tracker
-                        </h4>
-                      </div>
-                      <div class="flex flex-col gap-4 py-2">
-                        <p class="font-medium">
-                          A cooking app with a wide range of recipes and cooking
-                          tips. Integrated with Spoonacular API for recipe
-                          suggestions.
-                        </p>
-                        <div class="flex justify-between font-medium">
-                          <p>App Mobile</p>
-                          <p>2023</p>
-                        </div>
+                  </div>
+                  <div class="w-full md:w-[200px] lg:w-[220px] xl:w-[244px]">
+                    <div
+                      class="flex h-[288px] flex-col-reverse bg-[#FF0000] p-4 mxl:h-[400px] md:h-[200px] lg:h-[220px] xl:h-[244px]"
+                    >
+                      <h4 class="text-3xl mxl:text-4xl md:text-2xl lg:text-4xl">
+                        Budget Tracker
+                      </h4>
+                    </div>
+                    <div class="flex flex-col gap-4 py-2">
+                      <p class="font-medium">
+                        A cooking app with a wide range of recipes and cooking
+                        tips. Integrated with Spoonacular API for recipe
+                        suggestions.
+                      </p>
+                      <div class="flex justify-between font-medium">
+                        <p>App Mobile</p>
+                        <p>2023</p>
                       </div>
                     </div>
                   </div>
                 </div>
-              </section>
-            </div>
+              </div>
+            </section>
             <!-- Contact -->
             <!--             <section>
               <div class="py-0 pb-8">
@@ -544,5 +545,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/global-effects.js"></script>
   </body>
 </html>
