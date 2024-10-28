@@ -554,6 +554,10 @@ video {
   display: none;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .fixed {
   position: fixed;
 }
@@ -566,44 +570,16 @@ video {
   position: sticky;
 }
 
-.top-0 {
-  top: 0px;
-}
-
-.bottom-4 {
-  bottom: 1rem;
-}
-
 .right-4 {
   right: 1rem;
 }
 
-.top-4 {
-  top: 1rem;
-}
-
-.top-10 {
-  top: 2.5rem;
-}
-
-.top-20 {
-  top: 5rem;
-}
-
-.top-52 {
-  top: 13rem;
+.top-0 {
+  top: 0px;
 }
 
 .top-28 {
   top: 7rem;
-}
-
-.right-8 {
-  right: 2rem;
-}
-
-.right-16 {
-  right: 4rem;
 }
 
 .z-50 {
@@ -613,14 +589,6 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.block {
-  display: block;
-}
-
-.inline {
-  display: inline;
 }
 
 .flex {
@@ -652,33 +620,29 @@ video {
   height: 288px;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .w-full {
   width: 100%;
 }
 
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
+.w-screen {
+  width: 100vw;
 }
 
 .max-w-screen-xl {
   max-width: 1280px;
 }
 
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .cursor-pointer {
   cursor: pointer;
-}
-
-.scroll-p-20 {
-  scroll-padding: 5rem;
-}
-
-.scroll-pt-20 {
-  scroll-padding-top: 5rem;
-}
-
-.scroll-pt-96 {
-  scroll-padding-top: 24rem;
 }
 
 .flex-col {
@@ -721,8 +685,24 @@ video {
   gap: 2rem;
 }
 
-.scroll-smooth {
-  scroll-behavior: smooth;
+.gap-12 {
+  gap: 3rem;
+}
+
+.gap-24 {
+  gap: 6rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-visible {
+  overflow: visible;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
 }
 
 .rounded {
@@ -754,19 +734,14 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(244 236 236 / var(--tw-bg-opacity));
-}
-
-.bg-green-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
-}
-
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(20 21 23 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 236 236 / var(--tw-bg-opacity));
 }
 
 .p-4 {
@@ -783,9 +758,19 @@ video {
   padding-bottom: 0px;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .py-8 {
@@ -793,9 +778,14 @@ video {
   padding-bottom: 2rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .pb-8 {
@@ -804,6 +794,10 @@ video {
 
 .font-inter {
   font-family: Inter, sans-serif;
+}
+
+.font-sans {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .text-2xl {
@@ -819,6 +813,10 @@ video {
 .text-8xl {
   font-size: 6rem;
   line-height: 1;
+}
+
+.text-\[90px\] {
+  font-size: 90px;
 }
 
 .text-sm {
@@ -860,6 +858,10 @@ video {
 
 .underline {
   text-decoration-line: underline;
+}
+
+.line-through {
+  text-decoration-line: line-through;
 }
 
 .opacity-0 {
@@ -1021,10 +1023,6 @@ video {
     visibility: visible;
   }
 
-  .lg\:right-8 {
-    right: 2rem;
-  }
-
   .lg\:flex {
     display: flex;
   }
@@ -1069,6 +1067,11 @@ video {
     gap: 2rem;
   }
 
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .lg\:pt-10 {
     padding-top: 2.5rem;
   }
@@ -1088,6 +1091,10 @@ video {
     line-height: 1;
   }
 
+  .lg\:text-\[150px\] {
+    font-size: 150px;
+  }
+
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -1095,10 +1102,6 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:right-40 {
-    right: 10rem;
-  }
-
   .xl\:h-\[244px\] {
     height: 244px;
   }
@@ -1122,5 +1125,11 @@ video {
 
   .xl\:text-\[80px\] {
     font-size: 80px;
+  }
+}
+
+@media (min-width: 1630px) {
+  .min-\[1630px\]\:top-4 {
+    top: 1rem;
   }
 }

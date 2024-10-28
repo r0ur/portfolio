@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,6 +26,13 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
       rel="stylesheet"
+    />
+    <!-- Marquee -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.rawgit.com/aamirafridi/jQuery.Marquee/master/jquery.marquee.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/aamirafridi/jQuery.Marquee/master/jquery.marquee.css"
     />
     <noscript>
       Your browser does not support JavaScript, which may limit some
@@ -69,12 +76,13 @@
                   >Web development</a
                 >
                 <p>|</p>
-                <a
-                  href=""
-                  class="hover:text-accent hover:line-through"
-                  target="_self"
-                  >About</a
+                <div
+                  id="nav-about"
+                  onclick="scrollToSection('about')"
+                  class="cursor-pointer text-accent line-through"
                 >
+                  About
+                </div>
                 <button
                   onclick="copyEmailToClipboard()"
                   class="text-accent hover:line-through"
@@ -92,7 +100,7 @@
         <main class="relative">
           <div class="flex flex-col gap-8 md:gap-10 lg:gap-16">
             <!-- About -->
-            <section>
+            <section id="about">
               <div
                 class="flex flex-col gap-5 text-3xl mxl:text-4xl md:gap-8 md:text-5xl lg:gap-10 lg:pt-10 lg:text-6xl xl:text-[80px]"
               >
@@ -412,58 +420,71 @@
                 </div>
               </div>
             </section>
-            <!-- Contact -->
-            <!-- <section>
-              <div class="py-0 pb-8">
-                <h1 class="text-8xl md:text-[150px]">
-                  armando_rour@outlook.com
-                </h1>
-              </div>
-            </section> -->
           </div>
         </main>
       </div>
-      <footer>
-        <div
-          class="flex flex-col items-center gap-6 py-8 font-normal md:flex md:flex-row md:justify-between md:gap-4"
-        >
-          <div
-            class="flex flex-col items-center justify-between gap-4 font-medium md:flex-row"
-          >
-            <div
-              class="cursor-pointer font-normal hover:text-accent hover:line-through md:order-last"
-              onclick="scrollToTop()"
-            >
-              Scroll up ↑
-            </div>
-            <a
-              href="https://www.linkedin.com/in/armandorour/"
-              target="_blank"
-              class="hover:text-accent hover:line-through"
-              >LinkedIn</a
-            >
-            <a
-              href="https://github.com/r0ur"
-              target="_blank"
-              class="hover:text-accent hover:line-through"
-              >GitHub</a
-            >
-            <a
-              href="https://sixelf.com/rour"
-              target="_blank"
-              class="hover:text-accent hover:line-through"
-              >Sixelf</a
-            >
-          </div>
-          <p class="md:order-first">© 2024</p>
-        </div>
       </footer>
     </div>
+    <!-- Contact -->
+    <section>
+      <a href="mailto:armando_rour@outlook.com">
+        <div
+          class="marquee overflow-hidden whitespace-nowrap py-10 font-inter text-[90px] font-semibold lg:py-20 lg:text-[150px]"
+        >
+          <span class="px-20"> armando_rour@outlook.com</span>
+          <span class="px-20"> armando_rour@outlook.com</span>
+          <span class="px-20"> armando_rour@outlook.com</span>
+          <span class="px-20"> armando_rour@outlook.com</span>
+          <span class="px-20"> armando_rour@outlook.com</span>
+          <span class="px-20"> armando_rour@outlook.com</span>
+          <span class="px-20"> armando_rour@outlook.com</span>
+          <span class="px-20"> armando_rour@outlook.com</span>
+        </div>
+      </a>
+    </section>
+    <!-- Footer -->
+    <footer
+      class="mx-auto w-full px-4 font-inter font-semibold mxl:px-5 md:px-8 xl:w-[1120px] xl:px-0"
+    >
+      <div
+        class="flex flex-col items-center gap-6 py-8 font-normal md:flex md:flex-row md:justify-between md:gap-4"
+      >
+        <div
+          class="flex flex-col items-center justify-between gap-4 font-medium md:flex-row"
+        >
+          <div
+            class="cursor-pointer font-normal hover:text-accent hover:line-through md:order-last"
+            onclick="scrollToTop()"
+          >
+            Scroll up ↑
+          </div>
+          <a
+            href="https://www.linkedin.com/in/armandorour/"
+            target="_blank"
+            class="hover:text-accent hover:line-through"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/r0ur"
+            target="_blank"
+            class="hover:text-accent hover:line-through"
+            >GitHub</a
+          >
+          <a
+            href="https://sixelf.com/rour"
+            target="_blank"
+            class="hover:text-accent hover:line-through"
+            >Sixelf</a
+          >
+        </div>
+        <p class="md:order-first">© 2024</p>
+      </div>
+    </footer>
     <script src="../js/main.js"></script>
     <!-- Copy to Clipboard Alert -->
     <div
       id="alert"
-      class="fixed right-4 top-28 hidden rounded bg-black px-4 py-4 text-white shadow-lg transition-opacity duration-300 lg:right-8 xl:right-40"
+      class="fixed right-4 top-28 hidden rounded bg-black px-4 py-4 text-white shadow-lg transition-opacity duration-300 min-[1630px]:top-4"
     >
       Email copied to clipboard.
     </div>
