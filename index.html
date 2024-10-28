@@ -41,36 +41,34 @@
         <header class="sticky top-0 z-50 bg-white py-2 mxl:py-4 md:py-6">
           <nav>
             <div class="flex items-center justify-between">
-              <a href="index.html">
-                <div>
-                  <img
-                    src="assets/images/Favicon.ico"
-                    alt="Armando Rojano"
-                    class=""
-                    width="50px"
-                    height="50px"
-                  />
-                </div>
-              </a>
+              <div class="cursor-pointer" onclick="scrollToSection('hero')">
+                <img
+                  src="assets/images/Favicon.ico"
+                  alt="Armando Rojano"
+                  class=""
+                  width="50px"
+                  height="50px"
+                />
+              </div>
               <div class="hidden gap-5 lg:visible lg:flex">
-                <p
+                <div
                   onclick="scrollToSection('ux-research')"
                   class="cursor-pointer hover:text-accent hover:line-through"
                 >
                   UX research
-                </p>
-                <p
+                </div>
+                <div
                   onclick="scrollToSection('ux-design')"
                   class="cursor-pointer hover:text-accent hover:line-through"
                 >
                   UX design
-                </p>
-                <p
+                </div>
+                <div
                   onclick="scrollToSection('web-dev')"
                   class="cursor-pointer hover:text-accent hover:line-through"
                 >
                   Web development
-                </p>
+                </div>
                 <p>|</p>
                 <a
                   href="pages/about.html"
@@ -78,7 +76,12 @@
                   target="_self"
                   >About</a
                 >
-                <a href="#" class="text-accent hover:line-through">Email</a>
+                <button
+                  onclick="copyEmailToClipboard()"
+                  class="text-accent hover:line-through"
+                >
+                  Email
+                </button>
               </div>
               <div class="lg:hidden">
                 <button class="text-2xl">Menu</button>
@@ -518,10 +521,12 @@
           <div
             class="flex flex-col items-center justify-between gap-4 font-medium md:flex-row"
           >
-            <a
-              class="font-normal hover:text-accent hover:line-through md:order-last"
-              >Scroll up ↑</a
+            <div
+              class="cursor-pointer font-normal hover:text-accent hover:line-through md:order-last"
+              onclick="scrollToTop()"
             >
+              Scroll up ↑
+            </div>
             <a
               href="https://www.linkedin.com/in/armandorour/"
               target="_blank"
@@ -545,6 +550,13 @@
         </div>
       </footer>
     </div>
-    <script src="js/global-effects.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Copy to Clipboard Alert -->
+    <div
+      id="alert"
+      class="fixed right-4 top-28 hidden rounded bg-black px-4 py-4 text-white shadow-lg transition-opacity duration-300 lg:right-8 xl:right-40"
+    >
+      Email copied to clipboard.
+    </div>
   </body>
 </html>

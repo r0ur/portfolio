@@ -54,17 +54,17 @@
               </a>
               <div class="hidden gap-5 lg:visible lg:flex">
                 <a
-                  href="../index.html"
+                  href="../index.html#ux-research"
                   class="hover:text-accent hover:line-through"
                   >UX research</a
                 >
                 <a
-                  href="../index.html"
+                  href="../index.html#ux-design"
                   class="hover:text-accent hover:line-through"
                   >UX design</a
                 >
                 <a
-                  href="../index.html"
+                  href="../index.html#web-dev"
                   class="hover:text-accent hover:line-through"
                   >Web development</a
                 >
@@ -75,7 +75,12 @@
                   target="_self"
                   >About</a
                 >
-                <a href="#" class="text-accent hover:line-through">Email</a>
+                <button
+                  onclick="copyEmailToClipboard()"
+                  class="text-accent hover:line-through"
+                >
+                  Email
+                </button>
               </div>
               <div class="lg:hidden">
                 <button class="text-2xl">Menu</button>
@@ -396,6 +401,7 @@
                   <a
                     href="../assets/docs/UX Designer_Armando Rojano.pdf"
                     target="_blank"
+                    class="w-fit"
                   >
                     <h4
                       class="text-2xl text-accent underline mxl:text-2xl md:text-3xl lg:text-4xl"
@@ -407,7 +413,7 @@
               </div>
             </section>
             <!-- Contact -->
-            <!--             <section>
+            <!-- <section>
               <div class="py-0 pb-8">
                 <h1 class="text-8xl md:text-[150px]">
                   armando_rour@outlook.com
@@ -424,10 +430,12 @@
           <div
             class="flex flex-col items-center justify-between gap-4 font-medium md:flex-row"
           >
-            <a
-              class="font-normal hover:text-accent hover:line-through md:order-last"
-              >Scroll up ↑</a
+            <div
+              class="cursor-pointer font-normal hover:text-accent hover:line-through md:order-last"
+              onclick="scrollToTop()"
             >
+              Scroll up ↑
+            </div>
             <a
               href="https://www.linkedin.com/in/armandorour/"
               target="_blank"
@@ -450,6 +458,14 @@
           <p class="md:order-first">© 2024</p>
         </div>
       </footer>
+    </div>
+    <script src="../js/main.js"></script>
+    <!-- Copy to Clipboard Alert -->
+    <div
+      id="alert"
+      class="fixed right-4 top-28 hidden rounded bg-black px-4 py-4 text-white shadow-lg transition-opacity duration-300 lg:right-8 xl:right-40"
+    >
+      Email copied to clipboard.
     </div>
   </body>
 </html>
