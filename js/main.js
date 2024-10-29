@@ -106,12 +106,25 @@ function copyEmailToClipboard() {
     });
 }
 
+/**
+ * Initializes the marquee plugin on the elements with the class 'marquee'
+ * to create a scrolling effect.
+ */
 $(document).ready(function () {
   $('.marquee').marquee({
-    duration: 40000,
+    // Duration of the animation in milliseconds
+    duration: 80000,
+
+    // If true, the marquee will start visible
     startVisible: true,
+
+    // Delay in milliseconds before starting the animation
     delayBeforeStart: 0,
+
+    // Direction of the animation
     direction: 'left',
+
+    // If true, the marquee will be duplicated to cover the entire width of the element
     duplicated: true,
   });
 });
