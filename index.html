@@ -13,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="theme-color" content="#121212" />
     <!-- <base href="https://r0ur.github.io/portfolio/" target="_blank" /> -->
-    <title>Armando Rojano | Designer</title>
+    <title>kátharsistudio | Design</title>
     <link rel="icon" type="image/x-icon" href="assets/images/Favicon.ico" />
     <link href="./src/output.css" rel="stylesheet" />
     <!-- Google Fonts -->
@@ -62,7 +62,7 @@
               <div class="cursor-pointer" onclick="scrollToTop()">
                 <img
                   src="assets/images/Favicon.ico"
-                  alt="Armando Rojano"
+                  alt="kátharsistudio"
                   class=""
                   width="50px"
                   height="50px"
@@ -107,8 +107,8 @@
               <div class="lg:hidden">
                 <button
                   id="menu-button"
-                  class="text-2xl"
-                  onclick="toggleMenu()"
+                  class="text-2xl hover:line-through"
+                  onclick="openMobileMenu()"
                 >
                   Menu
                 </button>
@@ -119,65 +119,68 @@
               id="mobile-menu"
               class="fixed left-0 top-0 z-50 hidden h-full w-full bg-white lg:hidden"
             >
-              <div>
-                <div class="flex items-center justify-between">
-                  <div class="cursor-pointer" onclick="scrollToTop()">
-                    <img
-                      src="assets/images/Favicon.ico"
-                      alt="Armando Rojano"
-                      class=""
-                      width="50px"
-                      height="50px"
-                    />
-                  </div>
-                  <div class="lg:hidden">
-                    <button
-                      id="menu-button"
-                      class="text-2xl"
-                      onclick="closeMobileMenu()"
-                    >
-                      Close
-                    </button>
-                  </div>
+              <div
+                class="flex items-center justify-between px-4 py-6 mxl:px-5 md:px-8 md:py-8"
+              >
+                <div
+                  class="cursor-pointer"
+                  onclick="scrollToTop(); closeMobileMenu()"
+                >
+                  <img
+                    src="assets/images/Favicon.ico"
+                    alt="kátharsistudio"
+                    class=""
+                    width="50px"
+                    height="50px"
+                  />
+                </div>
+                <div class="lg:hidden">
+                  <button
+                    id="menu-button"
+                    class="text-2xl hover:line-through"
+                    onclick="closeMobileMenu()"
+                  >
+                    Close
+                  </button>
                 </div>
               </div>
               <div
-                class="flex h-full flex-col items-center justify-center gap-8 text-2xl"
+                class="flex h-full flex-col items-center gap-8 px-4 pt-20 text-2xl mxl:px-5 mxl:text-4xl md:gap-10 md:px-8 md:text-5xl"
               >
                 <div
                   id="nav-ux-research-mobile"
                   onclick="scrollToSection('ux-research'); closeMobileMenu()"
-                  class=""
+                  class="cursor-pointer hover:line-through"
                 >
                   UX research
                 </div>
                 <div
                   id="nav-ux-design-mobile"
                   onclick="scrollToSection('ux-design'); closeMobileMenu()"
-                  class=""
+                  class="cursor-pointer hover:line-through"
                 >
                   UX design
                 </div>
                 <div
                   id="nav-web-dev-mobile"
                   onclick="scrollToSection('web-dev'); closeMobileMenu()"
-                  class=""
+                  class="cursor-pointer hover:line-through"
                 >
                   Web development
                 </div>
                 <a
                   href="pages/about.html"
-                  class=""
+                  class="hover:line-through"
                   target="_self"
                   onclick="closeMobileMenu()"
                   >About</a
                 >
-                <button
-                  onclick="copyEmailToClipboard(); closeMobileMenu()"
+                <a
+                  href="mailto:armando_rour@outlook.com"
+                  onclick="closeMobileMenu()"
                   class="text-accent hover:line-through"
+                  >Email</a
                 >
-                  Email
-                </button>
               </div>
             </div>
           </nav>
@@ -188,10 +191,12 @@
             <!-- Hero -->
             <section id="hero">
               <div
-                class="flex flex-col gap-10 text-3xl mxl:text-4xl md:gap-14 md:text-5xl lg:gap-16 lg:pt-10 lg:text-6xl xl:text-7xl 2xl:gap-24 2xl:text-8xl"
+                class="flex flex-col gap-10 text-3xl mxl:text-4xl md:gap-14 md:text-5xl lg:gap-16 lg:pt-6 lg:text-6xl xl:text-7xl 2xl:gap-24 2xl:text-8xl"
               >
                 <h1 class="leading-[1.05]">
-                  Hello, I'm <span class="text-accent">Armando Rojano</span>—a
+                  <span class="font-serif font-normal italic">kátharsi</span
+                  ><span class="font-serif text-accent">studio</span> is
+                  <span class="text-accent">Armando Rojano</span>—a
                   multidisciplinary
                   <span class="text-accent">designer</span> with over 3 years of
                   experience based in México.
@@ -212,6 +217,12 @@
                   developing solutions for the ideas that emerge within the
                   company.
                 </h2>
+                <h3 class="leading-[1.05]">
+                  Alongside my corporate role, I operate as a
+                  <span class="text-accent">freelancer</span>. Here, you'll find
+                  a curated selection of projects from
+                  <span class="text-accent">both</span> settings.
+                </h3>
               </div>
             </section>
             <hr class="border-black" />
@@ -644,7 +655,7 @@
     <!-- Copy to Clipboard Alert -->
     <div
       id="alert"
-      class="fixed right-4 top-32 hidden rounded bg-black px-4 py-4 text-white shadow-lg transition-opacity duration-300 min-[1630px]:top-4"
+      class="fixed right-4 top-32 hidden rounded bg-black px-4 py-4 text-white shadow-lg transition-opacity duration-300 min-[2000px]:top-4"
     >
       Email copied to clipboard.
     </div>

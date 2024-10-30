@@ -13,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="theme-color" content="#121212" />
     <!--     <base href="https://r0ur.github.io/portfolio/" target="_blank" /> -->
-    <title>Armando Rojano | About</title>
+    <title>kátharsistudio | About</title>
     <link rel="icon" type="image/x-icon" href="../assets/images/Favicon.ico" />
     <link href="/src/output.css" rel="stylesheet" />
     <!-- Google Fonts -->
@@ -38,6 +38,16 @@
       Your browser does not support JavaScript, which may limit some
       functionality of this site.
     </noscript>
+    <style>
+      @keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+    </style>
   </head>
   <body class="bg-white text-black">
     <div
@@ -47,12 +57,13 @@
         <!-- Navigation -->
         <header class="sticky top-0 z-50 bg-white py-6 md:py-8">
           <nav>
+            <!-- Desktop Menu -->
             <div class="flex items-center justify-between">
-              <a href="/index.html">
+              <a target="_self" href="/index.html">
                 <div>
                   <img
                     src="../assets/images/Favicon.ico"
-                    alt="Armando Rojano"
+                    alt="kátharsistudio"
                     class=""
                     width="50px"
                     height="50px"
@@ -84,6 +95,7 @@
                 <p>|</p>
                 <a
                   href="../index.html"
+                  target="_self"
                   class="hover:text-accent hover:line-through"
                   >Home</a
                 >
@@ -95,7 +107,82 @@
                 </button>
               </div>
               <div class="lg:hidden">
-                <button class="text-2xl">Menu</button>
+                <button
+                  id="menu-button"
+                  class="text-2xl hover:line-through"
+                  onclick="openMobileMenu()"
+                >
+                  Menu
+                </button>
+              </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div
+              id="mobile-menu"
+              class="fixed left-0 top-0 z-50 hidden h-full w-full bg-white lg:hidden"
+            >
+              <div
+                class="flex items-center justify-between px-4 py-6 mxl:px-5 md:px-8 md:py-8"
+              >
+                <div
+                  class="cursor-pointer"
+                  onclick="scrollToTop(); closeMobileMenu()"
+                >
+                  <img
+                    src="../assets/images/Favicon.ico"
+                    alt="kátharsistudio"
+                    class=""
+                    width="50px"
+                    height="50px"
+                  />
+                </div>
+                <div class="lg:hidden">
+                  <button
+                    id="menu-button"
+                    class="text-2xl hover:line-through"
+                    onclick="closeMobileMenu()"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+              <div
+                class="flex h-full flex-col items-center gap-8 px-4 pt-20 text-2xl mxl:px-5 mxl:text-4xl md:gap-10 md:px-8 md:text-5xl"
+              >
+                <div
+                  id="nav-aboutmobile"
+                  onclick="scrollToSection('about'); closeMobileMenu()"
+                  class="cursor-pointer hover:line-through"
+                >
+                  About
+                </div>
+                <div
+                  id="nav-background-mobile"
+                  onclick="scrollToSection('background'); closeMobileMenu()"
+                  class="cursor-pointer hover:line-through"
+                >
+                  Background
+                </div>
+                <div
+                  id="nav-tech-mobile"
+                  onclick="scrollToSection('tech'); closeMobileMenu()"
+                  class="cursor-pointer hover:line-through"
+                >
+                  Technologies
+                </div>
+                <a
+                  href="/index.html"
+                  class="hover:line-through"
+                  target="_self"
+                  onclick="closeMobileMenu()"
+                  >Home</a
+                >
+                <a
+                  href="mailto:armando_rour@outlook.com"
+                  onclick="closeMobileMenu()"
+                  class="text-accent hover:line-through"
+                  >Email</a
+                >
               </div>
             </div>
           </nav>
@@ -106,12 +193,12 @@
             <!-- About -->
             <section id="about">
               <div
-                class="flex flex-col gap-10 text-3xl mxl:text-4xl md:gap-14 md:text-5xl lg:gap-16 lg:pt-10 lg:text-6xl xl:text-7xl 2xl:gap-24 2xl:text-8xl"
+                class="flex flex-col gap-10 text-3xl mxl:text-4xl md:gap-14 md:text-5xl lg:gap-16 lg:pt-6 lg:text-6xl xl:text-7xl 2xl:gap-24 2xl:text-8xl"
               >
                 <h1 class="leading-[1.05]">
                   My <span class="text-accent">expertise</span> includes visual
                   design, video editing, motion graphics,
-                  <span class="text-accent">and</span> web development, allowing
+                  <span class="text-accent">and</span> web development; allowing
                   me to explore the full spectrum of digital creation.
                 </h1>
                 <h2 class="leading-[1.05]">
@@ -487,7 +574,7 @@
     <!-- Copy to Clipboard Alert -->
     <div
       id="alert"
-      class="fixed right-4 top-32 hidden rounded bg-black px-4 py-4 text-white shadow-lg transition-opacity duration-300 min-[1630px]:top-4"
+      class="fixed right-4 top-32 hidden rounded bg-black px-4 py-4 text-white shadow-lg transition-opacity duration-300 min-[2000px]:top-4"
     >
       Email copied to clipboard.
     </div>

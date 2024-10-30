@@ -113,7 +113,7 @@ function copyEmailToClipboard() {
 $(document).ready(function () {
   $('.marquee').marquee({
     // Duration of the animation in milliseconds
-    duration: 80000,
+    duration: 50000,
 
     // If true, the marquee will start visible
     startVisible: true,
@@ -129,12 +129,12 @@ $(document).ready(function () {
   });
 });
 
-function toggleMenu() {
-  const mobileMenu = document.getElementById('mobile-menu');
-  mobileMenu.classList.toggle('hidden');
+function openMobileMenu() {
+  document.getElementById('mobile-menu').classList.remove('hidden');
+  document.body.classList.add('overflow-hidden');
 }
 
 function closeMobileMenu() {
-  const mobileMenu = document.getElementById('mobile-menu');
-  mobileMenu.classList.add('hidden');
+  document.getElementById('mobile-menu').classList.add('hidden');
+  document.body.classList.remove('overflow-hidden');
 }
