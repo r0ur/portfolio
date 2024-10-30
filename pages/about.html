@@ -41,11 +41,11 @@
   </head>
   <body class="bg-white text-black">
     <div
-      class="mx-auto w-full px-4 font-inter font-semibold mxl:px-5 md:px-8 xl:w-[1120px] xl:px-0"
+      class="mx-auto w-full px-4 font-inter font-semibold mxl:px-5 md:px-8 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
     >
       <div class="flex flex-col">
         <!-- Navigation -->
-        <header class="sticky top-0 z-50 bg-white py-2 mxl:py-4 md:py-6">
+        <header class="sticky top-0 z-50 bg-white py-6 md:py-8">
           <nav>
             <div class="flex items-center justify-between">
               <a href="/index.html">
@@ -60,29 +60,33 @@
                 </div>
               </a>
               <div class="hidden gap-5 lg:visible lg:flex">
-                <a
-                  href="../index.html#ux-research"
-                  class="hover:text-accent hover:line-through"
-                  >UX research</a
-                >
-                <a
-                  href="../index.html#ux-design"
-                  class="hover:text-accent hover:line-through"
-                  >UX design</a
-                >
-                <a
-                  href="../index.html#web-dev"
-                  class="hover:text-accent hover:line-through"
-                  >Web development</a
-                >
-                <p>|</p>
                 <div
                   id="nav-about"
                   onclick="scrollToSection('about')"
-                  class="cursor-pointer text-accent line-through"
+                  class="cursor-pointer hover:text-accent hover:line-through"
                 >
                   About
                 </div>
+                <div
+                  id="nav-background"
+                  onclick="scrollToSection('background')"
+                  class="cursor-pointer hover:text-accent hover:line-through"
+                >
+                  Background
+                </div>
+                <div
+                  id="nav-tech"
+                  onclick="scrollToSection('tech')"
+                  class="cursor-pointer hover:text-accent hover:line-through"
+                >
+                  Technologies
+                </div>
+                <p>|</p>
+                <a
+                  href="../index.html"
+                  class="hover:text-accent hover:line-through"
+                  >Home</a
+                >
                 <button
                   onclick="copyEmailToClipboard()"
                   class="text-accent hover:line-through"
@@ -102,15 +106,15 @@
             <!-- About -->
             <section id="about">
               <div
-                class="flex flex-col gap-5 text-3xl mxl:text-4xl md:gap-8 md:text-5xl lg:gap-10 lg:pt-10 lg:text-6xl xl:text-[80px]"
+                class="flex flex-col gap-10 text-3xl mxl:text-4xl md:gap-14 md:text-5xl lg:gap-16 lg:pt-10 lg:text-6xl xl:text-7xl 2xl:gap-24 2xl:text-8xl"
               >
-                <h1>
+                <h1 class="leading-[1.05]">
                   My <span class="text-accent">expertise</span> includes visual
                   design, video editing, motion graphics,
                   <span class="text-accent">and</span> web development, allowing
                   me to explore the full spectrum of digital creation.
                 </h1>
-                <h2>
+                <h2 class="leading-[1.05]">
                   When I'm not designing, I enjoy exploring my passions<br />—it
                   fuels my creativity—for
                   <a href="/pages/journal.html"
@@ -124,7 +128,7 @@
             </section>
             <hr class="border-black" />
             <!-- Technologies -->
-            <section>
+            <section id="tech">
               <div class="flex flex-col gap-5 md:gap-8 lg:gap-10">
                 <div class="flex flex-col gap-2">
                   <h3
@@ -425,10 +429,10 @@
       </div>
     </div>
     <!-- Contact -->
-    <section>
+    <section class="py-10 lg:py-20">
       <a href="mailto:armando_rour@outlook.com">
         <div
-          class="marquee overflow-hidden whitespace-nowrap py-10 font-inter text-[90px] font-semibold lg:py-20 lg:text-[150px]"
+          class="marquee overflow-hidden whitespace-nowrap font-inter text-[80px] font-semibold lg:text-[150px]"
         >
           <span class="px-20"> armando_rour@outlook.com</span>
           <span class="px-20"> armando_rour@outlook.com</span>
@@ -443,7 +447,7 @@
     </section>
     <!-- Footer -->
     <footer
-      class="mx-auto w-full px-4 font-inter font-semibold mxl:px-5 md:px-8 xl:w-[1120px] xl:px-0"
+      class="mx-auto w-full px-4 font-inter font-semibold mxl:px-5 md:px-8 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
     >
       <div
         class="flex flex-col items-center gap-6 py-8 font-normal md:flex md:flex-row md:justify-between md:gap-4"
@@ -483,7 +487,7 @@
     <!-- Copy to Clipboard Alert -->
     <div
       id="alert"
-      class="fixed right-4 top-28 hidden rounded bg-black px-4 py-4 text-white shadow-lg transition-opacity duration-300 min-[1630px]:top-4"
+      class="fixed right-4 top-32 hidden rounded bg-black px-4 py-4 text-white shadow-lg transition-opacity duration-300 min-[1630px]:top-4"
     >
       Email copied to clipboard.
     </div>

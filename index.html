@@ -51,12 +51,13 @@
   </head>
   <body class="bg-white text-black">
     <div
-      class="mx-auto w-full px-4 font-inter font-semibold mxl:px-5 md:px-8 xl:w-[1120px] xl:px-0"
+      class="mx-auto w-full px-4 font-inter font-semibold mxl:px-5 md:px-8 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
     >
       <div class="flex flex-col">
         <!-- Navigation -->
-        <header class="sticky top-0 z-50 bg-white py-2 mxl:py-4 md:py-6">
+        <header class="sticky top-0 z-50 bg-white py-6 md:py-8">
           <nav>
+            <!-- Desktop Menu -->
             <div class="flex items-center justify-between">
               <div class="cursor-pointer" onclick="scrollToTop()">
                 <img
@@ -104,7 +105,79 @@
                 </button>
               </div>
               <div class="lg:hidden">
-                <button class="text-2xl">Menu</button>
+                <button
+                  id="menu-button"
+                  class="text-2xl"
+                  onclick="toggleMenu()"
+                >
+                  Menu
+                </button>
+              </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div
+              id="mobile-menu"
+              class="fixed left-0 top-0 z-50 hidden h-full w-full bg-white lg:hidden"
+            >
+              <div>
+                <div class="flex items-center justify-between">
+                  <div class="cursor-pointer" onclick="scrollToTop()">
+                    <img
+                      src="assets/images/Favicon.ico"
+                      alt="Armando Rojano"
+                      class=""
+                      width="50px"
+                      height="50px"
+                    />
+                  </div>
+                  <div class="lg:hidden">
+                    <button
+                      id="menu-button"
+                      class="text-2xl"
+                      onclick="closeMobileMenu()"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex h-full flex-col items-center justify-center gap-8 text-2xl"
+              >
+                <div
+                  id="nav-ux-research-mobile"
+                  onclick="scrollToSection('ux-research'); closeMobileMenu()"
+                  class=""
+                >
+                  UX research
+                </div>
+                <div
+                  id="nav-ux-design-mobile"
+                  onclick="scrollToSection('ux-design'); closeMobileMenu()"
+                  class=""
+                >
+                  UX design
+                </div>
+                <div
+                  id="nav-web-dev-mobile"
+                  onclick="scrollToSection('web-dev'); closeMobileMenu()"
+                  class=""
+                >
+                  Web development
+                </div>
+                <a
+                  href="pages/about.html"
+                  class=""
+                  target="_self"
+                  onclick="closeMobileMenu()"
+                  >About</a
+                >
+                <button
+                  onclick="copyEmailToClipboard(); closeMobileMenu()"
+                  class="text-accent hover:line-through"
+                >
+                  Email
+                </button>
               </div>
             </div>
           </nav>
@@ -115,22 +188,29 @@
             <!-- Hero -->
             <section id="hero">
               <div
-                class="flex flex-col gap-5 text-3xl mxl:text-4xl md:gap-8 md:text-5xl lg:gap-10 lg:pt-10 lg:text-6xl xl:text-[80px]"
+                class="flex flex-col gap-10 text-3xl mxl:text-4xl md:gap-14 md:text-5xl lg:gap-16 lg:pt-10 lg:text-6xl xl:text-7xl 2xl:gap-24 2xl:text-8xl"
               >
-                <h1>
+                <h1 class="leading-[1.05]">
                   Hello, I'm <span class="text-accent">Armando Rojano</span>—a
                   multidisciplinary
                   <span class="text-accent">designer</span> with over 3 years of
                   experience based in México.
                 </h1>
-                <h2>
+                <h2 class="leading-[1.05]">
                   I work as a
                   <span class="text-accent"
                     >UX designer
                     <span class="text-black">and</span> researcher</span
                   >
-                  at Ilum Prosperity Sherpas, developing solutions for the ideas
-                  that emerge within the company.
+                  at
+                  <a
+                    class="hover:underline"
+                    href="https://www.linkedin.com/company/ilum-prosperity-sherpas/"
+                    target="_blank"
+                    >Ilum Prosperity Sherpas,</a
+                  >
+                  developing solutions for the ideas that emerge within the
+                  company.
                 </h2>
               </div>
             </section>
@@ -149,11 +229,13 @@
                   </p>
                 </div>
                 <div
-                  class="flex flex-wrap justify-between gap-8 md:gap-10 lg:flex-nowrap lg:gap-12"
+                  class="flex flex-wrap justify-start gap-8 md:gap-10 lg:gap-12"
                 >
-                  <div class="w-full md:w-[316px] lg:w-[340px]">
+                  <div
+                    class="w-full mxl:w-[320px] sm:w-[288px] md:w-[316px] lg:w-[340px]"
+                  >
                     <div
-                      class="flex h-[288px] flex-col-reverse bg-[#EDD000] p-4 mxl:h-[400px] md:h-[316px] lg:h-[320px]"
+                      class="relative flex aspect-square items-end bg-[#EDD000] p-4"
                     >
                       <h4 class="text-3xl mxl:text-4xl lg:text-5xl">
                         Maestro Malta
@@ -171,9 +253,11 @@
                       </div>
                     </div>
                   </div>
-                  <div class="w-full md:w-[316px] lg:w-[340px]">
+                  <div
+                    class="w-full mxl:w-[320px] sm:w-[288px] md:w-[316px] lg:w-[340px]"
+                  >
                     <div
-                      class="flex h-[288px] flex-col-reverse bg-[#EDD000] p-4 mxl:h-[400px] md:h-[316px] lg:h-[320px]"
+                      class="relative flex aspect-square items-end bg-[#EDD000] p-4"
                     >
                       <h4 class="text-3xl mxl:text-4xl lg:text-5xl">
                         Maestro Malta
@@ -191,9 +275,11 @@
                       </div>
                     </div>
                   </div>
-                  <div class="w-full md:w-[316px] lg:w-[340px]">
+                  <div
+                    class="w-full mxl:w-[320px] sm:w-[288px] md:w-[316px] lg:w-[340px]"
+                  >
                     <div
-                      class="flex h-[288px] flex-col-reverse bg-[#EDD000] p-4 mxl:h-[400px] md:h-[316px] lg:h-[320px]"
+                      class="relative flex aspect-square items-end bg-[#EDD000] p-4"
                     >
                       <h4 class="text-3xl mxl:text-4xl lg:text-5xl">
                         Maestro Malta
@@ -232,11 +318,19 @@
                 <div
                   class="flex flex-col gap-6 text-sm font-medium lg:gap-10 xl:gap-14"
                 >
-                  <div class="flex max-w-screen-xl flex-col gap-2">
+                  <div class="flex flex-col gap-2">
+                    <img
+                      src="assets/images/snapshots/Rifas1.webp"
+                      alt="Streaming Platform Screenshot"
+                      class="size-full max-w-[1440px]"
+                    />
+                    <p class="md:text-base">Lottery Platform</p>
+                  </div>
+                  <div class="flex flex-col gap-2">
                     <img
                       src="assets/images/snapshots/TOMA24.webp"
                       alt="Streaming Platform Screenshot"
-                      class="size-full"
+                      class="size-full max-w-[1440px]"
                     />
                     <p class="md:text-base">Streaming Platform</p>
                   </div>
@@ -244,17 +338,17 @@
                     <img
                       src="assets/images/snapshots/OXBI37.webp"
                       alt="Website System Screenshot"
-                      class="size-full"
+                      class="size-full max-w-[1440px]"
                     />
                     <img
                       src="assets/images/snapshots/OXBI36.webp"
                       alt="Website System Screenshot"
-                      class="size-full"
+                      class="size-full max-w-[1440px]"
                     />
                     <img
                       src="assets/images/snapshots/OXBI35.webp"
                       alt="Website System Screenshot"
-                      class="size-full"
+                      class="size-full max-w-[1440px]"
                     />
                     <p class="md:text-base">
                       Supplier Relationship Management | Verónica Ramírez
@@ -266,7 +360,7 @@
                     <img
                       src="assets/images/snapshots/Immer43.webp"
                       alt="Virtual Reality Landing Page Screenshot"
-                      class="size-full"
+                      class="size-full max-w-[1440px]"
                     />
                     <p class="md:text-base">
                       Landing Page | Verónica Ramírez (Visual Design), and
@@ -277,12 +371,12 @@
                     <img
                       src="assets/images/snapshots/CyberP47.webp"
                       alt="PC Part Picker Tool from CyberPuerta Screenshot"
-                      class="size-full"
+                      class="size-full max-w-[1440px]"
                     />
                     <img
                       src="assets/images/snapshots/CyberP46.webp"
                       alt="PC Part Picker Tool from CyberPuerta Screenshot"
-                      class="size-full"
+                      class="size-full max-w-[1440px]"
                     />
                     <p class="md:text-base">PC Part Picker Redesign</p>
                   </div>
@@ -290,12 +384,12 @@
                     <img
                       src="assets/images/snapshots/Binca33.webp"
                       alt="Credit Cards Landing Page Screenshot"
-                      class="size-full"
+                      class="size-full max-w-[1440px]"
                     />
                     <img
                       src="assets/images/snapshots/Binca34.webp"
                       alt="Credit Cards Landing Page Screenshot"
-                      class="size-full"
+                      class="size-full max-w-[1440px]"
                     />
                     <p class="md:text-base">
                       Landing Page | Madness (Visual Design), and Armando Rojano
@@ -306,12 +400,12 @@
                     <img
                       src="assets/images/snapshots/Bike27.webp"
                       alt="Dasboard Screenshot"
-                      class="size-full"
+                      class="size-full max-w-[1440px]"
                     />
                     <img
                       src="assets/images/snapshots/Bike28.webp"
                       alt="Dasboard Screenshot"
-                      class="size-full"
+                      class="size-full max-w-[1440px]"
                     />
                     <p class="md:text-base">Dashboard</p>
                   </div>
@@ -319,12 +413,12 @@
                     <img
                       src="assets/images/snapshots/Disrupto2.webp"
                       alt="Organization Landing Page Screenshot"
-                      class="size-full"
+                      class="size-full max-w-[1440px]"
                     />
                     <img
                       src="assets/images/snapshots/Disrupto3.webp"
                       alt="Organization Landing Page Screenshot"
-                      class="size-full"
+                      class="size-full max-w-[1440px]"
                     />
                     <p class="md:text-base">
                       Landing Page | Armando Rojano (UX Design)
@@ -334,7 +428,7 @@
                     <img
                       src="assets/images/snapshots/Yuni42.webp"
                       alt="Marketplace Landing Page and App Screenshot"
-                      class="size-full"
+                      class="size-full max-w-[1440px]"
                     />
                     <p class="md:text-base">
                       Landing Page and Mobile App | Madness (Visual Design),
@@ -346,22 +440,22 @@
                     <img
                       src="assets/images/snapshots/Doia13.webp"
                       alt="Snapshot 1"
-                      class="size-full"
+                      class="size-full max-w-[1440px]"
                     />
                     <img
                       src="assets/images/snapshots/Doia14.webp"
                       alt="Snapshot 1"
-                      class="size-full"
+                      class="size-full max-w-[1440px]"
                     />
                     <img
                       src="assets/images/snapshots/Doia38.webp"
                       alt="Snapshot 1"
-                      class="size-full"
+                      class="size-full max-w-[1440px]"
                     />
                     <img
                       src="/assets/images/snapshots/Doia39.webp"
                       alt="Snapshot 1"
-                      class="size-full"
+                      class="size-full max-w-[1440px]"
                     />
                     <p class="md:text-base">
                       Website | Madness (Visual Design), Verónica Ramírez and
@@ -372,12 +466,12 @@
                     <img
                       src="assets/images/snapshots/Mait40.webp"
                       alt="Snapshot 1"
-                      class="size-full"
+                      class="size-full max-w-[1440px]"
                     />
                     <img
                       src="assets/images/snapshots/Mait41.webp"
                       alt="Snapshot 1"
-                      class="size-full"
+                      class="size-full max-w-[1440px]"
                     />
                     <p class="md:text-base">
                       Landing Page and Mobile App | Madness (Visual Design),
@@ -389,7 +483,7 @@
                     <img
                       src="assets/images/snapshots/Ilum45.webp"
                       alt="Snapshot 1"
-                      class="size-full"
+                      class="size-full max-w-[1440px]"
                     />
                     <p class="md:text-base">
                       Landing Page | Madness (Visual Design), Verónica Ramírez
@@ -400,17 +494,17 @@
                     <img
                       src="assets/images/snapshots/OXLogi30.webp"
                       alt="Snapshot 1"
-                      class="size-full"
+                      class="size-full max-w-[1440px]"
                     />
                     <img
                       src="assets/images/snapshots/OXLogi31.webp"
                       alt="Snapshot 1"
-                      class="size-full"
+                      class="size-full max-w-[1440px]"
                     />
                     <img
                       src="assets/images/snapshots/OXLogi32.webp"
                       alt="Snapshot 1"
-                      class="size-full"
+                      class="size-full max-w-[1440px]"
                     />
                     <p class="md:text-base">
                       Supplier Relationship Management | Madness (Visual
@@ -437,42 +531,23 @@
                   </p>
                 </div>
                 <div
-                  class="flex flex-wrap justify-between gap-8 md:gap-10 lg:flex-nowrap lg:gap-12"
+                  class="flex flex-wrap justify-start gap-8 md:gap-10 lg:gap-12"
                 >
-                  <div class="w-full md:w-[200px] lg:w-[220px] xl:w-[244px]">
+                  <div class="w-full mxl:w-[320px] sm:w-[288px] md:w-[240px]">
                     <div
-                      class="flex h-[288px] flex-col-reverse bg-[#F8A775] p-4 mxl:h-[400px] md:h-[200px] lg:h-[220px] xl:h-[244px]"
-                    >
-                      <h4 class="text-3xl mxl:text-4xl md:text-2xl lg:text-4xl">
-                        Online Learning Platform
-                      </h4>
-                    </div>
-                    <div class="flex flex-col gap-4 py-2">
-                      <p class="font-medium">
-                        A simple message board where users can leave short
-                        messages. Data are stored in MongoDB Atlas. This is a
-                        full stack project.
-                      </p>
-                      <div class="flex justify-between font-medium">
-                        <p>App Mobile</p>
-                        <p>2023</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="w-full md:w-[200px] lg:w-[220px] xl:w-[244px]">
-                    <div
-                      class="flex h-[288px] flex-col-reverse bg-[#30534E] p-4 mxl:h-[400px] md:h-[200px] lg:h-[220px] xl:h-[244px]"
+                      class="relative flex aspect-square items-end bg-[#EDD000] p-4"
                     >
                       <h4
-                        class="text-3xl text-white mxl:text-4xl md:text-2xl lg:text-4xl"
+                        class="text-3xl text-black mxl:text-4xl md:text-2xl lg:text-4xl"
                       >
-                        Task Manager
+                        Maestro Malta
                       </h4>
                     </div>
                     <div class="flex flex-col gap-4 py-2">
                       <p class="font-medium">
-                        An app to keep track of tasks with reminders and
-                        priority levels. Built using React and Firebase.
+                        Explora cervezas artesanales locales e importadas,
+                        aprendiendo sobre sus sabores, precios, orígenes y
+                        alternativas.
                       </p>
                       <div class="flex justify-between font-medium">
                         <p>App Mobile</p>
@@ -480,39 +555,21 @@
                       </div>
                     </div>
                   </div>
-                  <div class="w-full md:w-[200px] lg:w-[220px] xl:w-[244px]">
+                  <div class="w-full mxl:w-[320px] sm:w-[288px] md:w-[240px]">
                     <div
-                      class="flex h-[288px] flex-col-reverse bg-[#FF0000] p-4 mxl:h-[400px] md:h-[200px] lg:h-[220px] xl:h-[244px]"
+                      class="relative flex aspect-square items-end bg-[#EDD000] p-4"
                     >
-                      <h4 class="text-3xl mxl:text-4xl md:text-2xl lg:text-4xl">
-                        Budget Tracker
+                      <h4
+                        class="text-3xl text-black mxl:text-4xl md:text-2xl lg:text-4xl"
+                      >
+                        Maestro Malta
                       </h4>
                     </div>
                     <div class="flex flex-col gap-4 py-2">
                       <p class="font-medium">
-                        A cooking app with a wide range of recipes and cooking
-                        tips. Integrated with Spoonacular API for recipe
-                        suggestions.
-                      </p>
-                      <div class="flex justify-between font-medium">
-                        <p>App Mobile</p>
-                        <p>2023</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="w-full md:w-[200px] lg:w-[220px] xl:w-[244px]">
-                    <div
-                      class="flex h-[288px] flex-col-reverse bg-[#FF0000] p-4 mxl:h-[400px] md:h-[200px] lg:h-[220px] xl:h-[244px]"
-                    >
-                      <h4 class="text-3xl mxl:text-4xl md:text-2xl lg:text-4xl">
-                        Budget Tracker
-                      </h4>
-                    </div>
-                    <div class="flex flex-col gap-4 py-2">
-                      <p class="font-medium">
-                        A cooking app with a wide range of recipes and cooking
-                        tips. Integrated with Spoonacular API for recipe
-                        suggestions.
+                        Explora cervezas artesanales locales e importadas,
+                        aprendiendo sobre sus sabores, precios, orígenes y
+                        alternativas.
                       </p>
                       <div class="flex justify-between font-medium">
                         <p>App Mobile</p>
@@ -528,10 +585,10 @@
       </div>
     </div>
     <!-- Contact -->
-    <section>
+    <section class="py-10 lg:py-20">
       <a href="mailto:armando_rour@outlook.com">
         <div
-          class="marquee overflow-hidden whitespace-nowrap py-10 font-inter text-[90px] font-semibold lg:py-20 lg:text-[150px]"
+          class="marquee overflow-hidden whitespace-nowrap font-inter text-[80px] font-semibold lg:text-[150px]"
         >
           <span class="px-20"> armando_rour@outlook.com</span>
           <span class="px-20"> armando_rour@outlook.com</span>
@@ -546,7 +603,7 @@
     </section>
     <!-- Footer -->
     <footer
-      class="mx-auto w-full px-4 font-inter font-semibold mxl:px-5 md:px-8 xl:w-[1120px] xl:px-0"
+      class="mx-auto w-full px-4 font-inter font-semibold mxl:px-5 md:px-8 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
     >
       <div
         class="flex flex-col items-center gap-6 py-8 font-normal md:flex md:flex-row md:justify-between md:gap-4"
@@ -587,7 +644,7 @@
     <!-- Copy to Clipboard Alert -->
     <div
       id="alert"
-      class="fixed right-4 top-28 hidden rounded bg-black px-4 py-4 text-white shadow-lg transition-opacity duration-300 min-[1630px]:top-4"
+      class="fixed right-4 top-32 hidden rounded bg-black px-4 py-4 text-white shadow-lg transition-opacity duration-300 min-[1630px]:top-4"
     >
       Email copied to clipboard.
     </div>
