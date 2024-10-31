@@ -772,16 +772,8 @@ video {
   padding-bottom: 2rem;
 }
 
-.pt-20 {
-  padding-top: 5rem;
-}
-
 .font-inter {
   font-family: Inter, sans-serif;
-}
-
-.font-serif {
-  font-family: Lora, serif;
 }
 
 .text-2xl {
@@ -822,10 +814,6 @@ video {
 
 .font-semibold {
   font-weight: 600;
-}
-
-.italic {
-  font-style: italic;
 }
 
 .leading-\[1\.05\] {
@@ -965,6 +953,10 @@ video {
 
   .md\:gap-14 {
     gap: 3.5rem;
+  }
+
+  .md\:gap-20 {
+    gap: 5rem;
   }
 
   .md\:gap-4 {

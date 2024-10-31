@@ -12,8 +12,8 @@
     <meta name="robots" content="index, follow" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="theme-color" content="#121212" />
-    <base href="https://r0ur.github.io/portfolio/" target="_blank" />
-    <title>kátharsistudio | Design</title>
+    <!--     <base href="https://r0ur.github.io/portfolio/" target="_blank" /> -->
+    <title>Armando Rojano | Designer</title>
     <link rel="icon" type="image/x-icon" href="assets/images/Favicon.ico" />
     <link href="src/output.css" rel="stylesheet" />
     <!-- Google Fonts -->
@@ -62,7 +62,7 @@
               <div class="cursor-pointer" onclick="scrollToTop()">
                 <img
                   src="assets/images/Favicon.ico"
-                  alt="kátharsistudio"
+                  alt="Armando Rojano"
                   class=""
                   width="50px"
                   height="50px"
@@ -128,7 +128,7 @@
                 >
                   <img
                     src="assets/images/Favicon.ico"
-                    alt="kátharsistudio"
+                    alt="Armando Rojano"
                     class=""
                     width="50px"
                     height="50px"
@@ -145,42 +145,47 @@
                 </div>
               </div>
               <div
-                class="flex h-full flex-col items-center gap-8 px-4 pt-20 text-2xl mxl:px-5 mxl:text-4xl md:gap-10 md:px-8 md:text-5xl"
+                class="flex flex-col gap-6 px-4 text-2xl mxl:px-5 mxl:text-4xl md:px-8 md:text-5xl"
               >
-                <div
-                  id="nav-ux-research-mobile"
-                  onclick="scrollToSection('ux-research'); closeMobileMenu()"
-                  class="cursor-pointer hover:line-through"
-                >
-                  UX research
+                <div class="flex flex-col items-center gap-6">
+                  <div
+                    id="nav-ux-research-mobile"
+                    onclick="scrollToSection('ux-research'); closeMobileMenu()"
+                    class="cursor-pointer hover:line-through"
+                  >
+                    UX research
+                  </div>
+                  <div
+                    id="nav-ux-design-mobile"
+                    onclick="scrollToSection('ux-design'); closeMobileMenu()"
+                    class="cursor-pointer hover:line-through"
+                  >
+                    UX design
+                  </div>
+                  <div
+                    id="nav-web-dev-mobile"
+                    onclick="scrollToSection('web-dev'); closeMobileMenu()"
+                    class="cursor-pointer hover:line-through"
+                  >
+                    Web development
+                  </div>
                 </div>
-                <div
-                  id="nav-ux-design-mobile"
-                  onclick="scrollToSection('ux-design'); closeMobileMenu()"
-                  class="cursor-pointer hover:line-through"
-                >
-                  UX design
+                <hr class="border-black" />
+                <div class="flex flex-col items-center gap-6">
+                  <a
+                    href="pages/about.html"
+                    class="hover:line-through"
+                    target="_self"
+                    onclick="closeMobileMenu()"
+                    >About</a
+                  >
+                  <a
+                    href="mailto:armando_rour@outlook.com"
+                    onclick="closeMobileMenu()"
+                    class="text-accent hover:line-through"
+                    >Email me</a
+                  >
                 </div>
-                <div
-                  id="nav-web-dev-mobile"
-                  onclick="scrollToSection('web-dev'); closeMobileMenu()"
-                  class="cursor-pointer hover:line-through"
-                >
-                  Web development
-                </div>
-                <a
-                  href="pages/about.html"
-                  class="hover:line-through"
-                  target="_self"
-                  onclick="closeMobileMenu()"
-                  >About</a
-                >
-                <a
-                  href="mailto:armando_rour@outlook.com"
-                  onclick="closeMobileMenu()"
-                  class="text-accent hover:line-through"
-                  >Email</a
-                >
               </div>
             </div>
           </nav>
@@ -194,9 +199,7 @@
                 class="flex flex-col gap-10 text-3xl mxl:text-4xl md:gap-14 md:text-5xl lg:gap-16 lg:pt-6 lg:text-6xl xl:text-7xl 2xl:gap-24 2xl:text-8xl"
               >
                 <h1 class="leading-[1.05]">
-                  <span class="font-serif font-normal italic">kátharsi</span
-                  ><span class="font-serif text-accent">studio</span> is
-                  <span class="text-accent">Armando Rojano</span>—a
+                  Hello, I'm <span class="text-accent">Armando Rojano</span>—a
                   multidisciplinary
                   <span class="text-accent">designer</span> with over 3 years of
                   experience based in México.
