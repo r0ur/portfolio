@@ -1,19 +1,43 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!--
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠟⠛⠋⢉⣉⣁⣠⣤⣤⣤⣤⣈⣉⠙⠛⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠉⣀⣤⣶⠾⠟⣛⣛⣿⣿⣿⣿⣿⣿⣿⣧⣈⡓⠦⢤⣈⠙⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⢉⣠⡶⠟⣋⣥⣶⣾⠿⢿⣟⣿⣯⣽⣿⣿⣿⣿⣿⣿⣿⣿⣶⣬⣙⠲⢄⡈⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠋⣀⡴⢛⣡⡶⠟⢛⣩⡥⠶⠾⠛⠛⠋⠙⠛⠛⠻⠿⠿⣿⣿⣧⣍⡛⢿⣿⣷⣦⣍⠳⢤⡈⠛⢿⣿⣿⣿⣿⣿⣿⣿
+    ⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⢁⡴⠞⣡⠴⣋⣥⠶⠚⢋⣁⣠⣤⡶⠶⠿⠟⠛⠛⠒⠲⠶⠤⢄⣉⠙⠛⠿⣶⣬⣙⠻⣿⣿⣦⡙⢶⣄⠙⢿⣿⣿⣿⣿⣿
+    ⣿⣿⣿⣿⣿⣿⠿⠋⣠⡾⠋⠔⣈⡤⠞⠋⣠⣴⠾⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣀⣀⠀⠉⠓⠢⢄⡉⠛⢿⣦⣽⡿⣿⣧⣝⢷⣄⠉⠻⣿⣿⣿
+    ⣿⣿⣿⣿⠟⢁⣤⣾⡟⢀⣤⠞⠉⣠⡴⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠿⠛⠛⣿⣄⠀⠀⠀⠈⠑⠠⣈⠙⠣⣿⣿⣿⣿⣿⣷⣤⡈⠻⣿
+    ⣿⡿⠏⢁⣴⣿⣿⣿⡴⠋⣀⡴⠙⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⢸⣷⠀⡀⠀⠀⠀⠀⠁⠢⢄⠙⠻⣿⣿⣿⣿⣿⣦⣈
+    ⠏⢀⣴⣿⣿⣿⠟⢁⡤⠞⠉⢀⣤⠀⠀⠀⠀⣄⠀⣇⠰⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⢸⣿⠀⣷⡄⠀⡀⠀⡀⠀⠀⠈⠒⠿⣿⣿⣿⣿⣿⣿
+    ⣿⣿⣿⣿⠛⠁⠐⠋⢀⣤⣴⣿⣿⡆⢃⠀⠀⣿⡀⢿⣶⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡜⢸⡿⢀⣿⠇⢰⡇⢠⡧⠀⣾⣦⣤⠄⠈⣿⡇⢹⣿⣿
+    ⣿⣿⣿⣧⠐⠁⢠⡈⢻⣿⣿⣿⣿⣿⣿⣦⡀⠹⣧⠈⢿⣿⣿⣦⣀⠀⠀⠀⠀⠀⠀⠀⢀⡴⢁⡿⢃⣾⠏⢠⣿⣡⣾⡇⢰⣿⡿⠋⠀⣾⣿⠇⣸⣿⣿
+    ⣿⣿⠏⠀⡤⠀⢸⣧⣼⣿⣿⣿⣿⣿⣿⣿⣷⣄⠘⠷⣼⣿⣿⣿⣿⣿⣷⣶⣤⣤⣴⣶⣋⣴⠟⣡⡿⠃⣰⣿⣿⣿⣿⢡⡿⠋⠀⠀⣰⣿⣿⣾⣿⣿⣿
+    ⣿⣿⣦⣤⣤⣤⣀⣀⠈⠙⠻⢯⡙⠿⣿⣿⣿⣿⣷⣤⡈⠙⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⡟⡡⠞⠋⣠⣾⣿⣿⣿⡿⠟⠁⠀⠀⣠⢾⣿⣿⣿⣿⣿⣿⣿
+    ⣿⣿⢿⣿⣿⣿⣿⣿⣿⣷⣦⣄⡉⠒⠠⢙⠛⠿⢿⣿⣿⣶⣤⣄⣀⣉⠉⠛⠛⠛⠉⠉⣀⣠⣴⣿⣿⣿⡿⠟⠉⠀⠀⢀⣴⠟⠁⣸⠟⣿⣿⣿⣿⣿⣿
+    ⣿⣧⣤⣤⣤⣤⣄⡈⠙⠿⣿⣿⣿⣷⣶⣤⣈⡑⠂⠬⢍⣛⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠛⠉⠀⠀⢀⣤⣶⡾⠋⣠⡞⢁⣼⣿⣿⣿⣿⣿⣿
+    ⣿⣿⣿⣿⣿⣿⣇⠻⢷⣤⣀⠉⠛⠻⢿⣿⣿⣿⣿⣶⣦⣤⣀⣈⠉⠙⠛⠛⠛⠛⠋⠉⠉⢀⣀⣀⣠⣤⣴⣾⡿⠟⢁⣤⡾⢋⣴⠟⣹⡿⢋⣿⣿⣿⣿
+    ⣿⣿⣿⣿⣿⣿⡄⠳⢤⣉⠛⠿⣷⣦⣤⣀⡉⠙⠛⠻⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠁⣠⣴⠟⢉⡴⢟⣡⣾⣟⣴⣿⣿⣿⣿⣿
+    ⣿⣿⣿⣿⣿⣿⣈⠲⢤⣌⡉⠒⣺⣿⣿⣿⣿⣿⣷⣶⡤⣤⣀⣈⡉⠉⠙⠛⠛⠛⠛⠛⠛⠋⠉⢁⣠⣤⣶⣿⣿⣥⣞⣩⠴⢛⣩⣶⣿⣿⣿⣿⣿⣿⣿
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣶⣦⣬⣼⣿⣿⣿⣿⣿⣿⣿⣿⣷⣌⠉⣙⣛⣛⣛⣛⠻⣿⡿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠶⠬⠭⢭⣭⣉⣙⣿⡍⠻⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣶⣶⣶⣶⣶⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    BIG BROTHER IS WATCHING YOU
+    -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="A portfolio website of a UX designer with over 3 years of experience."
+      content="A portfolio website of a multidisciplinary designer with over 3 years of experience."
     />
     <meta name="keywords" content="Portfolio, UX Design, Web Development" />
     <meta name="author" content="Armando Rojano Urízar" />
     <meta name="robots" content="index, follow" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="theme-color" content="#121212" />
-    <base href="https://r0ur.github.io/portfolio/" target="_blank" />
-    <title>kátharsistudio | Design</title>
+    <!--     <base href="https://r0ur.github.io/portfolio/" target="_blank" /> -->
+    <title>Armando Rojano | Designer</title>
     <link rel="icon" type="image/x-icon" href="assets/images/Favicon.ico" />
     <link href="src/output.css" rel="stylesheet" />
     <!-- Google Fonts -->
@@ -61,11 +85,9 @@
             <div class="flex items-center justify-between">
               <div class="cursor-pointer" onclick="scrollToTop()">
                 <img
-                  src="assets/images/Favicon.ico"
-                  alt="kátharsistudio"
-                  class=""
-                  width="50px"
-                  height="50px"
+                  src="assets/images/catarsis.png"
+                  alt="Armando Rojano"
+                  class="size-full max-w-[50px]"
                 />
               </div>
               <div class="hidden gap-5 lg:visible lg:flex">
@@ -101,7 +123,7 @@
                   onclick="copyEmailToClipboard()"
                   class="text-accent hover:line-through"
                 >
-                  Email
+                  Email me
                 </button>
               </div>
               <div class="lg:hidden">
@@ -127,11 +149,9 @@
                   onclick="scrollToTop(); closeMobileMenu()"
                 >
                   <img
-                    src="assets/images/Favicon.ico"
-                    alt="kátharsistudio"
-                    class=""
-                    width="50px"
-                    height="50px"
+                    src="assets/images/catarsis.png"
+                    alt="Armando Rojano"
+                    class="size-full max-w-[50px]"
                   />
                 </div>
                 <div class="lg:hidden">
@@ -145,42 +165,47 @@
                 </div>
               </div>
               <div
-                class="flex h-full flex-col items-center gap-8 px-4 pt-20 text-2xl mxl:px-5 mxl:text-4xl md:gap-10 md:px-8 md:text-5xl"
+                class="flex flex-col gap-6 px-4 text-2xl mxl:px-5 mxl:text-4xl md:px-8 md:text-5xl"
               >
-                <div
-                  id="nav-ux-research-mobile"
-                  onclick="scrollToSection('ux-research'); closeMobileMenu()"
-                  class="cursor-pointer hover:line-through"
-                >
-                  UX research
+                <div class="flex flex-col items-center gap-6">
+                  <div
+                    id="nav-ux-research-mobile"
+                    onclick="scrollToSection('ux-research'); closeMobileMenu()"
+                    class="cursor-pointer hover:line-through"
+                  >
+                    UX research
+                  </div>
+                  <div
+                    id="nav-ux-design-mobile"
+                    onclick="scrollToSection('ux-design'); closeMobileMenu()"
+                    class="cursor-pointer hover:line-through"
+                  >
+                    UX design
+                  </div>
+                  <div
+                    id="nav-web-dev-mobile"
+                    onclick="scrollToSection('web-dev'); closeMobileMenu()"
+                    class="cursor-pointer hover:line-through"
+                  >
+                    Web development
+                  </div>
                 </div>
-                <div
-                  id="nav-ux-design-mobile"
-                  onclick="scrollToSection('ux-design'); closeMobileMenu()"
-                  class="cursor-pointer hover:line-through"
-                >
-                  UX design
+                <hr class="border-black" />
+                <div class="flex flex-col items-center gap-6">
+                  <a
+                    href="pages/about.html"
+                    class="hover:line-through"
+                    target="_self"
+                    onclick="closeMobileMenu()"
+                    >About</a
+                  >
+                  <a
+                    href="mailto:armando_rour@outlook.com"
+                    onclick="closeMobileMenu()"
+                    class="text-accent hover:line-through"
+                    >Email me</a
+                  >
                 </div>
-                <div
-                  id="nav-web-dev-mobile"
-                  onclick="scrollToSection('web-dev'); closeMobileMenu()"
-                  class="cursor-pointer hover:line-through"
-                >
-                  Web development
-                </div>
-                <a
-                  href="pages/about.html"
-                  class="hover:line-through"
-                  target="_self"
-                  onclick="closeMobileMenu()"
-                  >About</a
-                >
-                <a
-                  href="mailto:armando_rour@outlook.com"
-                  onclick="closeMobileMenu()"
-                  class="text-accent hover:line-through"
-                  >Email</a
-                >
               </div>
             </div>
           </nav>
@@ -194,8 +219,9 @@
                 class="flex flex-col gap-10 text-3xl mxl:text-4xl md:gap-14 md:text-5xl lg:gap-16 lg:pt-6 lg:text-6xl xl:text-7xl 2xl:gap-24 2xl:text-8xl"
               >
                 <h1 class="leading-[1.05]">
-                  <span class="font-serif font-normal italic">kátharsi</span
-                  ><span class="font-serif text-accent">studio</span> is
+                  <span class="font-serif font-normal italic"
+                    >kathársi<span class="font-semibold">s</span></span
+                  ><span class="font-serif">tudio</span> is
                   <span class="text-accent">Armando Rojano</span>—a
                   multidisciplinary
                   <span class="text-accent">designer</span> with over 3 years of
@@ -231,83 +257,43 @@
               <div class="flex flex-col gap-5 lg:gap-8">
                 <div class="flex flex-col gap-2">
                   <h3
-                    class="text-3xl text-accent mxl:text-4xl md:text-5xl lg:text-6xl"
+                    class="text-3xl text-accent mxl:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
                   >
                     UX research
                   </h3>
-                  <p class="text-xl mxl:text-2xl md:text-3xl lg:text-4xl">
+                  <p
+                    class="text-xl mxl:text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
+                  >
                     These case studies are part of my work as a UX researcher.
                   </p>
                 </div>
                 <div
                   class="flex flex-wrap justify-start gap-8 md:gap-10 lg:gap-12"
                 >
-                  <div
-                    class="w-full mxl:w-[320px] sm:w-[288px] md:w-[316px] lg:w-[340px]"
-                  >
+                  <a href="" class="">
                     <div
-                      class="relative flex aspect-square items-end bg-[#EDD000] p-4"
+                      class="w-full mxl:w-[320px] sm:w-[288px] md:w-[316px] lg:w-[340px]"
                     >
-                      <h4 class="text-3xl mxl:text-4xl lg:text-5xl">
-                        Maestro Malta
-                      </h4>
-                    </div>
-                    <div class="flex flex-col gap-4 py-2">
-                      <p class="font-medium">
-                        Explora cervezas artesanales locales e importadas,
-                        aprendiendo sobre sus sabores, precios, orígenes y
-                        alternativas.
-                      </p>
-                      <div class="flex justify-between font-medium">
-                        <p>App Mobile</p>
-                        <p>2023</p>
+                      <div
+                        class="relative flex aspect-square transform-gpu items-end bg-[#FFC31B] p-4 transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:shadow-[#FFC31B]/50"
+                      >
+                        <h4 class="text-3xl mxl:text-4xl lg:text-5xl">
+                          Real State
+                        </h4>
+                      </div>
+                      <div class="flex flex-col gap-4 py-2">
+                        <p class="font-medium">
+                          The main objective of the project was to identify user
+                          pain points and usability issues that directly
+                          impacted property sales on the platform.
+                        </p>
+                        <div class="flex justify-between font-medium">
+                          <p>Customer Experience Analysis</p>
+                          <p>2023</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div
-                    class="w-full mxl:w-[320px] sm:w-[288px] md:w-[316px] lg:w-[340px]"
-                  >
-                    <div
-                      class="relative flex aspect-square items-end bg-[#EDD000] p-4"
-                    >
-                      <h4 class="text-3xl mxl:text-4xl lg:text-5xl">
-                        Maestro Malta
-                      </h4>
-                    </div>
-                    <div class="flex flex-col gap-4 py-2">
-                      <p class="font-medium">
-                        Explora cervezas artesanales locales e importadas,
-                        aprendiendo sobre sus sabores, precios, orígenes y
-                        alternativas.
-                      </p>
-                      <div class="flex justify-between font-medium">
-                        <p>App Mobile</p>
-                        <p>2023</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="w-full mxl:w-[320px] sm:w-[288px] md:w-[316px] lg:w-[340px]"
-                  >
-                    <div
-                      class="relative flex aspect-square items-end bg-[#EDD000] p-4"
-                    >
-                      <h4 class="text-3xl mxl:text-4xl lg:text-5xl">
-                        Maestro Malta
-                      </h4>
-                    </div>
-                    <div class="flex flex-col gap-4 py-2">
-                      <p class="font-medium">
-                        Explora cervezas artesanales locales e importadas,
-                        aprendiendo sobre sus sabores, precios, orígenes y
-                        alternativas.
-                      </p>
-                      <div class="flex justify-between font-medium">
-                        <p>App Mobile</p>
-                        <p>2023</p>
-                      </div>
-                    </div>
-                  </div>
+                  </a>
                 </div>
               </div>
             </section>
@@ -317,11 +303,13 @@
               <div class="flex flex-col gap-5 lg:gap-8">
                 <div class="flex flex-col gap-2">
                   <h3
-                    class="text-3xl text-accent mxl:text-4xl md:text-5xl lg:text-6xl"
+                    class="text-3xl text-accent mxl:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
                   >
                     UX design
                   </h3>
-                  <p class="text-xl mxl:text-2xl md:text-3xl lg:text-4xl">
+                  <p
+                    class="text-xl mxl:text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
+                  >
                     These snapshots are a sneak peek of my work as a UX designer
                     and the other roles I've had to take on.
                   </p>
@@ -329,21 +317,27 @@
                 <div
                   class="flex flex-col gap-6 text-sm font-medium lg:gap-10 xl:gap-14"
                 >
-                  <div class="flex flex-col gap-2">
+                  <!--                   <div class="flex flex-col gap-2">
                     <img
                       src="assets/images/snapshots/Rifas1.webp"
                       alt="Streaming Platform Screenshot"
                       class="size-full max-w-[1440px]"
                     />
-                    <p class="md:text-base">Lottery Platform</p>
-                  </div>
+                    <p class="md:text-base">
+                      <span class="font-semibold">Freelance Project</span> —
+                      Lottery Platform — 2024
+                    </p>
+                  </div> -->
                   <div class="flex flex-col gap-2">
                     <img
                       src="assets/images/snapshots/TOMA24.webp"
                       alt="Streaming Platform Screenshot"
                       class="size-full max-w-[1440px]"
                     />
-                    <p class="md:text-base">Streaming Platform</p>
+                    <p class="md:text-base">
+                      <span class="font-semibold">Personal Project</span> —
+                      Streaming Platform — 2024
+                    </p>
                   </div>
                   <div class="flex flex-col gap-2">
                     <img
@@ -362,9 +356,10 @@
                       class="size-full max-w-[1440px]"
                     />
                     <p class="md:text-base">
-                      Supplier Relationship Management | Verónica Ramírez
-                      (Visual Design), Oscar Delgado (UX Research), and Armando
-                      Rojano (UX Design, UX Writing)
+                      <span class="font-semibold">Corporate Project</span> —
+                      Supplier Relationship Management — Verónica Ramírez
+                      (Visual Design), Oscar Delgado and Erick Silva (Research),
+                      and Armando Rojano (UX Design, UX Writing) — 2024
                     </p>
                   </div>
                   <div class="flex flex-col gap-2">
@@ -374,8 +369,9 @@
                       class="size-full max-w-[1440px]"
                     />
                     <p class="md:text-base">
-                      Landing Page | Verónica Ramírez (Visual Design), and
-                      Armando Rojano (UX Design, UX Writing)
+                      <span class="font-semibold">Corporate Project</span> —
+                      Landing Page — Verónica Ramírez (Visual Design), and
+                      Armando Rojano (UX Design, UX Writing) — 2024
                     </p>
                   </div>
                   <div class="flex flex-col gap-2">
@@ -389,25 +385,12 @@
                       alt="PC Part Picker Tool from CyberPuerta Screenshot"
                       class="size-full max-w-[1440px]"
                     />
-                    <p class="md:text-base">PC Part Picker Redesign</p>
-                  </div>
-                  <div class="flex flex-col gap-2">
-                    <img
-                      src="assets/images/snapshots/Binca33.webp"
-                      alt="Credit Cards Landing Page Screenshot"
-                      class="size-full max-w-[1440px]"
-                    />
-                    <img
-                      src="assets/images/snapshots/Binca34.webp"
-                      alt="Credit Cards Landing Page Screenshot"
-                      class="size-full max-w-[1440px]"
-                    />
                     <p class="md:text-base">
-                      Landing Page | Madness (Visual Design), and Armando Rojano
-                      (UX Design, UX Writing)
+                      <span class="font-semibold">Personal Project</span> —
+                      CyberPuerta's PC Builder Tool Redesign — 2024
                     </p>
                   </div>
-                  <div class="flex flex-col gap-2">
+                  <!--                   <div class="flex flex-col gap-2">
                     <img
                       src="assets/images/snapshots/Bike27.webp"
                       alt="Dasboard Screenshot"
@@ -418,7 +401,27 @@
                       alt="Dasboard Screenshot"
                       class="size-full max-w-[1440px]"
                     />
-                    <p class="md:text-base">Dashboard</p>
+                    <p class="md:text-base">
+                      <span class="font-semibold">Personal Project</span> —
+                      Dashboard — 2024
+                    </p>
+                  </div> -->
+                  <div class="flex flex-col gap-2">
+                    <!--                     <img
+                      src="assets/images/snapshots/Binca33.webp"
+                      alt="Credit Cards Landing Page Screenshot"
+                      class="size-full max-w-[1440px]"
+                    /> -->
+                    <img
+                      src="assets/images/snapshots/Binca34.webp"
+                      alt="Credit Cards Landing Page Screenshot"
+                      class="size-full max-w-[1440px]"
+                    />
+                    <p class="md:text-base">
+                      <span class="font-semibold">Corporate Project</span> —
+                      Landing Page — Madness (Visual Design), and Armando Rojano
+                      (UX Design, UX Writing) — 2024
+                    </p>
                   </div>
                   <div class="flex flex-col gap-2">
                     <img
@@ -432,7 +435,8 @@
                       class="size-full max-w-[1440px]"
                     />
                     <p class="md:text-base">
-                      Landing Page | Armando Rojano (UX Design)
+                      <span class="font-semibold">Corporate Project</span> —
+                      Landing Page — Armando Rojano (UX Design) — 2023
                     </p>
                   </div>
                   <div class="flex flex-col gap-2">
@@ -442,9 +446,10 @@
                       class="size-full max-w-[1440px]"
                     />
                     <p class="md:text-base">
-                      Landing Page and Mobile App | Madness (Visual Design),
+                      <span class="font-semibold">Corporate Project</span> —
+                      Landing Page and Mobile App — Madness (Visual Design),
                       Verónica Ramírez and Armando Rojano (UX Design, UX
-                      Research)
+                      Research) — 2023
                     </p>
                   </div>
                   <div class="flex flex-col gap-2">
@@ -469,8 +474,9 @@
                       class="size-full max-w-[1440px]"
                     />
                     <p class="md:text-base">
-                      Website | Madness (Visual Design), Verónica Ramírez and
-                      Armando Rojano (UX Design, UX Research)
+                      <span class="font-semibold">Corporate Project</span> —
+                      Website — Madness (Visual Design), Verónica Ramírez and
+                      Armando Rojano (UX Design, UX Research) — 2022
                     </p>
                   </div>
                   <div class="flex flex-col gap-2">
@@ -485,9 +491,10 @@
                       class="size-full max-w-[1440px]"
                     />
                     <p class="md:text-base">
-                      Landing Page and Mobile App | Madness (Visual Design),
+                      <span class="font-semibold">Corporate Project</span> —
+                      Landing Page and Mobile App — Madness (Visual Design),
                       Verónica Ramírez and Armando Rojano (UX Design, UX
-                      Research)
+                      Research) — 2022
                     </p>
                   </div>
                   <div class="flex flex-col gap-2">
@@ -497,8 +504,9 @@
                       class="size-full max-w-[1440px]"
                     />
                     <p class="md:text-base">
-                      Landing Page | Madness (Visual Design), Verónica Ramírez
-                      and Armando Rojano (UX Design)
+                      <span class="font-semibold">Corporate Project</span> —
+                      Landing Page — Madness (Visual Design), Verónica Ramírez
+                      and Armando Rojano (UX Design) — 2022
                     </p>
                   </div>
                   <div class="flex flex-col gap-2">
@@ -518,9 +526,10 @@
                       class="size-full max-w-[1440px]"
                     />
                     <p class="md:text-base">
-                      Supplier Relationship Management | Madness (Visual
-                      Design), Verónica Ramírez (UX Research), and Armando
-                      Rojano (UX Design)
+                      <span class="font-semibold">Corporate Project</span> —
+                      Logistics Management — Madness (Visual Design), Verónica
+                      Ramírez (UX Research), and Armando Rojano (UX Design) —
+                      2021
                     </p>
                   </div>
                 </div>
@@ -532,11 +541,13 @@
               <div class="flex flex-col gap-5 lg:gap-8">
                 <div class="flex flex-col gap-2 text-3xl">
                   <h3
-                    class="text-3xl text-accent mxl:text-4xl md:text-5xl lg:text-6xl"
+                    class="text-3xl text-accent mxl:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
                   >
                     Web development
                   </h3>
-                  <p class="text-xl mxl:text-2xl md:text-3xl lg:text-4xl">
+                  <p
+                    class="text-xl mxl:text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
+                  >
                     This is where I'd put my repositories as a web developer...
                     if I had any.
                   </p>
@@ -544,50 +555,30 @@
                 <div
                   class="flex flex-wrap justify-start gap-8 md:gap-10 lg:gap-12"
                 >
-                  <div class="w-full mxl:w-[320px] sm:w-[288px] md:w-[240px]">
-                    <div
-                      class="relative flex aspect-square items-end bg-[#EDD000] p-4"
-                    >
-                      <h4
-                        class="text-3xl text-black mxl:text-4xl md:text-2xl lg:text-4xl"
+                  <a href="https://github.com/r0ur/portfolio" target="_blank">
+                    <div class="w-full mxl:w-[320px] sm:w-[288px] md:w-[240px]">
+                      <div
+                        class="relative flex aspect-square items-end bg-black p-4 transition-all duration-500 hover:-translate-y-3 hover:shadow-lg"
                       >
-                        Maestro Malta
-                      </h4>
-                    </div>
-                    <div class="flex flex-col gap-4 py-2">
-                      <p class="font-medium">
-                        Explora cervezas artesanales locales e importadas,
-                        aprendiendo sobre sus sabores, precios, orígenes y
-                        alternativas.
-                      </p>
-                      <div class="flex justify-between font-medium">
-                        <p>App Mobile</p>
-                        <p>2023</p>
+                        <h4
+                          class="text-3xl text-white mxl:text-4xl md:text-2xl lg:text-4xl"
+                        >
+                          Portfolio
+                        </h4>
+                      </div>
+                      <div class="flex flex-col gap-4 py-2">
+                        <p class="font-medium">
+                          A simple, responsive portfolio website to showcase my
+                          skills and projects. Technologies that I've used HTML,
+                          TailwindCSS and JavaScript.
+                        </p>
+                        <div class="flex justify-between font-medium">
+                          <p>Website</p>
+                          <p>2024</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="w-full mxl:w-[320px] sm:w-[288px] md:w-[240px]">
-                    <div
-                      class="relative flex aspect-square items-end bg-[#EDD000] p-4"
-                    >
-                      <h4
-                        class="text-3xl text-black mxl:text-4xl md:text-2xl lg:text-4xl"
-                      >
-                        Maestro Malta
-                      </h4>
-                    </div>
-                    <div class="flex flex-col gap-4 py-2">
-                      <p class="font-medium">
-                        Explora cervezas artesanales locales e importadas,
-                        aprendiendo sobre sus sabores, precios, orígenes y
-                        alternativas.
-                      </p>
-                      <div class="flex justify-between font-medium">
-                        <p>App Mobile</p>
-                        <p>2023</p>
-                      </div>
-                    </div>
-                  </div>
+                  </a>
                 </div>
               </div>
             </section>

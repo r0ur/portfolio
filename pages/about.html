@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="A portfolio page of a UX designer with over 3 years of experience."
+      content="A portfolio website of a multidisciplinary designer with over 3 years of experience."
     />
     <meta name="keywords" content="About, Experience, Technologies" />
     <meta name="author" content="Armando Rojano Urízar" />
     <meta name="robots" content="index, follow" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="theme-color" content="#121212" />
-    <title>kátharsistudio | About</title>
+    <title>Armando Rojano | About</title>
     <link rel="icon" type="image/x-icon" href="../assets/images/Favicon.ico" />
     <link href="../src/output.css" rel="stylesheet" />
     <!-- Google Fonts -->
@@ -61,11 +61,9 @@
               <a target="_self" href="../index.html">
                 <div>
                   <img
-                    src="../assets/images/Favicon.ico"
-                    alt="kátharsistudio"
-                    class=""
-                    width="50px"
-                    height="50px"
+                    src="../assets/images/catarsis.png"
+                    alt="Armando Rojano"
+                    class="size-full max-w-[50px]"
                   />
                 </div>
               </a>
@@ -96,13 +94,13 @@
                   href="../index.html"
                   target="_self"
                   class="hover:text-accent hover:line-through"
-                  >Home</a
+                  >Back to home</a
                 >
                 <button
                   onclick="copyEmailToClipboard()"
                   class="text-accent hover:line-through"
                 >
-                  Email
+                  Email me
                 </button>
               </div>
               <div class="lg:hidden">
@@ -128,11 +126,9 @@
                   onclick="scrollToTop(); closeMobileMenu()"
                 >
                   <img
-                    src="../assets/images/Favicon.ico"
-                    alt="kátharsistudio"
-                    class=""
-                    width="50px"
-                    height="50px"
+                    src="../assets/images/catarsis.png"
+                    alt="Armando Rojano"
+                    class="size-full max-w-[50px]"
                   />
                 </div>
                 <div class="lg:hidden">
@@ -146,42 +142,47 @@
                 </div>
               </div>
               <div
-                class="flex h-full flex-col items-center gap-8 px-4 pt-20 text-2xl mxl:px-5 mxl:text-4xl md:gap-10 md:px-8 md:text-5xl"
+                class="flex flex-col gap-6 px-4 text-2xl mxl:px-5 mxl:text-4xl md:px-8 md:text-5xl"
               >
-                <div
-                  id="nav-aboutmobile"
-                  onclick="scrollToSection('about'); closeMobileMenu()"
-                  class="cursor-pointer hover:line-through"
-                >
-                  About
+                <div class="flex flex-col items-center gap-6">
+                  <div
+                    id="nav-aboutmobile"
+                    onclick="scrollToSection('about'); closeMobileMenu()"
+                    class="cursor-pointer hover:line-through"
+                  >
+                    About
+                  </div>
+                  <div
+                    id="nav-background-mobile"
+                    onclick="scrollToSection('background'); closeMobileMenu()"
+                    class="cursor-pointer hover:line-through"
+                  >
+                    Background
+                  </div>
+                  <div
+                    id="nav-tech-mobile"
+                    onclick="scrollToSection('tech'); closeMobileMenu()"
+                    class="cursor-pointer hover:line-through"
+                  >
+                    Technologies
+                  </div>
                 </div>
-                <div
-                  id="nav-background-mobile"
-                  onclick="scrollToSection('background'); closeMobileMenu()"
-                  class="cursor-pointer hover:line-through"
-                >
-                  Background
+                <hr class="border-black" />
+                <div class="flex flex-col items-center gap-6">
+                  <a
+                    href="../index.html"
+                    class="hover:line-through"
+                    target="_self"
+                    onclick="closeMobileMenu()"
+                    >Back to home</a
+                  >
+                  <a
+                    href="mailto:armando_rour@outlook.com"
+                    onclick="closeMobileMenu()"
+                    class="text-accent hover:line-through"
+                    >Email me</a
+                  >
                 </div>
-                <div
-                  id="nav-tech-mobile"
-                  onclick="scrollToSection('tech'); closeMobileMenu()"
-                  class="cursor-pointer hover:line-through"
-                >
-                  Technologies
-                </div>
-                <a
-                  href="../index.html"
-                  class="hover:line-through"
-                  target="_self"
-                  onclick="closeMobileMenu()"
-                  >Home</a
-                >
-                <a
-                  href="mailto:armando_rour@outlook.com"
-                  onclick="closeMobileMenu()"
-                  class="text-accent hover:line-through"
-                  >Email</a
-                >
               </div>
             </div>
           </nav>
@@ -213,23 +214,173 @@
               </div>
             </section>
             <hr class="border-black" />
-            <!-- Technologies -->
-            <section id="tech">
-              <div class="flex flex-col gap-5 md:gap-8 lg:gap-10">
+            <section id="background">
+              <div class="flex flex-col gap-10 lg:gap-16">
                 <div class="flex flex-col gap-2">
                   <h3
-                    class="text-3xl text-accent mxl:text-4xl md:text-5xl lg:text-6xl"
+                    class="text-3xl text-accent mxl:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
+                  >
+                    Background
+                  </h3>
+                  <p
+                    class="text-xl mxl:text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
+                  >
+                    My curiosity, technical proficiency and adaptability allow
+                    me to thrive in dynamic environments.
+                  </p>
+                </div>
+                <div class="flex flex-col gap-20 2xl:gap-24">
+                  <div class="flex max-w-[800px] flex-col gap-4">
+                    <img
+                      src="../assets/images/ilum.png"
+                      class="size-full max-w-[90px]"
+                      alt="Ilum Prosperity Sherpas Logo"
+                    />
+                    <div class="flex flex-col gap-2">
+                      <p
+                        class="text-xl font-medium mxl:text-2xl md:text-3xl lg:text-4xl"
+                      >
+                        Ilum Prosperity Sherpas
+                      </p>
+                      <h4
+                        class="text-3xl mxl:text-4xl md:text-5xl lg:py-4 2xl:text-[65px]"
+                      >
+                        Entry Level Web Developer
+                      </h4>
+                      <p class="md:text-lg lg:text-xl">March 2024 — Now</p>
+                      <p class="font-medium md:text-lg lg:text-xl">
+                        To broaden my skillset as a digital creator, I began
+                        contributing as a web developer, handling both frontend
+                        and backend tasks alongside my UX design work.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex max-w-[800px] flex-col gap-4">
+                    <img
+                      src="../assets/images/catarsis.png"
+                      class="size-full max-w-[90px]"
+                      alt="kathársistudio Logo"
+                    />
+                    <div class="flex flex-col gap-2">
+                      <p
+                        class="text-xl font-medium mxl:text-2xl md:text-3xl lg:text-4xl"
+                      >
+                        Freelance
+                      </p>
+                      <h4
+                        class="text-3xl mxl:text-4xl md:text-5xl lg:py-4 2xl:text-[65px]"
+                      >
+                        Designer
+                      </h4>
+                      <p class="md:text-lg lg:text-xl">2023 — Now</p>
+                      <p class="font-medium md:text-lg lg:text-xl">
+                        Returning to freelancing, I redesigned my logo mark and
+                        paired it with a brand name I'd envisioned for a long
+                        time—now as a multidisciplinary designer.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-4">
+                    <img
+                      src="../assets/images/ilum.png"
+                      class="size-full max-w-[90px]"
+                      alt="Ilum Prosperity Sherpas Logo"
+                    />
+                    <div class="flex flex-col gap-2">
+                      <p
+                        class="text-xl font-medium mxl:text-2xl md:text-3xl lg:text-4xl"
+                      >
+                        Ilum Prosperity Sherpas
+                      </p>
+                      <h4
+                        class="text-3xl mxl:text-4xl md:text-5xl lg:py-4 2xl:text-[65px]"
+                      >
+                        UX Designer and Researcher
+                      </h4>
+                      <p class="md:text-lg lg:text-xl">January 2022 — Now</p>
+                      <p
+                        class="max-w-[800px] font-medium md:text-lg lg:text-xl"
+                      >
+                        I took on a role as a UX designer and researcher. I
+                        began handling core responsibilities while also covering
+                        additional roles as needed.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex max-w-[800px] flex-col gap-4">
+                    <img
+                      src="../assets/images/ilum.png"
+                      class="size-full max-w-[90px]"
+                      alt="Ilum Prosperity Sherpas Logo"
+                    />
+                    <div class="flex flex-col gap-2">
+                      <p
+                        class="text-xl font-medium mxl:text-2xl md:text-3xl lg:text-4xl"
+                      >
+                        Ilum Prosperity Sherpas
+                      </p>
+                      <h4
+                        class="text-3xl mxl:text-4xl md:text-5xl lg:py-4 2xl:text-[65px]"
+                      >
+                        UX Designer
+                      </h4>
+                      <p class="md:text-lg lg:text-xl">
+                        August 2021 — January 2022
+                      </p>
+                      <p class="font-medium md:text-lg lg:text-xl">
+                        After completing my degree, I started as a user
+                        experience designer, dedicating six months to designing
+                        the experience for a logistics service.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex max-w-[800px] flex-col gap-4">
+                    <img
+                      src="../assets/images/untitled.png"
+                      class="size-full max-w-[90px]"
+                      alt="No Logo"
+                    />
+                    <div class="flex flex-col gap-2">
+                      <p
+                        class="text-xl font-medium mxl:text-2xl md:text-3xl lg:text-4xl"
+                      >
+                        Freelance
+                      </p>
+                      <h4
+                        class="text-3xl mxl:text-4xl md:text-5xl lg:py-4 2xl:text-[65px]"
+                      >
+                        Graphic Designer
+                      </h4>
+                      <p class="md:text-lg lg:text-xl">2018 — 2021</p>
+                      <p class="font-medium md:text-lg lg:text-xl">
+                        Midway through my digital arts career, I worked on
+                        visual design, photography and retouching, as well as
+                        video editing and production. I developed a logo mark,
+                        though not a brand name.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <hr class="border-black" />
+            <!-- Technologies -->
+            <section id="tech">
+              <div class="flex flex-col gap-8 lg:gap-10">
+                <div class="flex flex-col gap-2">
+                  <h3
+                    class="text-3xl text-accent mxl:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
                   >
                     Technologies
                   </h3>
-                  <p class="text-xl mxl:text-2xl md:text-3xl lg:text-4xl">
+                  <p
+                    class="text-xl mxl:text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
+                  >
                     These are the tools I'm comfortable using, but I always
                     enjoy learning new tech.
                   </p>
                 </div>
-                <div
-                  class="flex flex-col gap-8 md:gap-10 md:text-lg lg:gap-12 lg:text-xl"
-                >
+                <div class="flex flex-col gap-12 md:text-lg lg:text-xl">
                   <div class="flex flex-col gap-2">
                     <p class="font-semibold">Design</p>
                     <ul
@@ -238,48 +389,48 @@
                       <li class="flex items-center gap-2">
                         <img
                           src="../assets/icons/figma-linear.svg"
-                          class="size-6"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="Figma Logo"
                         />
                         Figma
                       </li>
                       <li class="flex items-center gap-2">
                         <img
                           src="../assets/icons/marvelapp.svg"
-                          class="size-6"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="Marvel Logo"
                         />
                         Marvel
                       </li>
                       <li class="flex items-center gap-2">
                         <img
                           src="../assets/icons/illustrator.svg"
-                          class="size-6"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="Illustrator Logo"
                         />
                         Illustrator
                       </li>
                       <li class="flex items-center gap-2">
                         <img
                           src="../assets/icons/photoshop.svg"
-                          class="size-6"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="Photoshop Logo"
                         />
                         Photoshop
                       </li>
                       <li class="flex items-center gap-2">
                         <img
                           src="../assets/icons/photoshop.svg"
-                          class="size-6"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="Premiere Pro Logo"
                         />
                         Premiere Pro
                       </li>
                       <li class="flex items-center gap-2">
                         <img
                           src="../assets/icons/adobe-after-effects.svg"
-                          class="size-6"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="After Effects Logo"
                         />
                         After Effects
                       </li>
@@ -293,94 +444,94 @@
                       <li class="flex items-center gap-2">
                         <img
                           src="../assets/icons/html-solid.svg"
-                          class="size-6"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="HTML Logo"
                         />
                         HTML
                       </li>
                       <li class="flex items-center gap-2">
                         <img
                           src="../assets/icons/css-solid.svg"
-                          class="size-6"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="CSS Logo"
                         />
                         CSS
                       </li>
                       <li class="flex items-center gap-2">
                         <img
                           src="../assets/icons/javascript-fill.svg"
-                          class="size-6"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="JavaScript Logo"
                         />
                         JavaScript
                       </li>
-                      <li class="flex items-center gap-2">
+                      <li class="hidden items-center gap-2">
                         <img
                           src="../assets/icons/typescript-fill.svg"
-                          class="size-6"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="TypeScript Logo"
                         />
                         TypeScript
                       </li>
                       <li class="flex items-center gap-2">
                         <img
                           src="../assets/icons/vue.svg"
-                          class="size-6"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="Vue Logo"
                         />
                         Vue
                       </li>
                       <li class="flex items-center gap-2">
                         <img
                           src="../assets/icons/vuetify.svg"
-                          class="size-6"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="Vuetify Logo"
                         />
                         Vuetify
                       </li>
                       <li class="flex items-center gap-2">
                         <img
                           src="../assets/icons/angular.svg"
-                          class="size-6"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="Angular Logo"
                         />
                         Angular
                       </li>
                       <li class="flex items-center gap-2">
                         <img
                           src="../assets/icons/react.svg"
-                          class="size-6"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="React Logo"
                         />
                         React
                       </li>
                       <li class="flex items-center gap-2">
                         <img
                           src="../assets/icons/sass-fill.svg"
-                          class="size-6"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="Sass Logo"
                         />
                         Sass
                       </li>
                       <li class="flex items-center gap-2">
                         <img
                           src="../assets/icons/bootstrap.svg"
-                          class="size-6"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="Bootstrap Logo"
                         />
                         Bootstrap
                       </li>
                       <li class="flex items-center gap-2">
                         <img
                           src="../assets/icons/tailwind.svg"
-                          class="size-6"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="TailwindCSS Logo"
                         />
                         TailwindCSS
                       </li>
                     </ul>
                   </div>
-                  <div class="flex flex-col gap-2">
+                  <div class="hidden flex-col gap-2">
                     <p class="font-semibold">Backend</p>
                     <ul
                       class="flex flex-wrap items-center gap-6 font-medium lg:gap-8"
@@ -388,22 +539,22 @@
                       <li class="flex items-center gap-2">
                         <img
                           src="../assets/icons/node-fill.svg"
-                          class="size-6"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="Node.js Logo"
                         />
                         Node.js
                       </li>
                       <li class="flex items-center gap-2">
                         <img
                           src="../assets/icons/nextjs-fill.svg"
-                          class="size-6"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="Next.js Logo"
                         />
                         Next.js
                       </li>
                     </ul>
                   </div>
-                  <div class="flex flex-col gap-2">
+                  <div class="hidden flex-col gap-2">
                     <p class="font-semibold">Database</p>
                     <ul
                       class="flex flex-wrap items-center gap-6 font-medium lg:gap-8"
@@ -411,24 +562,24 @@
                       <li class="flex items-center gap-2">
                         <img
                           src="../assets/icons/mongodb.svg"
-                          class="size-6"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="MongoDB Logo"
                         />
                         MongoDB
                       </li>
                       <li class="flex items-center gap-2">
                         <img
                           src="../assets/icons/mysql.svg"
-                          class="size-6"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="MySQL Logo"
                         />
                         MySQL
                       </li>
                       <li class="flex items-center gap-2">
                         <img
                           src="../assets/icons/postgresql-fill.svg"
-                          class="size-6"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="PostgreSQL Logo"
                         />
                         PostgreSQL
                       </li>
@@ -442,24 +593,24 @@
                       <li class="flex items-center gap-2">
                         <img
                           src="../assets/icons/git.svg"
-                          class="size-6"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="Git Logo"
                         />
                         Git
                       </li>
                       <li class="flex items-center gap-2">
                         <img
                           src="../assets/icons/github.svg"
-                          class="size-6"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="GitHub Logo"
                         />
                         GitHub
                       </li>
                       <li class="flex items-center gap-2">
                         <img
                           src="../assets/icons/bitbucket.svg"
-                          class="size-6"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="Bitbucket Logo"
                         />
                         Bitbucket
                       </li>
@@ -473,24 +624,24 @@
                       <li class="flex items-center gap-2">
                         <img
                           src="../assets/icons/jira.svg"
-                          class="size-max"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="Jira Logo"
                         />
                         Jira
                       </li>
                       <li class="flex items-center gap-2">
                         <img
                           src="../assets/icons/confluence.svg"
-                          class="size-6"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="Confluence Logo"
                         />
                         Confluence
                       </li>
                       <li class="flex items-center gap-2">
                         <img
                           src="../assets/icons/asana.svg"
-                          class="size-6"
-                          alt=""
+                          class="size-6 lg:size-7"
+                          alt="Asana Logo"
                         />
                         Asana
                       </li>
