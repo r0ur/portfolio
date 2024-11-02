@@ -49,7 +49,7 @@ function highlightActiveSection() {
     const rect = section.getBoundingClientRect();
 
     if (rect.top >= 0 && rect.top < window.innerHeight * 0.5) {
-      activeSectionId = section.id; // Guardar la ID de la sección visible
+      activeSectionId = section.id;
     }
   });
 
@@ -102,7 +102,7 @@ function copyEmailToClipboard() {
       }, 3000);
     })
     .catch((error) => {
-      console.error('Error al copiar el correo: ', error);
+      console.error('Error copying email: ', error);
     });
 }
 
@@ -129,11 +129,21 @@ $(document).ready(function () {
   });
 });
 
+/**
+ * Opens the mobile menu by removing the 'hidden' class from the element with the
+ * 'mobile-menu' ID and adds the 'overflow-hidden' class to the body to prevent
+ * scrolling.
+ */
 function openMobileMenu() {
   document.getElementById('mobile-menu').classList.remove('hidden');
   document.body.classList.add('overflow-hidden');
 }
 
+/**
+ * Closes the mobile menu by adding the 'hidden' class to the element with the
+ * 'mobile-menu' ID and removes the 'overflow-hidden' class from the body to allow
+ * scrolling.
+ */
 function closeMobileMenu() {
   document.getElementById('mobile-menu').classList.add('hidden');
   document.body.classList.remove('overflow-hidden');
