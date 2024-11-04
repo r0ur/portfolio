@@ -74,142 +74,147 @@
     </style>
   </head>
   <body class="bg-white text-black">
-    <div
-      class="mx-auto w-full px-4 font-inter font-semibold mxl:px-5 md:px-8 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
-    >
-      <div class="flex flex-col">
-        <!-- Navigation -->
-        <header class="sticky top-0 z-50 bg-white py-6 md:py-8">
-          <nav>
-            <!-- Desktop Menu -->
-            <div class="flex items-center justify-between">
-              <div class="cursor-pointer" onclick="scrollToTop()">
+    <div class="flex flex-col">
+      <!-- Navigation -->
+      <header
+        class="sticky top-0 z-50 mx-auto w-full bg-white font-inter font-semibold shadow"
+      >
+        <nav>
+          <!-- Desktop Menu -->
+          <div
+            class="mx-auto flex items-center justify-between px-4 py-4 mxl:px-5 md:px-8 md:py-6 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
+          >
+            <div class="cursor-pointer" onclick="scrollToTop()">
+              <img
+                src="assets/images/catarsis.png"
+                alt="Armando Rojano"
+                class="size-full max-w-[50px]"
+              />
+            </div>
+            <div class="hidden gap-5 lg:visible lg:flex">
+              <div
+                id="nav-ux-research"
+                onclick="scrollToSection('ux-research')"
+                class="cursor-pointer hover:text-accent hover:line-through"
+              >
+                UX research
+              </div>
+              <div
+                id="nav-ux-design"
+                onclick="scrollToSection('ux-design')"
+                class="cursor-pointer hover:text-accent hover:line-through"
+              >
+                UX design
+              </div>
+              <div
+                id="nav-web-dev"
+                onclick="scrollToSection('web-dev')"
+                class="cursor-pointer hover:text-accent hover:line-through"
+              >
+                Web development
+              </div>
+              <p>|</p>
+              <a
+                href="pages/about.html"
+                class="hover:text-accent hover:line-through"
+                target="_self"
+                >About</a
+              >
+              <button
+                onclick="copyEmailToClipboard()"
+                class="text-accent hover:line-through"
+              >
+                Copy my email
+              </button>
+            </div>
+            <div class="lg:hidden">
+              <button
+                id="menu-button"
+                class="text-2xl hover:line-through"
+                onclick="openMobileMenu()"
+              >
+                Menu
+              </button>
+            </div>
+          </div>
+          <!-- Mobile Menu -->
+          <div
+            id="mobile-menu"
+            class="fixed left-0 top-0 z-50 hidden h-full w-full bg-white lg:hidden"
+          >
+            <div
+              class="flex items-center justify-between px-4 py-4 mxl:px-5 md:px-8 md:py-8"
+            >
+              <div
+                class="cursor-pointer"
+                onclick="scrollToTop(); closeMobileMenu()"
+              >
                 <img
                   src="assets/images/catarsis.png"
                   alt="Armando Rojano"
                   class="size-full max-w-[50px]"
                 />
               </div>
-              <div class="hidden gap-5 lg:visible lg:flex">
-                <div
-                  id="nav-ux-research"
-                  onclick="scrollToSection('ux-research')"
-                  class="cursor-pointer hover:text-accent hover:line-through"
-                >
-                  UX research
-                </div>
-                <div
-                  id="nav-ux-design"
-                  onclick="scrollToSection('ux-design')"
-                  class="cursor-pointer hover:text-accent hover:line-through"
-                >
-                  UX design
-                </div>
-                <div
-                  id="nav-web-dev"
-                  onclick="scrollToSection('web-dev')"
-                  class="cursor-pointer hover:text-accent hover:line-through"
-                >
-                  Web development
-                </div>
-                <p>|</p>
-                <a
-                  href="pages/about.html"
-                  class="hover:text-accent hover:line-through"
-                  target="_self"
-                  >About</a
-                >
-                <button
-                  onclick="copyEmailToClipboard()"
-                  class="text-accent hover:line-through"
-                >
-                  Copy email
-                </button>
-              </div>
               <div class="lg:hidden">
                 <button
                   id="menu-button"
                   class="text-2xl hover:line-through"
-                  onclick="openMobileMenu()"
+                  onclick="closeMobileMenu()"
                 >
-                  Menu
+                  Close
                 </button>
               </div>
             </div>
-            <!-- Mobile Menu -->
             <div
-              id="mobile-menu"
-              class="fixed left-0 top-0 z-50 hidden h-full w-full bg-white lg:hidden"
+              class="flex flex-col gap-6 px-4 text-2xl mxl:px-5 mxl:text-4xl md:px-8 md:text-5xl"
             >
-              <div
-                class="flex items-center justify-between px-4 py-6 mxl:px-5 md:px-8 md:py-8"
-              >
+              <div class="flex flex-col items-center gap-6">
                 <div
-                  class="cursor-pointer"
-                  onclick="scrollToTop(); closeMobileMenu()"
+                  id="nav-ux-research-mobile"
+                  onclick="scrollToSection('ux-research'); closeMobileMenu()"
+                  class="cursor-pointer hover:line-through"
                 >
-                  <img
-                    src="assets/images/catarsis.png"
-                    alt="Armando Rojano"
-                    class="size-full max-w-[50px]"
-                  />
+                  UX research
                 </div>
-                <div class="lg:hidden">
-                  <button
-                    id="menu-button"
-                    class="text-2xl hover:line-through"
-                    onclick="closeMobileMenu()"
-                  >
-                    Close
-                  </button>
+                <div
+                  id="nav-ux-design-mobile"
+                  onclick="scrollToSection('ux-design'); closeMobileMenu()"
+                  class="cursor-pointer hover:line-through"
+                >
+                  UX design
+                </div>
+                <div
+                  id="nav-web-dev-mobile"
+                  onclick="scrollToSection('web-dev'); closeMobileMenu()"
+                  class="cursor-pointer hover:line-through"
+                >
+                  Web development
                 </div>
               </div>
-              <div
-                class="flex flex-col gap-6 px-4 text-2xl mxl:px-5 mxl:text-4xl md:px-8 md:text-5xl"
-              >
-                <div class="flex flex-col items-center gap-6">
-                  <div
-                    id="nav-ux-research-mobile"
-                    onclick="scrollToSection('ux-research'); closeMobileMenu()"
-                    class="cursor-pointer hover:line-through"
-                  >
-                    UX research
-                  </div>
-                  <div
-                    id="nav-ux-design-mobile"
-                    onclick="scrollToSection('ux-design'); closeMobileMenu()"
-                    class="cursor-pointer hover:line-through"
-                  >
-                    UX design
-                  </div>
-                  <div
-                    id="nav-web-dev-mobile"
-                    onclick="scrollToSection('web-dev'); closeMobileMenu()"
-                    class="cursor-pointer hover:line-through"
-                  >
-                    Web development
-                  </div>
-                </div>
-                <hr class="border-black" />
-                <div class="flex flex-col items-center gap-6">
-                  <a
-                    href="pages/about.html"
-                    class="hover:line-through"
-                    target="_self"
-                    onclick="closeMobileMenu()"
-                    >About</a
-                  >
-                  <a
-                    href="mailto:armando_rour@outlook.com"
-                    onclick="closeMobileMenu()"
-                    class="text-accent hover:line-through"
-                    >Email me</a
-                  >
-                </div>
+              <hr class="border-black" />
+              <div class="flex flex-col items-center gap-6">
+                <a
+                  href="pages/about.html"
+                  class="hover:line-through"
+                  target="_self"
+                  onclick="closeMobileMenu()"
+                  >About</a
+                >
+                <a
+                  href="mailto:armando_rour@outlook.com"
+                  onclick="closeMobileMenu()"
+                  class="text-accent hover:line-through"
+                  >Email me</a
+                >
               </div>
             </div>
-          </nav>
-        </header>
+          </div>
+        </nav>
+      </header>
+      <!-- Breakpoints -->
+      <div
+        class="mx-auto w-full px-4 font-inter font-semibold mxl:px-5 md:px-8 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
+      >
         <!-- Content -->
         <main class="relative">
           <div class="flex flex-col gap-8 md:gap-10 lg:gap-16">
@@ -219,10 +224,7 @@
                 class="flex flex-col gap-10 text-3xl mxl:text-4xl md:gap-14 md:text-5xl lg:gap-16 lg:pt-6 lg:text-6xl xl:text-7xl 2xl:gap-24 2xl:text-8xl"
               >
                 <h1 class="leading-[1.05]">
-                  <span class="font-serif font-normal italic"
-                    >kathársi<span class="font-semibold">s</span></span
-                  ><span class="font-serif">tudio</span> is
-                  <span class="text-accent">Armando Rojano</span>—a
+                  Hello! I'm <span class="text-accent">Armando Rojano</span>—a
                   multidisciplinary
                   <span class="text-accent">designer</span> with over 3 years of
                   experience based in México.
@@ -235,7 +237,7 @@
                   >
                   at
                   <a
-                    class="hover:underline"
+                    class="underline hover:decoration-accent"
                     href="https://www.linkedin.com/company/ilum-prosperity-sherpas/"
                     target="_blank"
                     >Ilum Prosperity Sherpas,</a
@@ -243,12 +245,6 @@
                   developing solutions for the ideas that emerge within the
                   company.
                 </h2>
-                <h3 class="leading-[1.05]">
-                  Alongside my corporate role, I operate as a
-                  <span class="text-accent">freelancer</span>. Here, you'll find
-                  a curated selection of projects from
-                  <span class="text-accent">both</span> settings.
-                </h3>
               </div>
             </section>
             <hr class="border-black" />
@@ -268,14 +264,14 @@
                   </p>
                 </div>
                 <div
-                  class="flex flex-wrap justify-start gap-8 md:gap-10 lg:gap-12"
+                  class="-mx-4 flex gap-8 overflow-x-auto px-4 md:flex-wrap md:gap-10 md:overflow-visible lg:gap-11"
                 >
                   <a href="pages/cases/realstate.html" target="_self">
                     <div
-                      class="w-full mxl:w-[320px] sm:w-[288px] md:w-[316px] lg:w-[340px]"
+                      class="group w-[240px] shrink-0 mxl:w-[320px] sm:w-[320px] md:w-[316px] lg:w-[340px]"
                     >
                       <div
-                        class="relative flex aspect-square transform-gpu items-end bg-[#FFC31B] p-4 transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:shadow-[#FFC31B]/50"
+                        class="relative flex aspect-square transform-gpu items-end bg-[#FFC31B] p-4 transition-all duration-500 hover:shadow-[#FFC31B]/50 group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-[#FFC31B]/50"
                       >
                         <h4 class="text-3xl mxl:text-4xl lg:text-5xl">
                           Real State
@@ -294,6 +290,79 @@
                       </div>
                     </div>
                   </a>
+                  <a href="pages/cases/realstate.html" target="_self">
+                    <div
+                      class="group w-[240px] shrink-0 mxl:w-[320px] sm:w-[320px] md:w-[316px] lg:w-[340px]"
+                    >
+                      <div
+                        class="relative flex aspect-square transform-gpu items-end bg-[#FFC31B] p-4 transition-all duration-500 hover:shadow-[#FFC31B]/50 group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-[#FFC31B]/50"
+                      >
+                        <h4 class="text-3xl mxl:text-4xl lg:text-5xl">
+                          Real State
+                        </h4>
+                      </div>
+                      <div class="flex flex-col gap-4 py-2">
+                        <p class="font-medium">
+                          The main objective of the project was to identify user
+                          pain points and usability issues that directly
+                          impacted property sales on the platform.
+                        </p>
+                        <div class="flex justify-between font-medium">
+                          <p>Customer Experience Analysis</p>
+                          <p>2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="pages/cases/realstate.html" target="_self">
+                    <div
+                      class="group w-[240px] shrink-0 mxl:w-[320px] sm:w-[320px] md:w-[316px] lg:w-[340px]"
+                    >
+                      <div
+                        class="relative flex aspect-square transform-gpu items-end bg-[#FFC31B] p-4 transition-all duration-500 hover:shadow-[#FFC31B]/50 group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-[#FFC31B]/50"
+                      >
+                        <h4 class="text-3xl mxl:text-4xl lg:text-5xl">
+                          Real State
+                        </h4>
+                      </div>
+                      <div class="flex flex-col gap-4 py-2">
+                        <p class="font-medium">
+                          The main objective of the project was to identify user
+                          pain points and usability issues that directly
+                          impacted property sales on the platform.
+                        </p>
+                        <div class="flex justify-between font-medium">
+                          <p>Customer Experience Analysis</p>
+                          <p>2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="pages/cases/realstate.html" target="_self">
+                    <div
+                      class="group w-[240px] shrink-0 mxl:w-[320px] sm:w-[320px] md:w-[316px] lg:w-[340px]"
+                    >
+                      <div
+                        class="relative flex aspect-square transform-gpu items-end bg-[#FFC31B] p-4 transition-all duration-500 hover:shadow-[#FFC31B]/50 group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-[#FFC31B]/50"
+                      >
+                        <h4 class="text-3xl mxl:text-4xl lg:text-5xl">
+                          Real State
+                        </h4>
+                      </div>
+                      <div class="flex flex-col gap-4 py-2">
+                        <p class="font-medium">
+                          The main objective of the project was to identify user
+                          pain points and usability issues that directly
+                          impacted property sales on the platform.
+                        </p>
+                        <div class="flex justify-between font-medium">
+                          <p>Customer Experience Analysis</p>
+                          <p>2023</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <!-- Repite las tarjetas aquí -->
                 </div>
               </div>
             </section>
@@ -553,12 +622,40 @@
                   </p>
                 </div>
                 <div
-                  class="flex flex-wrap justify-start gap-8 md:gap-10 lg:gap-12"
+                  class="-mx-4 flex gap-8 overflow-x-auto px-4 md:flex-wrap md:gap-10 md:overflow-visible lg:gap-11"
                 >
                   <a href="https://github.com/r0ur/portfolio" target="_blank">
-                    <div class="w-full mxl:w-[320px] sm:w-[288px] md:w-[240px]">
+                    <div
+                      class="group min-w-[240px] mxl:w-[320px] sm:w-[288px] md:w-[240px]"
+                    >
                       <div
-                        class="relative flex aspect-square items-end bg-black p-4 transition-all duration-500 hover:-translate-y-3 hover:shadow-lg"
+                        class="relative flex aspect-square items-end bg-black p-4 transition-all duration-500 group-hover:-translate-y-3 group-hover:shadow-lg"
+                      >
+                        <h4
+                          class="text-3xl text-white mxl:text-4xl md:text-2xl lg:text-4xl"
+                        >
+                          Portfolio
+                        </h4>
+                      </div>
+                      <div class="flex flex-col gap-4 py-2">
+                        <p class="font-medium">
+                          A simple, responsive portfolio website to showcase my
+                          skills and projects. Technologies that I've used HTML,
+                          TailwindCSS and JavaScript.
+                        </p>
+                        <div class="flex justify-between font-medium">
+                          <p>Website</p>
+                          <p>2024</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://github.com/r0ur/portfolio" target="_blank">
+                    <div
+                      class="group min-w-[240px] mxl:w-[320px] sm:w-[288px] md:w-[240px]"
+                    >
+                      <div
+                        class="relative flex aspect-square items-end bg-black p-4 transition-all duration-500 hover:-translate-y-3 hover:shadow-lg group-hover:-translate-y-3 group-hover:shadow-lg"
                       >
                         <h4
                           class="text-3xl text-white mxl:text-4xl md:text-2xl lg:text-4xl"
@@ -646,7 +743,7 @@
     <!-- Copy to Clipboard Alert -->
     <div
       id="alert"
-      class="fixed right-4 top-32 hidden rounded bg-black px-4 py-4 text-white shadow-lg transition-opacity duration-300 min-[2000px]:top-4"
+      class="fixed right-4 top-28 hidden rounded bg-black px-4 py-4 text-white shadow-lg transition-opacity duration-300"
     >
       Email copied to clipboard.
     </div>
