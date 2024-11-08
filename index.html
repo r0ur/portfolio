@@ -77,19 +77,25 @@
     <div class="flex flex-col">
       <!-- Navigation -->
       <header
-        class="sticky top-0 z-50 mx-auto w-full border-b border-black bg-white font-inter font-semibold"
+        class="sticky top-0 z-50 mx-auto w-full border-b border-primary bg-white font-inter"
       >
         <nav>
           <!-- Desktop Menu -->
           <div
-            class="mx-auto flex items-center justify-between px-4 py-4 mxl:px-5 md:px-8 md:py-6 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
+            class="mx-auto flex items-center justify-between px-4 py-2 mxl:px-5 md:px-8 lg:py-4 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
           >
-            <div class="cursor-pointer" onclick="scrollToTop()">
+            <div
+              class="flex cursor-pointer items-center gap-2"
+              onclick="scrollToTop()"
+            >
               <img
                 src="assets/images/catarsis.png"
                 alt="Armando Rojano"
-                class="size-full w-10 lg:w-12"
+                class="size-full w-10"
               />
+              <p class="font-medium">
+                Armando <span class="invisible lg:visible">Rojano</span>
+              </p>
             </div>
             <div class="hidden gap-5 lg:visible lg:flex">
               <div
@@ -143,10 +149,10 @@
             class="fixed left-0 top-0 z-50 hidden h-full w-full bg-white lg:hidden"
           >
             <div
-              class="flex items-center justify-between px-4 py-4 mxl:px-5 md:px-8 md:py-8"
+              class="flex items-center justify-between px-4 py-2 mxl:px-5 md:px-8"
             >
               <div
-                class="cursor-pointer"
+                class="flex cursor-pointer items-center gap-2"
                 onclick="scrollToTop(); closeMobileMenu()"
               >
                 <img
@@ -154,6 +160,9 @@
                   alt="Armando Rojano"
                   class="size-full w-10 lg:w-12"
                 />
+                <p class="font-medium">
+                  Armando <span class="invisible lg:visible">Rojano</span>
+                </p>
               </div>
               <div class="lg:hidden">
                 <button
@@ -168,7 +177,7 @@
             <div
               class="flex flex-col gap-6 px-4 text-2xl mxl:px-5 mxl:text-4xl md:px-8 md:text-5xl"
             >
-              <div class="flex flex-col items-center gap-6">
+              <div class="flex flex-col items-center gap-6 pt-8">
                 <div
                   id="nav-ux-research-mobile"
                   onclick="scrollToSection('ux-research'); closeMobileMenu()"
@@ -213,7 +222,7 @@
       </header>
       <!-- Breakpoints -->
       <div
-        class="mx-auto w-full px-4 font-inter font-semibold mxl:px-5 md:px-8 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
+        class="mx-auto w-full px-4 font-inter mxl:px-5 md:px-8 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
       >
         <!-- Content -->
         <main class="relative">
@@ -221,7 +230,7 @@
             <!-- Hero -->
             <section id="hero">
               <div
-                class="flex flex-col gap-10 pt-5 text-3xl mxl:text-4xl md:gap-14 md:text-5xl lg:gap-16 lg:pt-6 lg:text-6xl xl:text-7xl 2xl:gap-24 2xl:text-8xl"
+                class="flex flex-col gap-10 pt-4 text-3xl font-medium mxl:text-4xl md:gap-14 md:text-5xl lg:gap-16 lg:pt-8 lg:text-6xl xl:text-7xl 2xl:gap-24 2xl:text-8xl"
               >
                 <h1 class="leading-[1.05]">
                   Hello! I'm <span class="text-accent">Armando Rojano</span>—a
@@ -247,13 +256,13 @@
                 </h2>
               </div>
             </section>
-            <hr class="border-black" />
+            <hr class="border-primary" />
             <!-- UX Research -->
             <section id="ux-research">
               <div class="flex flex-col gap-5 lg:gap-8">
                 <div class="flex flex-col gap-2">
                   <h3
-                    class="text-3xl text-accent mxl:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
+                    class="text-3xl font-medium text-accent mxl:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
                   >
                     UX research
                   </h3>
@@ -266,113 +275,103 @@
                 <div
                   class="-mx-4 flex gap-8 overflow-x-auto px-4 md:flex-wrap md:gap-10 md:overflow-visible lg:gap-11"
                 >
-                  <a href="pages/cases/realstate.html" target="_self">
+                  <a
+                    href="https://www.dropbox.com/scl/fi/1k78blsyvkjmn8z7khmbv/MaestroMalta_CaseStudyUX.pdf?rlkey=4mzbfu1k2ci78rkr6cyzysb99&st=8jd43v86&dl=0"
+                    target="_blank"
+                  >
                     <div
                       class="group w-[240px] shrink-0 mxl:w-[320px] sm:w-[320px] md:w-[316px] lg:w-[340px]"
                     >
                       <div
-                        class="relative flex aspect-square transform-gpu items-end bg-[#FFC31B] p-4 transition-all duration-500 hover:shadow-[#FFC31B]/50 group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-[#FFC31B]/50"
+                        class="relative flex aspect-square transform-gpu items-end rounded-lg bg-[#EDD000] p-4 transition-all duration-500 hover:shadow-[#EDD000]/50 group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-[#EDD000]/50"
                       >
-                        <h4 class="text-3xl mxl:text-4xl lg:text-5xl">
-                          Real State
+                        <h4
+                          class="text-3xl font-medium mxl:text-4xl lg:text-5xl"
+                        >
+                          Maestro Malta
                         </h4>
                       </div>
                       <div class="flex flex-col gap-4 py-2">
-                        <p class="font-medium">
-                          The main objective of the project was to identify user
-                          pain points and usability issues that directly
-                          impacted property sales on the platform.
+                        <p>
+                          Discover various types of beer, compare flavors and
+                          prices, view country of origin, find where to buy
+                          them, and read reviews and ratings.
                         </p>
-                        <div class="flex justify-between font-medium">
-                          <p>Customer Experience Analysis</p>
+                        <div class="flex justify-between">
+                          <p>Mobile App</p>
                           <p>2023</p>
                         </div>
                       </div>
                     </div>
                   </a>
-                  <a href="pages/cases/realstate.html" target="_self">
+                  <a
+                    href="https://www.dropbox.com/scl/fi/qs4cq1o8uh6qw40gxma0d/Mait_CaseStudyUX.pdf?rlkey=12kjs2rcblkcbbz0a0kndiww6&st=x86tf6ms&dl=0"
+                    target="_blank"
+                  >
                     <div
                       class="group w-[240px] shrink-0 mxl:w-[320px] sm:w-[320px] md:w-[316px] lg:w-[340px]"
                     >
                       <div
-                        class="relative flex aspect-square transform-gpu items-end bg-[#FFC31B] p-4 transition-all duration-500 hover:shadow-[#FFC31B]/50 group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-[#FFC31B]/50"
+                        class="relative flex aspect-square transform-gpu items-end rounded-lg bg-[#E42864] p-4 transition-all duration-500 hover:shadow-[#E42864]/50 group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-[#E42864]/50"
                       >
-                        <h4 class="text-3xl mxl:text-4xl lg:text-5xl">
-                          Real State
+                        <h4
+                          class="text-3xl font-medium text-white mxl:text-4xl lg:text-5xl"
+                        >
+                          Mait
                         </h4>
                       </div>
                       <div class="flex flex-col gap-4 py-2">
-                        <p class="font-medium">
-                          The main objective of the project was to identify user
-                          pain points and usability issues that directly
-                          impacted property sales on the platform.
+                        <p>
+                          Provides information on local tourist spots, including
+                          experiences, shops, restaurants, and trips,
+                          encouraging interaction with locals.
                         </p>
-                        <div class="flex justify-between font-medium">
-                          <p>Customer Experience Analysis</p>
-                          <p>2023</p>
+                        <div class="flex justify-between">
+                          <p>Mobile App</p>
+                          <p>2022</p>
                         </div>
                       </div>
                     </div>
                   </a>
-                  <a href="pages/cases/realstate.html" target="_self">
+                  <a
+                    href="https://www.dropbox.com/scl/fi/oodoy1v18d4f48rl9x31c/OX_CaseStudyUX.pdf?rlkey=70edl1leojzynjnoe9yuas4jn&st=5aeuea6h&dl=0"
+                    target="_blank"
+                  >
                     <div
                       class="group w-[240px] shrink-0 mxl:w-[320px] sm:w-[320px] md:w-[316px] lg:w-[340px]"
                     >
                       <div
-                        class="relative flex aspect-square transform-gpu items-end bg-[#FFC31B] p-4 transition-all duration-500 hover:shadow-[#FFC31B]/50 group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-[#FFC31B]/50"
+                        class="relative flex aspect-square transform-gpu items-end rounded-lg bg-[#9F0202] p-4 transition-all duration-500 hover:shadow-[#9F0202]/50 group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-[#9F0202]/50"
                       >
-                        <h4 class="text-3xl mxl:text-4xl lg:text-5xl">
-                          Real State
+                        <h4
+                          class="text-3xl font-medium text-white mxl:text-4xl lg:text-5xl"
+                        >
+                          OX Logistics
                         </h4>
                       </div>
                       <div class="flex flex-col gap-4 py-2">
-                        <p class="font-medium">
-                          The main objective of the project was to identify user
-                          pain points and usability issues that directly
-                          impacted property sales on the platform.
+                        <p>
+                          Connecting transport companies with businesses needing
+                          ongoing shipping services to minimize empty miles for
+                          carriers.
                         </p>
-                        <div class="flex justify-between font-medium">
-                          <p>Customer Experience Analysis</p>
-                          <p>2023</p>
+                        <div class="flex justify-between">
+                          <p>Website</p>
+                          <p>2021</p>
                         </div>
                       </div>
                     </div>
                   </a>
-                  <a href="pages/cases/realstate.html" target="_self">
-                    <div
-                      class="group w-[240px] shrink-0 mxl:w-[320px] sm:w-[320px] md:w-[316px] lg:w-[340px]"
-                    >
-                      <div
-                        class="relative flex aspect-square transform-gpu items-end bg-[#FFC31B] p-4 transition-all duration-500 hover:shadow-[#FFC31B]/50 group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-[#FFC31B]/50"
-                      >
-                        <h4 class="text-3xl mxl:text-4xl lg:text-5xl">
-                          Real State
-                        </h4>
-                      </div>
-                      <div class="flex flex-col gap-4 py-2">
-                        <p class="font-medium">
-                          The main objective of the project was to identify user
-                          pain points and usability issues that directly
-                          impacted property sales on the platform.
-                        </p>
-                        <div class="flex justify-between font-medium">
-                          <p>Customer Experience Analysis</p>
-                          <p>2023</p>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <!-- Repite las tarjetas aquí -->
                 </div>
               </div>
             </section>
-            <hr class="border-black" />
+            <hr class="border-primary" />
             <!-- UX Design -->
             <section id="ux-design">
               <div class="flex flex-col gap-5 lg:gap-8">
                 <div class="flex flex-col gap-2">
                   <h3
-                    class="text-3xl text-accent mxl:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
+                    class="text-3xl font-medium text-accent mxl:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
                   >
                     UX design
                   </h3>
@@ -383,9 +382,7 @@
                     and the other roles I've had to take on.
                   </p>
                 </div>
-                <div
-                  class="flex flex-col gap-6 text-sm font-medium lg:gap-10 xl:gap-14"
-                >
+                <div class="flex flex-col gap-6 text-sm lg:gap-10 xl:gap-14">
                   <div class="hidden flex-col gap-2">
                     <img
                       src="assets/images/snapshots/Rifas1.webp"
@@ -393,7 +390,7 @@
                       class="size-full max-w-[1440px]"
                     />
                     <p class="md:text-base">
-                      <span class="font-semibold">Freelance Project</span> —
+                      <span class="font-medium">Freelance Project</span> —
                       Lottery Platform — 2024
                     </p>
                   </div>
@@ -404,7 +401,7 @@
                       class="size-full max-w-[1440px]"
                     />
                     <p class="hidden md:text-base lg:block">
-                      <span class="font-semibold">Personal Project</span> —
+                      <span class="font-medium">Personal Project</span> —
                       Streaming Platform — 2024
                     </p>
                   </div>
@@ -425,7 +422,7 @@
                       class="size-full max-w-[1440px]"
                     />
                     <p class="hidden md:text-base lg:block">
-                      <span class="font-semibold">Corporate Project</span> —
+                      <span class="font-medium">Corporate Project</span> —
                       Supplier Relationship Management — Verónica Ramírez
                       (Visual Design), Oscar Delgado and Erick Silva (Research),
                       and Armando Rojano (UX Design, UX Writing) — 2024
@@ -438,7 +435,7 @@
                       class="size-full max-w-[1440px]"
                     />
                     <p class="hidden md:text-base lg:block">
-                      <span class="font-semibold">Corporate Project</span> —
+                      <span class="font-medium">Corporate Project</span> —
                       Landing Page — Verónica Ramírez (Visual Design), and
                       Armando Rojano (UX Design, UX Writing) — 2024
                     </p>
@@ -455,7 +452,7 @@
                       class="size-full max-w-[1440px]"
                     />
                     <p class="hidden md:text-base lg:block">
-                      <span class="font-semibold">Personal Project</span> —
+                      <span class="font-medium">Personal Project</span> —
                       CyberPuerta's PC Builder Tool Redesign — 2024
                     </p>
                   </div>
@@ -471,7 +468,7 @@
                       class="size-full max-w-[1440px]"
                     />
                     <p class="hidden md:text-base lg:block">
-                      <span class="font-semibold">Personal Project</span> —
+                      <span class="font-medium">Personal Project</span> —
                       Dashboard — 2024
                     </p>
                   </div>
@@ -487,7 +484,7 @@
                       class="size-full max-w-[1440px]"
                     />
                     <p class="hidden md:text-base lg:block">
-                      <span class="font-semibold">Corporate Project</span> —
+                      <span class="font-medium">Corporate Project</span> —
                       Landing Page — Madness (Visual Design), and Armando Rojano
                       (UX Design, UX Writing) — 2024
                     </p>
@@ -504,7 +501,7 @@
                       class="size-full max-w-[1440px]"
                     />
                     <p class="hidden md:text-base lg:block">
-                      <span class="font-semibold">Corporate Project</span> —
+                      <span class="font-medium">Corporate Project</span> —
                       Landing Page — Armando Rojano (UX Design) — 2023
                     </p>
                   </div>
@@ -515,7 +512,7 @@
                       class="size-full max-w-[1440px]"
                     />
                     <p class="hidden md:text-base lg:block">
-                      <span class="font-semibold">Corporate Project</span> —
+                      <span class="font-medium">Corporate Project</span> —
                       Landing Page and Mobile App — Madness (Visual Design),
                       Verónica Ramírez and Armando Rojano (UX Design, UX
                       Research) — 2023
@@ -543,7 +540,7 @@
                       class="size-full max-w-[1440px]"
                     />
                     <p class="hidden md:text-base lg:block">
-                      <span class="font-semibold">Corporate Project</span> —
+                      <span class="font-medium">Corporate Project</span> —
                       Website — Madness (Visual Design), Verónica Ramírez and
                       Armando Rojano (UX Design, UX Research) — 2022
                     </p>
@@ -560,7 +557,7 @@
                       class="size-full max-w-[1440px]"
                     />
                     <p class="hidden md:text-base lg:block">
-                      <span class="font-semibold">Corporate Project</span> —
+                      <span class="font-medium">Corporate Project</span> —
                       Landing Page and Mobile App — Madness (Visual Design),
                       Verónica Ramírez and Armando Rojano (UX Design, UX
                       Research) — 2022
@@ -573,7 +570,7 @@
                       class="size-full max-w-[1440px]"
                     />
                     <p class="hidden md:text-base lg:block">
-                      <span class="font-semibold">Corporate Project</span> —
+                      <span class="font-medium">Corporate Project</span> —
                       Landing Page — Madness (Visual Design), Verónica Ramírez
                       and Armando Rojano (UX Design) — 2022
                     </p>
@@ -595,7 +592,7 @@
                       class="size-full max-w-[1440px]"
                     />
                     <p class="hidden md:text-base lg:block">
-                      <span class="font-semibold">Corporate Project</span> —
+                      <span class="font-medium">Corporate Project</span> —
                       Logistics Management — Madness (Visual Design), Verónica
                       Ramírez (UX Research), and Armando Rojano (UX Design) —
                       2021
@@ -604,13 +601,13 @@
                 </div>
               </div>
             </section>
-            <hr class="border-black" />
+            <hr class="border-primary" />
             <!-- Web Development -->
             <section id="web-dev">
               <div class="flex flex-col gap-5 lg:gap-8">
                 <div class="flex flex-col gap-2 text-3xl">
                   <h3
-                    class="text-3xl text-accent mxl:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
+                    class="text-3xl font-medium text-accent mxl:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
                   >
                     Web development
                   </h3>
@@ -629,47 +626,21 @@
                       class="group min-w-[240px] mxl:w-[320px] sm:w-[288px] md:w-[240px]"
                     >
                       <div
-                        class="relative flex aspect-square items-end bg-black p-4 transition-all duration-500 group-hover:-translate-y-3 group-hover:shadow-lg"
+                        class="relative flex aspect-square items-end rounded-lg bg-black p-4 transition-all duration-500 group-hover:-translate-y-3 group-hover:shadow-lg"
                       >
                         <h4
-                          class="text-3xl text-white mxl:text-4xl md:text-2xl lg:text-4xl"
+                          class="text-3xl font-medium text-white mxl:text-4xl lg:text-[40px]"
                         >
                           Portfolio
                         </h4>
                       </div>
                       <div class="flex flex-col gap-4 py-2">
-                        <p class="font-medium">
+                        <p>
                           A simple, responsive portfolio website to showcase my
                           skills and projects. Technologies that I've used HTML,
                           TailwindCSS and JavaScript.
                         </p>
-                        <div class="flex justify-between font-medium">
-                          <p>Website</p>
-                          <p>2024</p>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="https://github.com/r0ur/portfolio" target="_blank">
-                    <div
-                      class="group min-w-[240px] mxl:w-[320px] sm:w-[288px] md:w-[240px]"
-                    >
-                      <div
-                        class="relative flex aspect-square items-end bg-black p-4 transition-all duration-500 hover:-translate-y-3 hover:shadow-lg group-hover:-translate-y-3 group-hover:shadow-lg"
-                      >
-                        <h4
-                          class="text-3xl text-white mxl:text-4xl md:text-2xl lg:text-4xl"
-                        >
-                          Portfolio
-                        </h4>
-                      </div>
-                      <div class="flex flex-col gap-4 py-2">
-                        <p class="font-medium">
-                          A simple, responsive portfolio website to showcase my
-                          skills and projects. Technologies that I've used HTML,
-                          TailwindCSS and JavaScript.
-                        </p>
-                        <div class="flex justify-between font-medium">
+                        <div class="flex justify-between">
                           <p>Website</p>
                           <p>2024</p>
                         </div>
@@ -687,7 +658,7 @@
     <section class="py-10 lg:py-20">
       <a href="mailto:armando_rour@outlook.com">
         <div
-          class="marquee overflow-hidden whitespace-nowrap font-inter text-[80px] font-semibold lg:text-[150px]"
+          class="marquee overflow-hidden whitespace-nowrap font-inter text-[80px] font-medium lg:text-[150px]"
         >
           <span class="px-20"> armando_rour@outlook.com</span>
           <span class="px-20"> armando_rour@outlook.com</span>
@@ -702,10 +673,10 @@
     </section>
     <!-- Footer -->
     <footer
-      class="mx-auto w-full px-4 font-inter font-semibold mxl:px-5 md:px-8 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
+      class="mx-auto w-full px-4 font-inter mxl:px-5 md:px-8 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
     >
       <div
-        class="flex flex-col items-center gap-6 py-8 font-normal md:flex md:flex-row md:justify-between md:gap-4"
+        class="flex flex-col items-center gap-6 py-8 md:flex md:flex-row md:justify-between md:gap-4"
       >
         <div
           class="flex flex-col items-center justify-between gap-4 font-medium md:flex-row"
@@ -743,7 +714,7 @@
     <!-- Copy to Clipboard Alert -->
     <div
       id="alert"
-      class="fixed right-4 top-28 hidden rounded bg-black px-4 py-4 text-white shadow-lg transition-opacity duration-300"
+      class="fixed right-4 top-28 hidden rounded bg-black px-4 py-4 font-inter text-white shadow-lg transition-opacity duration-300"
     >
       Email copied to clipboard.
     </div>
