@@ -12,9 +12,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#E6E6E6',
-        secondary: '#2C2C2E',
-        tertiary: '#141517',
+        primary: '#E5E5E5',
+        secondary: '#F6F6F6',
+        tertiary: '#2C2C2E',
         accent: '#e4007c',
         black: '#000000',
         white: '#ffffff',
