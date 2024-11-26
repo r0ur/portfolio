@@ -72,6 +72,12 @@
         }
       }
     </style>
+    <!-- Marquee -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
   </head>
   <body class="bg-white text-black">
     <div class="flex flex-col">
@@ -282,10 +288,10 @@
                     target="_blank"
                   >
                     <div
-                      class="group w-[240px] shrink-0 mxl:w-[320px] sm:w-[320px] md:w-[316px] lg:w-[340px]"
+                      class="group w-[240px] shrink-0 bg-secondary mxl:w-[320px] sm:w-[320px] md:w-[316px] lg:w-[340px]"
                     >
                       <div
-                        class="relative flex aspect-square transform-gpu items-end rounded-lg bg-[#EDD000] p-4 transition-all duration-500 hover:shadow-[#EDD000]/50 group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-[#EDD000]/50"
+                        class="relative flex aspect-square transform-gpu items-end rounded-tl-lg rounded-tr-lg bg-[#EDD000] p-4 transition-all duration-500 hover:shadow-[#EDD000]/50 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-[#EDD000]/50"
                       >
                         <h4
                           class="text-3xl font-medium mxl:text-4xl lg:text-5xl"
@@ -293,15 +299,25 @@
                           Maestro Malta
                         </h4>
                       </div>
-                      <div class="flex flex-col gap-4 py-2">
+                      <div class="flex flex-col gap-4 p-4">
                         <p>
                           Discover various types of beer, compare flavors and
                           prices, view country of origin, find where to buy
                           them, and read reviews and ratings.
                         </p>
-                        <div class="flex justify-between">
+                        <div class="flex w-fit gap-2 rounded-lg bg-primary p-2">
+                          <img
+                            src="assets/icons/smartphone-device.svg"
+                            alt=""
+                          />
                           <p>Mobile App</p>
-                          <p>2023</p>
+                        </div>
+                        <div>
+                          <p
+                            class="hidden font-semibold text-accent group-hover:flex"
+                          >
+                            View →
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -311,10 +327,10 @@
                     target="_blank"
                   >
                     <div
-                      class="group w-[240px] shrink-0 mxl:w-[320px] sm:w-[320px] md:w-[316px] lg:w-[340px]"
+                      class="group w-[240px] shrink-0 bg-secondary mxl:w-[320px] sm:w-[320px] md:w-[316px] lg:w-[340px]"
                     >
                       <div
-                        class="relative flex aspect-square transform-gpu items-end rounded-lg bg-[#E42864] p-4 transition-all duration-500 hover:shadow-[#E42864]/50 group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-[#E42864]/50"
+                        class="relative flex aspect-square transform-gpu items-end rounded-tl-lg rounded-tr-lg bg-[#E42864] p-4 transition-all duration-500 hover:shadow-[#E42864]/50 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-[#E42864]/50"
                       >
                         <h4
                           class="text-3xl font-medium text-white mxl:text-4xl lg:text-5xl"
@@ -322,15 +338,25 @@
                           Mait
                         </h4>
                       </div>
-                      <div class="flex flex-col gap-4 py-2">
+                      <div class="flex flex-col gap-4 p-4">
                         <p>
                           Provides information on local tourist spots, including
                           experiences, shops, restaurants, and trips,
                           encouraging interaction with locals.
                         </p>
-                        <div class="flex justify-between">
+                        <div class="flex w-fit gap-2 rounded-lg bg-primary p-2">
+                          <img
+                            src="assets/icons/smartphone-device.svg"
+                            alt=""
+                          />
                           <p>Mobile App</p>
-                          <p>2022</p>
+                        </div>
+                        <div>
+                          <p
+                            class="hidden font-semibold text-accent group-hover:flex"
+                          >
+                            View →
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -340,10 +366,10 @@
                     target="_blank"
                   >
                     <div
-                      class="group w-[240px] shrink-0 mxl:w-[320px] sm:w-[320px] md:w-[316px] lg:w-[340px]"
+                      class="group w-[240px] shrink-0 bg-secondary mxl:w-[320px] sm:w-[320px] md:w-[316px] lg:w-[340px]"
                     >
                       <div
-                        class="relative flex aspect-square transform-gpu items-end rounded-lg bg-[#9F0202] p-4 transition-all duration-500 hover:shadow-[#9F0202]/50 group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-[#9F0202]/50"
+                        class="relative flex aspect-square transform-gpu items-end rounded-tl-lg rounded-tr-lg bg-[#9F0202] p-4 transition-all duration-500 hover:shadow-[#9F0202]/50 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-[#9F0202]/50"
                       >
                         <h4
                           class="text-3xl font-medium text-white mxl:text-4xl lg:text-5xl"
@@ -351,16 +377,38 @@
                           OX Logistics
                         </h4>
                       </div>
-                      <div class="flex flex-col gap-4 py-2">
+                      <div class="flex flex-col gap-4 p-4">
                         <p>
                           Connecting transport companies with businesses needing
                           ongoing shipping services to minimize empty miles for
                           carriers.
                         </p>
-                        <div class="flex justify-between">
-                          <p>Website</p>
-                          <p>2021</p>
+                        <div class="flex w-fit gap-2 rounded-lg bg-primary p-2">
+                          <img src="assets/icons/apple-imac-2021.svg" alt="" />
+                          <p>Web App</p>
                         </div>
+                        <div>
+                          <p
+                            class="hidden font-semibold text-accent group-hover:flex"
+                          >
+                            View →
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="assets/images/cases/Case1.png">
+                    <div
+                      class="group w-[240px] shrink-0 bg-secondary mxl:w-[320px] sm:w-[320px] md:w-[316px] lg:w-[340px]"
+                    >
+                      <div
+                        class="relative flex aspect-square transform-gpu items-end rounded-tl-lg rounded-tr-lg bg-[#9F0202] p-4 transition-all duration-500 hover:shadow-[#9F0202]/50 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-[#9F0202]/50"
+                      >
+                        <h4
+                          class="text-3xl font-medium text-white mxl:text-4xl lg:text-5xl"
+                        >
+                          Imagen
+                        </h4>
                       </div>
                     </div>
                   </a>
