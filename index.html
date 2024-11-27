@@ -36,7 +36,6 @@
     <meta name="robots" content="index, follow" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="theme-color" content="#121212" />
-    <!--     <base href="https://r0ur.github.io/portfolio/" target="_blank" /> -->
     <title>Armando Rojano | Designer</title>
     <link rel="icon" type="image/x-icon" href="assets/images/Favicon.ico" />
     <link href="src/output.css" rel="stylesheet" />
@@ -51,6 +50,11 @@
       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
       rel="stylesheet"
     />
+    <!-- Fancybox -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
     <!-- Marquee -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.rawgit.com/aamirafridi/jQuery.Marquee/master/jquery.marquee.min.js"></script>
@@ -62,6 +66,7 @@
       Your browser does not support JavaScript, which may limit some
       functionality of this site.
     </noscript>
+    <!-- Styles -->
     <style>
       @keyframes marquee {
         0% {
@@ -232,7 +237,7 @@
             <!-- Hero -->
             <section id="hero">
               <div
-                class="flex flex-col gap-10 pt-4 text-3xl font-medium mxl:text-4xl md:gap-14 md:text-6xl lg:gap-16 lg:pt-8 xl:text-7xl 2xl:gap-24 2xl:text-8xl"
+                class="flex flex-col gap-10 pt-4 text-3xl font-medium mxl:text-4xl sm:text-5xl md:gap-14 md:text-6xl lg:gap-16 lg:pt-8 xl:text-7xl 2xl:gap-24 2xl:text-8xl"
               >
                 <h1 class="leading-[1.05]">
                   Hello! I'm <span class="text-accent">Armando Rojano</span>—a
@@ -278,72 +283,14 @@
                   class="-mx-4 flex gap-8 overflow-x-auto px-4 md:flex-wrap md:gap-10 md:overflow-visible lg:gap-11"
                 >
                   <a
-                    href="https://www.dropbox.com/scl/fi/1k78blsyvkjmn8z7khmbv/MaestroMalta_CaseStudyUX.pdf?rlkey=4mzbfu1k2ci78rkr6cyzysb99&st=8jd43v86&dl=0"
-                    target="_blank"
+                    href="assets/images/cases/Case1.png"
+                    data-fancybox="case-studies"
                   >
                     <div
-                      class="group w-[240px] shrink-0 mxl:w-[320px] sm:w-[320px] md:w-[316px] lg:w-[340px]"
+                      class="group w-[240px] shrink-0 bg-secondary mxl:w-[320px] sm:w-[320px] md:w-[316px] lg:w-[340px]"
                     >
                       <div
-                        class="relative flex aspect-square transform-gpu items-end rounded-lg bg-[#EDD000] p-4 transition-all duration-500 hover:shadow-[#EDD000]/50 group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-[#EDD000]/50"
-                      >
-                        <h4
-                          class="text-3xl font-medium mxl:text-4xl lg:text-5xl"
-                        >
-                          Maestro Malta
-                        </h4>
-                      </div>
-                      <div class="flex flex-col gap-4 py-2">
-                        <p>
-                          Discover various types of beer, compare flavors and
-                          prices, view country of origin, find where to buy
-                          them, and read reviews and ratings.
-                        </p>
-                        <div class="flex justify-between">
-                          <p>Mobile App</p>
-                          <p>2023</p>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <a
-                    href="https://www.dropbox.com/scl/fi/qs4cq1o8uh6qw40gxma0d/Mait_CaseStudyUX.pdf?rlkey=12kjs2rcblkcbbz0a0kndiww6&st=x86tf6ms&dl=0"
-                    target="_blank"
-                  >
-                    <div
-                      class="group w-[240px] shrink-0 mxl:w-[320px] sm:w-[320px] md:w-[316px] lg:w-[340px]"
-                    >
-                      <div
-                        class="relative flex aspect-square transform-gpu items-end rounded-lg bg-[#E42864] p-4 transition-all duration-500 hover:shadow-[#E42864]/50 group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-[#E42864]/50"
-                      >
-                        <h4
-                          class="text-3xl font-medium text-white mxl:text-4xl lg:text-5xl"
-                        >
-                          Mait
-                        </h4>
-                      </div>
-                      <div class="flex flex-col gap-4 py-2">
-                        <p>
-                          Provides information on local tourist spots, including
-                          experiences, shops, restaurants, and trips,
-                          encouraging interaction with locals.
-                        </p>
-                        <div class="flex justify-between">
-                          <p>Mobile App</p>
-                          <p>2022</p>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <a
-                    href="https://www.dropbox.com/scl/fi/oodoy1v18d4f48rl9x31c/OX_CaseStudyUX.pdf?rlkey=70edl1leojzynjnoe9yuas4jn&st=5aeuea6h&dl=0"
-                    target="_blank"
-                  >
-                    <div
-                      class="group w-[240px] shrink-0 mxl:w-[320px] sm:w-[320px] md:w-[316px] lg:w-[340px]"
-                    >
-                      <div
-                        class="relative flex aspect-square transform-gpu items-end rounded-lg bg-[#9F0202] p-4 transition-all duration-500 hover:shadow-[#9F0202]/50 group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-[#9F0202]/50"
+                        class="relative flex aspect-square transform-gpu items-end rounded-tl-lg rounded-tr-lg bg-[#9F0202] p-4 transition-all duration-500 hover:shadow-[#9F0202]/50 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-[#9F0202]/50"
                       >
                         <h4
                           class="text-3xl font-medium text-white mxl:text-4xl lg:text-5xl"
@@ -351,15 +298,47 @@
                           OX Logistics
                         </h4>
                       </div>
-                      <div class="flex flex-col gap-4 py-2">
+                      <div class="flex flex-col gap-4 p-4">
                         <p>
                           Connecting transport companies with businesses needing
                           ongoing shipping services to minimize empty miles for
                           carriers.
                         </p>
-                        <div class="flex justify-between">
-                          <p>Website</p>
-                          <p>2021</p>
+                        <div class="flex w-fit gap-2 rounded-lg bg-primary p-2">
+                          <img src="assets/icons/apple-imac-2021.svg" alt="" />
+                          <p>Web App</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="assets/images/cases/Case2.png"
+                    data-fancybox="case-studies"
+                  >
+                    <div
+                      class="group w-[240px] shrink-0 bg-secondary mxl:w-[320px] sm:w-[320px] md:w-[316px] lg:w-[340px]"
+                    >
+                      <div
+                        class="relative flex aspect-square transform-gpu items-end rounded-tl-lg rounded-tr-lg bg-[#E42864] p-4 transition-all duration-500 hover:shadow-[#E42864]/50 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-[#E42864]/50"
+                      >
+                        <h4
+                          class="text-3xl font-medium text-white mxl:text-4xl lg:text-5xl"
+                        >
+                          Mait
+                        </h4>
+                      </div>
+                      <div class="flex flex-col gap-4 p-4">
+                        <p>
+                          Provides information on local tourist spots, including
+                          experiences, shops, restaurants, and trips,
+                          encouraging interaction with locals.
+                        </p>
+                        <div class="flex w-fit gap-2 rounded-lg bg-primary p-2">
+                          <img
+                            src="assets/icons/smartphone-device.svg"
+                            alt=""
+                          />
+                          <p>Mobile App</p>
                         </div>
                       </div>
                     </div>
@@ -625,26 +604,26 @@
                 >
                   <a href="https://github.com/r0ur/portfolio" target="_blank">
                     <div
-                      class="group min-w-[240px] mxl:w-[320px] sm:w-[288px] md:w-[240px]"
+                      class="group w-[240px] shrink-0 bg-secondary mxl:w-[320px] sm:w-[320px] md:w-[316px] lg:w-[340px]"
                     >
                       <div
-                        class="relative flex aspect-square items-end rounded-lg bg-black p-4 transition-all duration-500 group-hover:-translate-y-3 group-hover:shadow-lg"
+                        class="relative flex aspect-square transform-gpu items-end rounded-tl-lg rounded-tr-lg bg-black p-4 transition-all duration-500 hover:shadow-black/50 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-black/50"
                       >
                         <h4
-                          class="text-3xl font-medium text-white mxl:text-4xl lg:text-[40px]"
+                          class="text-3xl font-medium text-white mxl:text-4xl lg:text-5xl"
                         >
                           Portfolio
                         </h4>
                       </div>
-                      <div class="flex flex-col gap-4 py-2">
+                      <div class="flex flex-col gap-4 p-4">
                         <p>
                           A simple, responsive portfolio website to showcase my
                           skills and projects. Technologies that I've used HTML,
-                          TailwindCSS and JavaScript.
+                          TailwindCSS, Prettier and JavaScript.
                         </p>
-                        <div class="flex justify-between">
+                        <div class="flex w-fit gap-2 rounded-lg bg-primary p-2">
+                          <img src="assets/icons/apple-imac-2021.svg" alt="" />
                           <p>Website</p>
-                          <p>2024</p>
                         </div>
                       </div>
                     </div>
@@ -711,8 +690,10 @@
         <p class="md:order-first">© 2024</p>
       </div>
     </footer>
-    <!-- Scripts -->
-    <script src="js/main.js"></script>
+    <!-- Fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js" defer></script>
     <!-- Copy to Clipboard Alert -->
     <div
       id="alert"

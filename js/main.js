@@ -148,3 +148,8 @@ function closeMobileMenu() {
   document.getElementById('mobile-menu').classList.add('hidden');
   document.body.classList.remove('overflow-hidden');
 }
+
+Fancybox.bind("[data-fancybox='case-studies']", {
+  wheel: 'pan',
+  groupAttr: false,
+});
