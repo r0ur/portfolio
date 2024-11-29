@@ -663,10 +663,6 @@ video {
   width: 100%;
 }
 
-.min-w-\[240px\] {
-  min-width: 240px;
-}
-
 .max-w-80 {
   max-width: 20rem;
 }
@@ -800,11 +796,6 @@ video {
 .bg-\[\#E42864\] {
   --tw-bg-opacity: 1;
   background-color: rgb(228 40 100 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#EDD000\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(237 208 0 / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -1003,19 +994,9 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.hover\:shadow-\[\#EDD000\]\/50:hover {
-  --tw-shadow-color: rgb(237 208 0 / 0.5);
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
 .hover\:shadow-black\/50:hover {
   --tw-shadow-color: rgb(0 0 0 / 0.5);
   --tw-shadow: var(--tw-shadow-colored);
-}
-
-.group:hover .group-hover\:-translate-y-3 {
-  --tw-translate-y: -0.75rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .group:hover .group-hover\:scale-105 {
@@ -1039,12 +1020,6 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.group:hover .group-hover\:shadow-lg {
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .group:hover .group-hover\:shadow-\[\#9F0202\]\/50 {
   --tw-shadow-color: rgb(159 2 2 / 0.5);
   --tw-shadow: var(--tw-shadow-colored);
@@ -1052,11 +1027,6 @@ video {
 
 .group:hover .group-hover\:shadow-\[\#E42864\]\/50 {
   --tw-shadow-color: rgb(228 40 100 / 0.5);
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.group:hover .group-hover\:shadow-\[\#EDD000\]\/50 {
-  --tw-shadow-color: rgb(237 208 0 / 0.5);
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -1087,10 +1057,6 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:w-\[288px\] {
-    width: 288px;
-  }
-
   .sm\:w-\[320px\] {
     width: 320px;
   }
@@ -1112,10 +1078,6 @@ video {
 
   .md\:flex {
     display: flex;
-  }
-
-  .md\:w-\[240px\] {
-    width: 240px;
   }
 
   .md\:w-\[316px\] {
@@ -1271,10 +1233,6 @@ video {
 
   .lg\:text-\[150px\] {
     font-size: 150px;
-  }
-
-  .lg\:text-\[40px\] {
-    font-size: 40px;
   }
 
   .lg\:text-xl {
