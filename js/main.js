@@ -149,6 +149,12 @@ function closeMobileMenu() {
   document.body.classList.remove('overflow-hidden');
 }
 
+/**
+ * Initializes the Fancybox plugin for elements with the data attribute 'case-studies'.
+ *
+ * This function binds Fancybox to elements with the data-fancybox attribute set to 'case-studies',
+ * enabling a pan interaction with the mouse wheel and disabling grouping by attributes.
+ */
 Fancybox.bind("[data-fancybox='case-studies']", {
   wheel: 'pan',
   groupAttr: false,
