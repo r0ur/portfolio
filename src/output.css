@@ -574,16 +574,12 @@ video {
   position: sticky;
 }
 
-.inset-0 {
-  inset: 0px;
-}
-
 .left-0 {
   left: 0px;
 }
 
-.right-4 {
-  right: 1rem;
+.left-1\/2 {
+  left: 50%;
 }
 
 .top-0 {
@@ -592,18 +588,6 @@ video {
 
 .top-28 {
   top: 7rem;
-}
-
-.left-1\/2 {
-  left: 50%;
-}
-
-.top-1\/2 {
-  top: 50%;
-}
-
-.top-36 {
-  top: 9rem;
 }
 
 .z-50 {
@@ -735,10 +719,6 @@ video {
 
 .justify-start {
   justify-content: flex-start;
-}
-
-.justify-center {
-  justify-content: center;
 }
 
 .justify-between {
