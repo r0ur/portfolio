@@ -92,7 +92,6 @@ function copyEmailToClipboard() {
       alert.classList.remove('hidden', 'opacity-0');
       alert.classList.add('opacity-100');
 
-      // Hide the alert after 3 seconds
       setTimeout(() => {
         alert.classList.remove('opacity-100');
         alert.classList.add('opacity-0');
@@ -106,25 +105,22 @@ function copyEmailToClipboard() {
     });
 }
 
-/**
- * Initializes the marquee plugin on the elements with the class 'marquee'
- * to create a scrolling effect.
- */
+$(window).on('load', function () {
+  $('.images-marquee').marquee({
+    duration: 60000,
+    startVisible: true,
+    delayBeforeStart: 0,
+    direction: 'left',
+    duplicated: true,
+  });
+});
+
 $(document).ready(function () {
   $('.marquee').marquee({
-    // Duration of the animation in milliseconds
-    duration: 50000,
-
-    // If true, the marquee will start visible
+    duration: 30000,
     startVisible: true,
-
-    // Delay in milliseconds before starting the animation
     delayBeforeStart: 0,
-
-    // Direction of the animation
     direction: 'left',
-
-    // If true, the marquee will be duplicated to cover the entire width of the element
     duplicated: true,
   });
 });

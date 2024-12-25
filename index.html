@@ -1,30 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!--
-    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠟⠛⠋⢉⣉⣁⣠⣤⣤⣤⣤⣈⣉⠙⠛⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠉⣀⣤⣶⠾⠟⣛⣛⣿⣿⣿⣿⣿⣿⣿⣧⣈⡓⠦⢤⣈⠙⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⢉⣠⡶⠟⣋⣥⣶⣾⠿⢿⣟⣿⣯⣽⣿⣿⣿⣿⣿⣿⣿⣿⣶⣬⣙⠲⢄⡈⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠋⣀⡴⢛⣡⡶⠟⢛⣩⡥⠶⠾⠛⠛⠋⠙⠛⠛⠻⠿⠿⣿⣿⣧⣍⡛⢿⣿⣷⣦⣍⠳⢤⡈⠛⢿⣿⣿⣿⣿⣿⣿⣿
-    ⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⢁⡴⠞⣡⠴⣋⣥⠶⠚⢋⣁⣠⣤⡶⠶⠿⠟⠛⠛⠒⠲⠶⠤⢄⣉⠙⠛⠿⣶⣬⣙⠻⣿⣿⣦⡙⢶⣄⠙⢿⣿⣿⣿⣿⣿
-    ⣿⣿⣿⣿⣿⣿⠿⠋⣠⡾⠋⠔⣈⡤⠞⠋⣠⣴⠾⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣀⣀⠀⠉⠓⠢⢄⡉⠛⢿⣦⣽⡿⣿⣧⣝⢷⣄⠉⠻⣿⣿⣿
-    ⣿⣿⣿⣿⠟⢁⣤⣾⡟⢀⣤⠞⠉⣠⡴⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠿⠛⠛⣿⣄⠀⠀⠀⠈⠑⠠⣈⠙⠣⣿⣿⣿⣿⣿⣷⣤⡈⠻⣿
-    ⣿⡿⠏⢁⣴⣿⣿⣿⡴⠋⣀⡴⠙⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⢸⣷⠀⡀⠀⠀⠀⠀⠁⠢⢄⠙⠻⣿⣿⣿⣿⣿⣦⣈
-    ⠏⢀⣴⣿⣿⣿⠟⢁⡤⠞⠉⢀⣤⠀⠀⠀⠀⣄⠀⣇⠰⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⢸⣿⠀⣷⡄⠀⡀⠀⡀⠀⠀⠈⠒⠿⣿⣿⣿⣿⣿⣿
-    ⣿⣿⣿⣿⠛⠁⠐⠋⢀⣤⣴⣿⣿⡆⢃⠀⠀⣿⡀⢿⣶⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡜⢸⡿⢀⣿⠇⢰⡇⢠⡧⠀⣾⣦⣤⠄⠈⣿⡇⢹⣿⣿
-    ⣿⣿⣿⣧⠐⠁⢠⡈⢻⣿⣿⣿⣿⣿⣿⣦⡀⠹⣧⠈⢿⣿⣿⣦⣀⠀⠀⠀⠀⠀⠀⠀⢀⡴⢁⡿⢃⣾⠏⢠⣿⣡⣾⡇⢰⣿⡿⠋⠀⣾⣿⠇⣸⣿⣿
-    ⣿⣿⠏⠀⡤⠀⢸⣧⣼⣿⣿⣿⣿⣿⣿⣿⣷⣄⠘⠷⣼⣿⣿⣿⣿⣿⣷⣶⣤⣤⣴⣶⣋⣴⠟⣡⡿⠃⣰⣿⣿⣿⣿⢡⡿⠋⠀⠀⣰⣿⣿⣾⣿⣿⣿
-    ⣿⣿⣦⣤⣤⣤⣀⣀⠈⠙⠻⢯⡙⠿⣿⣿⣿⣿⣷⣤⡈⠙⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⡟⡡⠞⠋⣠⣾⣿⣿⣿⡿⠟⠁⠀⠀⣠⢾⣿⣿⣿⣿⣿⣿⣿
-    ⣿⣿⢿⣿⣿⣿⣿⣿⣿⣷⣦⣄⡉⠒⠠⢙⠛⠿⢿⣿⣿⣶⣤⣄⣀⣉⠉⠛⠛⠛⠉⠉⣀⣠⣴⣿⣿⣿⡿⠟⠉⠀⠀⢀⣴⠟⠁⣸⠟⣿⣿⣿⣿⣿⣿
-    ⣿⣧⣤⣤⣤⣤⣄⡈⠙⠿⣿⣿⣿⣷⣶⣤⣈⡑⠂⠬⢍⣛⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠛⠉⠀⠀⢀⣤⣶⡾⠋⣠⡞⢁⣼⣿⣿⣿⣿⣿⣿
-    ⣿⣿⣿⣿⣿⣿⣇⠻⢷⣤⣀⠉⠛⠻⢿⣿⣿⣿⣿⣶⣦⣤⣀⣈⠉⠙⠛⠛⠛⠛⠋⠉⠉⢀⣀⣀⣠⣤⣴⣾⡿⠟⢁⣤⡾⢋⣴⠟⣹⡿⢋⣿⣿⣿⣿
-    ⣿⣿⣿⣿⣿⣿⡄⠳⢤⣉⠛⠿⣷⣦⣤⣀⡉⠙⠛⠻⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠁⣠⣴⠟⢉⡴⢟⣡⣾⣟⣴⣿⣿⣿⣿⣿
-    ⣿⣿⣿⣿⣿⣿⣈⠲⢤⣌⡉⠒⣺⣿⣿⣿⣿⣿⣷⣶⡤⣤⣀⣈⡉⠉⠙⠛⠛⠛⠛⠛⠛⠋⠉⢁⣠⣤⣶⣿⣿⣥⣞⣩⠴⢛⣩⣶⣿⣿⣿⣿⣿⣿⣿
-    ⣿⣿⣿⣿⣿⣿⣿⣿⣶⣦⣬⣼⣿⣿⣿⣿⣿⣿⣿⣿⣷⣌⠉⣙⣛⣛⣛⣛⠻⣿⡿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠶⠬⠭⢭⣭⣉⣙⣿⡍⠻⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣶⣶⣶⣶⣶⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-    BIG BROTHER IS WATCHING YOU
-    -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -58,25 +34,6 @@
     <!-- Marquee -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.rawgit.com/aamirafridi/jQuery.Marquee/master/jquery.marquee.min.js"></script>
-    <script
-      src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"
-      type="text/javascript"
-    ></script>
-    <noscript>
-      Your browser does not support JavaScript, which may limit some
-      functionality of this site.
-    </noscript>
-    <!-- Styles -->
-    <style>
-      @keyframes marquee {
-        0% {
-          transform: translateX(100%);
-        }
-        100% {
-          transform: translateX(-100%);
-        }
-      }
-    </style>
   </head>
   <body class="bg-white text-black">
     <div class="flex flex-col">
@@ -106,39 +63,33 @@
             </div>
             <div class="hidden gap-5 lg:visible lg:flex">
               <div
-                id="nav-ux-research"
-                onclick="scrollToSection('ux-research')"
+                id="nav-work"
+                onclick="scrollToSection('work')"
                 class="cursor-pointer hover:text-accent hover:line-through"
               >
-                UX research
+                Work
               </div>
               <div
-                id="nav-ux-design"
-                onclick="scrollToSection('ux-design')"
+                id="nav-about"
+                onclick="scrollToSection('about')"
                 class="cursor-pointer hover:text-accent hover:line-through"
               >
-                UX design
+                About
               </div>
               <div
-                id="nav-web-dev"
-                onclick="scrollToSection('web-dev')"
+                id="nav-contact"
+                onclick="scrollToSection('contact')"
+                class="cursor-pointer text-accent hover:text-accent hover:line-through"
+              >
+                Contact
+              </div>
+              <div
+                id=""
+                onclick=""
                 class="cursor-pointer hover:text-accent hover:line-through"
               >
-                Web development
+                ¡en Español!
               </div>
-              <p>|</p>
-              <a
-                href="pages/about.html"
-                class="hover:text-accent hover:line-through"
-                target="_self"
-                >About</a
-              >
-              <button
-                onclick="copyEmailToClipboard()"
-                class="text-accent hover:line-through"
-              >
-                Copy my email
-              </button>
             </div>
             <div class="lg:hidden">
               <button
@@ -227,24 +178,137 @@
           </div>
         </nav>
       </header>
+      <section>
+        <div class="images-marquee overflow-hidden whitespace-nowrap">
+          <div class="animate-marquee flex gap-2">
+            <img
+              src="assets/images/marquee/BN3.png"
+              alt="Image 1"
+              class="size-auto max-h-[256px]"
+            />
+            <img
+              src="assets/images/marquee/BN2.png"
+              alt="Image 2"
+              class="size-auto max-h-[256px]"
+            />
+            <img
+              src="assets/images/marquee/OX1.png"
+              alt="Image 3"
+              class="size-auto max-h-[256px]"
+            />
+            <img
+              src="assets/images/marquee/DO1.png"
+              alt="Image 4"
+              class="size-auto max-h-[256px]"
+            />
+            <img
+              src="assets/images/marquee/MAT1.png"
+              alt="Image 5"
+              class="size-auto max-h-[256px]"
+            />
+            <img
+              src="assets/images/marquee/BN1.png"
+              alt="Image 6"
+              class="size-auto max-h-[256px]"
+            />
+            <img
+              src="assets/images/marquee/MAT3.png"
+              alt="Image 7"
+              class="size-auto max-h-[256px]"
+            />
+            <img
+              src="assets/images/marquee/ILM1.png"
+              alt="Image 8"
+              class="size-auto max-h-[256px]"
+            />
+            <img
+              src="assets/images/marquee/YN1.png"
+              alt="Image 9"
+              class="size-auto max-h-[256px]"
+            />
+            <img
+              src="assets/images/marquee/ZUM1.png"
+              alt="Image 10"
+              class="size-auto max-h-[256px]"
+            />
+            <img
+              src="assets/images/marquee/DIS2.png"
+              alt="Image 11"
+              class="size-auto max-h-[256px]"
+            />
+            <img
+              src="assets/images/marquee/NX1.png"
+              alt="Image 12"
+              class="size-auto max-h-[256px]"
+            />
+            <img
+              src="assets/images/marquee/IMM1.png"
+              alt="Image 13"
+              class="size-auto max-h-[256px]"
+            />
+            <img
+              src="assets/images/marquee/DIS1.png"
+              alt="Image 14"
+              class="size-auto max-h-[256px]"
+            />
+            <img
+              src="assets/images/marquee/TMA1.png"
+              alt="Image 15"
+              class="size-auto max-h-[256px]"
+            />
+            <img
+              src="assets/images/marquee/CP1.png"
+              alt="Image 16"
+              class="size-auto max-h-[256px]"
+            />
+            <img
+              src="assets/images/marquee/MAT2.png"
+              alt="Image 17"
+              class="size-auto max-h-[256px]"
+            />
+            <img
+              src="assets/images/marquee/RIF1.png"
+              alt="Image 19"
+              class="size-auto max-h-[256px]"
+            />
+            <img
+              src="assets/images/marquee/OXB1.png"
+              alt="Image 20"
+              class="size-auto max-h-[256px]"
+            />
+            <img
+              src="assets/images/marquee/MM1.png"
+              alt="Image 21"
+              class="size-auto max-h-[256px]"
+            />
+          </div>
+        </div>
+      </section>
       <!-- Breakpoints -->
       <div
         class="mx-auto w-full px-4 font-inter mxl:px-5 md:px-8 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
       >
         <!-- Content -->
         <main class="relative">
-          <div class="flex flex-col gap-8 md:gap-10 lg:gap-16">
+          <div class="flex flex-col gap-8 md:gap-10 lg:gap-20">
             <!-- Hero -->
             <section id="hero">
               <div
-                class="flex flex-col gap-10 pt-4 text-3xl font-medium mxl:text-4xl sm:text-5xl md:gap-14 md:text-6xl lg:gap-16 lg:pt-8 xl:text-7xl 2xl:gap-24 2xl:text-8xl"
+                class="flex flex-col gap-10 pt-4 text-3xl font-medium mxl:text-4xl sm:text-5xl md:gap-14 md:text-6xl lg:gap-16 lg:pt-20 xl:text-7xl 2xl:gap-24 2xl:text-8xl"
               >
                 <h1 class="leading-[1.05]">
-                  Hello! I'm <span class="text-accent">Armando Rojano</span>—a
-                  multidisciplinary
-                  <span class="text-accent">designer</span> with over 3 years of
-                  experience based in México.
+                  Hello! I'm Armando Rojano, a
+                  <span class="font-light">multidisciplinary designer</span>
+                  with over 3 years of experience.
                 </h1>
+                <h2 class="leading-[1.05]">
+                  I bridge
+                  <span class="font-light"
+                    >design
+                    <span class="font-medium">and</span> development</span
+                  >
+                  to craft intuitive and impactful digital solutions.
+                </h2>
                 <h2 class="leading-[1.05]">
                   I work as a
                   <span class="text-accent"
@@ -265,7 +329,7 @@
             </section>
             <hr class="border-primary" />
             <!-- UX Research -->
-            <section id="ux-research">
+            <section id="work">
               <div class="flex flex-col gap-5 lg:gap-8">
                 <div class="flex flex-col gap-2">
                   <h3
@@ -403,7 +467,7 @@
             </section>
             <hr class="border-primary" />
             <!-- UX Design -->
-            <section id="ux-design">
+            <section>
               <div class="flex flex-col gap-5 lg:gap-8">
                 <div class="flex flex-col gap-2">
                   <h3
@@ -614,7 +678,7 @@
             </section>
             <hr class="border-primary" />
             <!-- Web Development -->
-            <section id="web-dev">
+            <section>
               <div class="flex flex-col gap-5 lg:gap-8">
                 <div class="flex flex-col gap-2 text-3xl">
                   <h3
@@ -660,69 +724,660 @@
                 </div>
               </div>
             </section>
+            <section id="about">
+              <div
+                class="flex flex-col gap-10 pt-4 text-3xl font-medium mxl:text-4xl sm:text-5xl md:gap-14 md:text-6xl lg:gap-16 lg:pt-8 xl:text-7xl 2xl:gap-24 2xl:text-8xl"
+              >
+                <h1 class="leading-[1.05]">
+                  My expertise includes
+                  <span class="text-accent"
+                    >visual design, content design, motion design,
+                    <span class="text-black">and</span> web development</span
+                  >, allowing me to explore the full spectrum of digital
+                  creation.
+                </h1>
+                <h2 class="leading-[1.05]">
+                  When I'm not designing,
+                  <span class="text-accent">I enjoy exploring my passions</span
+                  ><br />—it fuels my creativity—for
+                  <a href=""
+                    ><span class="underline hover:decoration-accent"
+                      >photojournalism,</span
+                    ></a
+                  >
+                  books, movies, running, and continuous personal growth.
+                </h2>
+              </div>
+            </section>
+            <!-- Background -->
+            <section>
+              <div class="flex flex-col gap-10 lg:gap-16">
+                <div class="flex flex-col gap-2">
+                  <h3 class="text-3xl text-accent">Background</h3>
+                  <p class="text-5xl font-medium">
+                    My curiosity, technical proficiency and adaptability allow
+                    me to thrive in dynamic environments.
+                  </p>
+                </div>
+                <div class="flex flex-col gap-14 2xl:gap-14">
+                  <div class="flex flex-col gap-2">
+                    <div class="flex items-center gap-3">
+                      <div
+                        class="h-[20px] w-[20px] rounded-full bg-accent"
+                      ></div>
+                      <h4 class="text-3xl font-medium mxl:text-4xl">
+                        UX Engineer
+                        <span class="font-normal"
+                          >at Ilum Prosperity Sherpas</span
+                        >
+                      </h4>
+                    </div>
+                    <p class="md:text-lg lg:text-xl">March 2024 — Present</p>
+                    <p class="max-w-prose md:text-lg lg:text-xl">
+                      To broaden my skillset as a digital creator, I began
+                      contributing as a web developer, handling both frontend
+                      and backend tasks alongside my UX design work.
+                    </p>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <div class="flex items-center gap-3">
+                      <div
+                        class="h-[20px] w-[20px] rounded-full bg-accent"
+                      ></div>
+                      <h4 class="text-3xl font-medium mxl:text-4xl">
+                        <span class="font-normal">Freelance</span> UX Designer
+                      </h4>
+                    </div>
+                    <p class="md:text-lg lg:text-xl">Since 2023</p>
+                    <p class="max-w-prose md:text-lg lg:text-xl">
+                      Returning to freelancing, I redesigned my logo mark, now
+                      encompassing all my skills as a multidisciplinary
+                      designer.
+                    </p>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <div class="flex items-center gap-3">
+                      <div
+                        class="h-[20px] w-[20px] rounded-full bg-secondary"
+                      ></div>
+                      <h4 class="text-3xl font-medium mxl:text-4xl">
+                        UX Designer and Researcher
+                        <span class="font-normal"
+                          >at Ilum Prosperity Sherpas</span
+                        >
+                      </h4>
+                    </div>
+                    <p class="md:text-lg lg:text-xl">
+                      January 2022 — March 2024
+                    </p>
+                    <p class="max-w-prose md:text-lg lg:text-xl">
+                      I took on a role as a UX designer and researcher. I began
+                      handling core responsibilities while also covering
+                      additional roles as needed
+                    </p>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <div class="flex items-center gap-3">
+                      <div
+                        class="h-[20px] w-[20px] rounded-full bg-secondary"
+                      ></div>
+                      <h4 class="text-3xl font-medium mxl:text-4xl">
+                        UX Designer
+                        <span class="font-normal"
+                          >at Ilum Prosperity Sherpas</span
+                        >
+                      </h4>
+                    </div>
+                    <p class="md:text-lg lg:text-xl">
+                      August 2021 — January 2022
+                    </p>
+                    <p class="max-w-prose md:text-lg lg:text-xl">
+                      After completing my degree, I started as a user experience
+                      designer, dedicating six months to designing the
+                      experience for a logistics service.
+                    </p>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <div class="flex items-center gap-3">
+                      <div
+                        class="h-[20px] w-[20px] rounded-full bg-secondary"
+                      ></div>
+                      <h4 class="text-3xl font-medium mxl:text-4xl">
+                        <span class="font-normal">Freelance</span> Graphic
+                        Designer
+                      </h4>
+                    </div>
+                    <p class="md:text-lg lg:text-xl">2018 — 2021</p>
+                    <p class="max-w-prose md:text-lg lg:text-xl">
+                      Midway through my digital arts career, I worked on visual
+                      design, photography and retouching, as well as video
+                      editing and production.
+                    </p>
+                  </div>
+                  <a
+                    href="../assets/docs/UX-Designer_Armando-Rojano_EN.pdf"
+                    target="_blank"
+                    class="w-fit font-medium"
+                  >
+                    <h4
+                      class="text-2xl underline hover:decoration-accent mxl:text-2xl md:text-3xl lg:text-4xl"
+                    >
+                      Resume here.
+                    </h4>
+                  </a>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="flex flex-col items-center gap-6 lg:gap-8">
+                <p class="text-3xl text-accent">Certificates</p>
+                <div class="flex flex-wrap gap-20">
+                  <a
+                    href="https://www.credly.com/badges/7ea865be-3ed7-482f-bd84-8366711c70c8/public_url"
+                    target="_blank"
+                  >
+                    <div class="group flex max-w-80 flex-col gap-2">
+                      <img
+                        src="../assets/icons/google-fill.svg"
+                        class="size-full h-12 w-12"
+                        alt="Ilum Prosperity Sherpas Logo"
+                      />
+                      <p
+                        class="text-xl font-medium group-hover:text-accent group-hover:line-through mxl:text-2xl"
+                      >
+                        UX Design Professional Certificate
+                        <span class="font-normal">by</span> Google
+                      </p>
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.credly.com/badges/c45179d7-b68f-4841-90ec-2e69fd456ff3/public_url"
+                    target="_blank"
+                  >
+                    <div class="group flex max-w-80 flex-col gap-2">
+                      <div class="h-12 w-12">
+                        <img
+                          src="../assets/images/certiprof.png"
+                          class="size-full h-10 w-12"
+                          alt="Ilum Prosperity Sherpas Logo"
+                        />
+                      </div>
+                      <p
+                        class="text-xl font-medium group-hover:text-accent group-hover:line-through mxl:text-2xl"
+                      >
+                        Design Thinking Professional Certificate
+                        <span class="font-normal">by</span> CertiProf
+                      </p>
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.credly.com/badges/def86223-ec15-4b8b-9fb8-c6908ce22fc8/public_url"
+                    target="_blank"
+                  >
+                    <div class="group flex max-w-80 flex-col gap-2">
+                      <div class="h-12 w-12">
+                        <img
+                          src="../assets/images/certiprof.png"
+                          class="size-full h-10 w-12"
+                          alt="Ilum Prosperity Sherpas Logo"
+                        />
+                      </div>
+                      <p
+                        class="text-xl font-medium group-hover:text-accent group-hover:line-through mxl:text-2xl"
+                      >
+                        Scrum Foundation Professional Certification
+                        <span class="font-normal">by</span> CertiProf
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </section>
+            <!-- Technologies -->
+            <section>
+              <div
+                class="mb-20 flex flex-col gap-6 lg:mb-28 lg:flex-row lg:gap-10"
+              >
+                <div class="flex flex-col gap-2 lg:w-52 lg:text-right">
+                  <h3 class="text-3xl text-accent">Technologies</h3>
+                  <p class="text-xl font-medium mxl:text-2xl md:text-3xl">
+                    These are the tools I have used, but I always enjoy learning
+                    new tech.
+                  </p>
+                </div>
+                <div class="flex flex-col gap-12 md:text-lg lg:text-xl">
+                  <div class="flex flex-col gap-2">
+                    <p class="font-medium">Design</p>
+                    <ul class="flex flex-wrap items-center gap-6 lg:gap-8">
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/figma-linear.svg"
+                          class="size-6 lg:size-7"
+                          alt="Figma"
+                        />
+                        Figma
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/sketch.svg"
+                          class="size-6 lg:size-7"
+                          alt="Sketch"
+                        />
+                        Sketch
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/marvelapp.svg"
+                          class="size-6 lg:size-7"
+                          alt="Marvel"
+                        />
+                        Marvel
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/zeplin.svg"
+                          class="size-6 lg:size-7"
+                          alt="Zeplin"
+                        />
+                        Zeplin
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/maze.svg"
+                          class="size-6 lg:size-7"
+                          alt="Maze"
+                        />
+                        Maze
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/axure.svg"
+                          class="size-6"
+                          alt="Axure"
+                        />
+                        Axure
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/framer.svg"
+                          class="size-6 lg:size-7"
+                          alt="Framer"
+                        />
+                        Framer
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/webflow.svg"
+                          class="size-6 lg:size-7"
+                          alt="Webflow"
+                        />
+                        Webflow
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/whimsical.svg"
+                          class="size-6 lg:size-7"
+                          alt="Whimsical"
+                        />
+                        Whimsical
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/illustrator.svg"
+                          class="size-6 lg:size-7"
+                          alt="Illustrator"
+                        />
+                        Illustrator
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/photoshop.svg"
+                          class="size-6 lg:size-7"
+                          alt="Photoshop"
+                        />
+                        Photoshop
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/photoshop.svg"
+                          class="size-6 lg:size-7"
+                          alt="Premiere Pro"
+                        />
+                        Premiere Pro
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/adobe-after-effects.svg"
+                          class="size-6 lg:size-7"
+                          alt="After Effects"
+                        />
+                        After Effects
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <p class="font-medium">Frontend</p>
+                    <ul class="flex flex-wrap items-center gap-6 lg:gap-8">
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/html-solid.svg"
+                          class="size-6 lg:size-7"
+                          alt="HTML"
+                        />
+                        HTML
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/css-solid.svg"
+                          class="size-6 lg:size-7"
+                          alt="CSS"
+                        />
+                        CSS
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/javascript-fill.svg"
+                          class="size-6 lg:size-7"
+                          alt="JavaScript"
+                        />
+                        JavaScript
+                      </li>
+                      <li class="hidden items-center gap-2">
+                        <img
+                          src="../assets/icons/typescript-fill.svg"
+                          class="size-6 lg:size-7"
+                          alt="TypeScript"
+                        />
+                        TypeScript
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/vue.svg"
+                          class="size-6 lg:size-7"
+                          alt="Vue"
+                        />
+                        Vue
+                      </li>
+                      <li class="hidden items-center gap-2">
+                        <img
+                          src="../assets/icons/vuetify.svg"
+                          class="size-6 lg:size-7"
+                          alt="Vuetify"
+                        />
+                        Vuetify
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/angular.svg"
+                          class="size-6 lg:size-7"
+                          alt="Angular"
+                        />
+                        Angular
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/react.svg"
+                          class="size-6 lg:size-7"
+                          alt="React"
+                        />
+                        React
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/sass-fill.svg"
+                          class="size-6 lg:size-7"
+                          alt="Sass Logo"
+                        />
+                        Sass
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/bootstrap.svg"
+                          class="size-6 lg:size-7"
+                          alt="Bootstrap"
+                        />
+                        Bootstrap
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/tailwind.svg"
+                          class="size-6 lg:size-7"
+                          alt="TailwindCSS"
+                        />
+                        TailwindCSS
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="hidden flex-col gap-2">
+                    <p class="font-medium">Backend</p>
+                    <ul class="flex flex-wrap items-center gap-6 lg:gap-8">
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/node-fill.svg"
+                          class="size-6 lg:size-7"
+                          alt="Node.js"
+                        />
+                        Node.js
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/nextjs-fill.svg"
+                          class="size-6 lg:size-7"
+                          alt="Next.js"
+                        />
+                        Next.js
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/graphql.svg"
+                          class="size-6 lg:size-7"
+                          alt="GraphQL"
+                        />
+                        GraphQL
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="hidden flex-col gap-2">
+                    <p class="font-medium">Database</p>
+                    <ul class="flex flex-wrap items-center gap-6 lg:gap-8">
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/mongodb.svg"
+                          class="size-6 lg:size-7"
+                          alt="MongoDB"
+                        />
+                        MongoDB
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/postgresql-fill.svg"
+                          class="size-6 lg:size-7"
+                          alt="PostgreSQL"
+                        />
+                        PostgreSQL
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/firebase.svg"
+                          class="size-6 lg:size-7"
+                          alt="Firebase"
+                        />
+                        Firebase
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <p class="font-medium">Version Control</p>
+                    <ul class="flex flex-wrap items-center gap-6 lg:gap-8">
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/git.svg"
+                          class="size-6 lg:size-7"
+                          alt="Git"
+                        />
+                        Git
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/github.svg"
+                          class="size-6 lg:size-7"
+                          alt="GitHub"
+                        />
+                        GitHub
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/bitbucket.svg"
+                          class="size-6 lg:size-7"
+                          alt="Bitbucket"
+                        />
+                        Bitbucket
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <p class="font-medium">Others</p>
+                    <ul class="flex flex-wrap items-center gap-6 lg:gap-8">
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/jira.svg"
+                          class="size-6 lg:size-7"
+                          alt="Jira"
+                        />
+                        Jira
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/asana.svg"
+                          class="size-6 lg:size-7"
+                          alt="Asana"
+                        />
+                        Asana
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/confluence.svg"
+                          class="size-6 lg:size-7"
+                          alt="Confluence"
+                        />
+                        Confluence
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/notion.svg"
+                          class="size-6 lg:size-7"
+                          alt="Notion"
+                        />
+                        Notion
+                      </li>
+                      <li class="flex items-center gap-2">
+                        <img
+                          src="../assets/icons/miro.svg"
+                          class="size-6 lg:size-7"
+                          alt="Miro"
+                        />
+                        Miro
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </main>
       </div>
     </div>
-    <!-- Contact -->
-    <section class="py-10 lg:py-20">
-      <a href="mailto:armando_rour@outlook.com">
-        <div
-          class="marquee overflow-hidden whitespace-nowrap font-inter text-[80px] font-medium lg:text-[150px]"
-        >
-          <span class="px-20"> armando_rour@outlook.com</span>
-          <span class="px-20"> armando_rour@outlook.com</span>
-          <span class="px-20"> armando_rour@outlook.com</span>
-          <span class="px-20"> armando_rour@outlook.com</span>
-          <span class="px-20"> armando_rour@outlook.com</span>
-          <span class="px-20"> armando_rour@outlook.com</span>
-          <span class="px-20"> armando_rour@outlook.com</span>
-          <span class="px-20"> armando_rour@outlook.com</span>
-        </div>
-      </a>
-    </section>
     <!-- Footer -->
-    <footer
-      class="mx-auto w-full px-4 font-inter mxl:px-5 md:px-8 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
-    >
-      <div
-        class="flex flex-col items-center gap-6 py-8 md:flex md:flex-row md:justify-between md:gap-4"
-      >
+    <footer id="contact" class="bg-accent text-white">
+      <div class="flex flex-col gap-10 pt-10 lg:gap-20 lg:pt-20">
         <div
-          class="flex flex-col items-center justify-between gap-4 font-medium md:flex-row"
+          class="mx-auto flex w-full flex-col items-center gap-6 px-4 font-inter mxl:px-5 md:px-8 md:text-2xl xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
         >
+          <p class="text-3xl font-semibold lg:text-4xl">Let's connect!</p>
           <div
-            class="cursor-pointer font-normal hover:text-accent hover:line-through md:order-last"
+            class="flex flex-wrap justify-center gap-6 text-xl font-normal md:gap-10 lg:text-2xl"
+          >
+            <a
+              href="mailto:armando_rour@outlook.com"
+              target="_blank"
+              class="flex items-center gap-2 hover:text-white hover:line-through"
+            >
+              <img
+                src="assets/icons/white/email-white.svg"
+                alt="LinkedIn"
+                class="size-6 lg:size-7"
+              />
+              Email
+            </a>
+            <a
+              href="https://www.linkedin.com/in/armandorour/"
+              target="_blank"
+              class="flex items-center gap-2 hover:text-white hover:line-through"
+            >
+              <img
+                src="assets/icons/white/linkedin-white.svg"
+                alt="LinkedIn"
+                class="size-6 lg:size-7"
+              />
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/r0ur"
+              target="_blank"
+              class="flex items-center gap-2 hover:text-white hover:line-through"
+            >
+              <img
+                src="assets/icons/white/github-white.svg"
+                alt="LinkedIn"
+                class="size-6 lg:size-7"
+              />
+              GitHub
+            </a>
+            <a
+              href="https://sixelf.com/rour"
+              target="_blank"
+              class="flex items-center gap-2 hover:text-white hover:line-through"
+            >
+              <img
+                src="assets/icons/white/sixelf-white.svg"
+                alt="LinkedIn"
+                class="size-6 lg:size-7"
+              />
+              Sixelf
+            </a>
+          </div>
+        </div>
+        <button onclick="copyEmailToClipboard()">
+          <div
+            class="marquee overflow-hidden whitespace-nowrap font-inter text-[80px] font-medium lg:text-[150px]"
+          >
+            <span class="px-20"> armando_rour@outlook.com</span>
+            <span class="px-20"> armando_rour@outlook.com</span>
+            <span class="px-20"> armando_rour@outlook.com</span>
+            <span class="px-20"> armando_rour@outlook.com</span>
+            <span class="px-20"> armando_rour@outlook.com</span>
+            <span class="px-20"> armando_rour@outlook.com</span>
+            <span class="px-20"> armando_rour@outlook.com</span>
+            <span class="px-20"> armando_rour@outlook.com</span>
+          </div>
+        </button>
+        <div
+          class="mx-auto flex w-full flex-col items-center gap-6 px-4 py-8 font-inter mxl:px-5 md:flex md:flex-row md:justify-between md:gap-4 md:px-8 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
+        >
+          <p
+            class="cursor-pointer font-normal hover:text-white hover:line-through md:order-last"
             onclick="scrollToTop()"
           >
             Scroll up ↑
-          </div>
-          <a
-            href="https://www.linkedin.com/in/armandorour/"
-            target="_blank"
-            class="hover:text-accent hover:line-through"
-            >LinkedIn</a
-          >
-          <a
-            href="https://github.com/r0ur"
-            target="_blank"
-            class="hover:text-accent hover:line-through"
-            >GitHub</a
-          >
-          <a
-            href="https://sixelf.com/rour"
-            target="_blank"
-            class="hover:text-accent hover:line-through"
-            >Sixelf</a
-          >
+          </p>
+          <p>© 2024</p>
         </div>
-        <p class="md:order-first">© 2024</p>
       </div>
     </footer>
-    <!-- Fancybox -->
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <!-- Main JS -->
-    <script src="js/main.js" defer></script>
+    <!-- REMEMEBER TO DELETE THIS -->
+    <footer
+      class="mx-auto w-full px-4 font-inter mxl:px-5 md:px-8 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
+    ></footer>
     <!-- Copy to Clipboard Alert -->
     <div
       id="alert"
@@ -730,5 +1385,13 @@
     >
       Email copied to clipboard.
     </div>
+    <!-- Fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script
+      src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"
+      type="text/javascript"
+    ></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
   </body>
 </html>

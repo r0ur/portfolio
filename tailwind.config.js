@@ -12,12 +12,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#E5E5E5',
-        secondary: '#F6F6F6',
-        tertiary: '#2C2C2E',
-        accent: '#e4007c',
-        black: '#000000',
-        white: '#ffffff',
+        primary: '#ADADAD',
+        secondary: '#D0D0D0',
+        tertiary: '#16161F',
+        accent: '#0001F7',
+        black: '#0E0E0E',
+        white: '#FAF8F3',
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
