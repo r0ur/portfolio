@@ -79,14 +79,14 @@
               <div
                 id="nav-contact"
                 onclick="scrollToSection('contact')"
-                class="cursor-pointer text-accent hover:text-accent hover:line-through"
+                class="accent cursor-pointer hover:text-accent hover:line-through"
               >
                 Contact
               </div>
               <div
                 id=""
                 onclick=""
-                class="cursor-pointer hover:text-accent hover:line-through"
+                class="hidden cursor-pointer hover:text-accent hover:line-through"
               >
                 ¡en Español!
               </div>
@@ -138,35 +138,27 @@
               <div class="flex flex-col items-center gap-6 pt-8">
                 <div
                   id="nav-ux-research-mobile"
-                  onclick="scrollToSection('ux-research'); closeMobileMenu()"
+                  onclick="scrollToSection('work'); closeMobileMenu()"
                   class="cursor-pointer hover:line-through"
                 >
-                  UX research
+                  Work
                 </div>
                 <div
                   id="nav-ux-design-mobile"
-                  onclick="scrollToSection('ux-design'); closeMobileMenu()"
+                  onclick="scrollToSection('about'); closeMobileMenu()"
                   class="cursor-pointer hover:line-through"
                 >
-                  UX design
+                  About
                 </div>
                 <div
                   id="nav-web-dev-mobile"
-                  onclick="scrollToSection('web-dev'); closeMobileMenu()"
+                  onclick="scrollToSection('contact'); closeMobileMenu()"
                   class="cursor-pointer hover:line-through"
                 >
-                  Web development
+                  Contact
                 </div>
               </div>
-              <hr class="border-primary" />
               <div class="flex flex-col items-center gap-6">
-                <a
-                  href="pages/about.html"
-                  class="hover:line-through"
-                  target="_self"
-                  onclick="closeMobileMenu()"
-                  >About</a
-                >
                 <a
                   href="mailto:armando_rour@outlook.com"
                   onclick="closeMobileMenu()"
@@ -289,7 +281,7 @@
       <main class="relative">
         <!-- Breakpoints -->
         <div
-          class="mx-auto flex w-full flex-col gap-8 px-4 font-inter mxl:px-5 md:gap-10 md:px-8 lg:gap-20 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
+          class="mx-auto flex w-full flex-col gap-20 px-4 font-inter mxl:px-5 md:px-8 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
         >
           <!-- Hero -->
           <section>
@@ -312,130 +304,59 @@
           </section>
           <!-- UX Research -->
           <section id="work">
-            <div class="flex flex-col gap-5 lg:gap-8">
-              <div class="flex flex-col gap-2">
-                <h3
-                  class="text-3xl font-medium text-accent mxl:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
-                >
-                  UX research
-                </h3>
-                <p
-                  class="text-xl mxl:text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
-                >
-                  These case studies are part of my work as a UX researcher.
-                </p>
-              </div>
-              <div
-                class="-mx-4 flex gap-8 overflow-x-auto px-4 md:flex-wrap md:gap-10 md:overflow-visible lg:gap-11"
-              >
+            <div class="flex flex-col gap-4">
+              <h3 class="text-3xl text-accent">UX research</h3>
+              <div class="-mx-4 flex flex-wrap gap-8 px-4 md:gap-10 lg:gap-11">
                 <a
                   href="assets/images/cases/Case 1.png"
                   data-fancybox="case-studies"
                 >
-                  <div
-                    class="group w-[240px] shrink-0 bg-secondary mxl:w-[320px] sm:w-[320px] md:w-[316px] lg:w-[340px]"
-                  >
-                    <div
-                      class="relative flex aspect-square transform-gpu items-end rounded-tl-lg rounded-tr-lg bg-[#9F0202] p-4 transition-all duration-500 hover:shadow-[#9F0202]/50 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-[#9F0202]/50"
-                    >
-                      <h4
-                        class="text-3xl font-medium text-white mxl:text-4xl lg:text-5xl"
-                      >
-                        Logistic
-                      </h4>
-                    </div>
-                    <div class="flex flex-col gap-4 p-4">
-                      <p class="text-xl">
-                        UX Design and Research for a B2B Premium Logistic
-                        Platform
-                      </p>
-                      <div class="flex w-fit gap-2 rounded-lg bg-primary p-2">
-                        <img src="assets/icons/apple-imac-2021.svg" alt="" />
-                        <p>Web App</p>
-                      </div>
-                    </div>
+                  <div class="flex flex-col gap-1">
+                    <img
+                      src="assets/images/covers/OXCOVER.png"
+                      alt="OX logistics"
+                    />
+                    <p class="font-medium">OX Logistics</p>
+                    <p class="text-primary">Web App</p>
                   </div>
                 </a>
                 <a
                   href="assets/images/cases/Case 2.png"
                   data-fancybox="case-studies"
                 >
-                  <div
-                    class="group w-[240px] shrink-0 bg-secondary mxl:w-[320px] sm:w-[320px] md:w-[316px] lg:w-[340px]"
-                  >
-                    <div
-                      class="relative flex aspect-square transform-gpu items-end rounded-tl-lg rounded-tr-lg bg-[#E42864] p-4 transition-all duration-500 hover:shadow-[#E42864]/50 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-[#E42864]/50"
-                    >
-                      <h4
-                        class="text-3xl font-medium text-white mxl:text-4xl lg:text-5xl"
-                      >
-                        Travel
-                      </h4>
-                    </div>
-                    <div class="flex flex-col gap-4 p-4">
-                      <p class="text-xl">
-                        UX Design and Research for a Freemium Travel Platform
-                      </p>
-                      <div class="flex w-fit gap-2 rounded-lg bg-primary p-2">
-                        <img src="assets/icons/smartphone-device.svg" alt="" />
-                        <p>Mobile App</p>
-                      </div>
-                    </div>
+                  <div class="flex flex-col gap-1">
+                    <img
+                      src="assets/images/covers/MTCOVER.png"
+                      alt="OX logistics"
+                    />
+                    <p class="font-medium">Mait</p>
+                    <p class="text-primary">Mobile App</p>
                   </div>
                 </a>
                 <a
                   href="assets/images/cases/Case 3.png"
                   data-fancybox="case-studies"
                 >
-                  <div
-                    class="group w-[240px] shrink-0 bg-secondary mxl:w-[320px] sm:w-[320px] md:w-[316px] lg:w-[340px]"
-                  >
-                    <div
-                      class="relative flex aspect-square transform-gpu items-end rounded-tl-lg rounded-tr-lg bg-[#EADDC5] p-4 transition-all duration-500 hover:shadow-[#EADDC5]/50 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-[#EADDC5]/50"
-                    >
-                      <h4
-                        class="text-3xl font-medium text-black mxl:text-4xl lg:text-5xl"
-                      >
-                        Skincare
-                      </h4>
-                    </div>
-                    <div class="flex flex-col gap-4 p-4">
-                      <p class="text-xl">
-                        UX Design and Research for a B2C Dermatology Platform
-                      </p>
-                      <div class="flex w-fit gap-2 rounded-lg bg-primary p-2">
-                        <img src="assets/icons/apple-imac-2021.svg" alt="" />
-                        <p>Web App</p>
-                      </div>
-                    </div>
+                  <div class="flex flex-col gap-1">
+                    <img
+                      src="assets/images/covers/YNCOVER.png"
+                      alt="OX logistics"
+                    />
+                    <p class="font-medium">Yuni</p>
+                    <p class="text-primary">Mobile App</p>
                   </div>
                 </a>
                 <a
                   href="assets/images/cases/Case 4.png"
                   data-fancybox="case-studies"
                 >
-                  <div
-                    class="group w-[240px] shrink-0 bg-secondary mxl:w-[320px] sm:w-[320px] md:w-[316px] lg:w-[340px]"
-                  >
-                    <div
-                      class="relative flex aspect-square transform-gpu items-end rounded-tl-lg rounded-tr-lg bg-[#0080FF] p-4 transition-all duration-500 hover:shadow-[#0080FF]/50 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-[#0080FF]/50"
-                    >
-                      <h4
-                        class="text-3xl font-medium text-white mxl:text-4xl lg:text-5xl"
-                      >
-                        Product Rental
-                      </h4>
-                    </div>
-                    <div class="flex flex-col gap-4 p-4">
-                      <p class="text-xl">
-                        UX Design and Research for a C2C Rental Marketplace
-                        Platform
-                      </p>
-                      <div class="flex w-fit gap-2 rounded-lg bg-primary p-2">
-                        <img src="assets/icons/smartphone-device.svg" alt="" />
-                        <p>Mobile App</p>
-                      </div>
-                    </div>
+                  <div class="flex flex-col gap-1">
+                    <img
+                      src="assets/images/covers/DoCover.png"
+                      alt="OX logistics"
+                    />
+                    <p class="font-medium">Doia</p>
+                    <p class="text-primary">Web App</p>
                   </div>
                 </a>
               </div>
@@ -443,126 +364,135 @@
           </section>
           <!-- UX Design -->
           <section>
-            <div class="flex flex-col gap-1">
-              <div class="flex items-center gap-2">
+            <div class="flex flex-col gap-4">
+              <div
+                class="flex flex-col gap-2 lg:flex-row lg:items-center lg:gap-4"
+              >
                 <h3 class="text-3xl text-accent">UX design</h3>
-                <p class="text-primary">
-                  Scroll horizontally in the grid of images
-                </p>
+                <div class="hidden gap-2 lg:flex">
+                  <img
+                    class="size-7"
+                    src="assets/icons/white/scroll-wheel.svg"
+                  />
+                  <p class="text-primary">Hold Shift + Mouse Scroll Wheel</p>
+                </div>
+                <div>
+                  <p class="flex text-primary lg:hidden">
+                    Drag horizontally to see more snapshots
+                  </p>
+                </div>
               </div>
               <div
-                class="flex gap-2 overflow-visible overflow-x-auto overscroll-contain scroll-smooth"
+                class="flex snap-x snap-mandatory gap-2 overflow-auto overflow-x-scroll scroll-smooth"
               >
                 <img
-                  src="assets/images/snapshots/Rifas1.webp"
+                  src="assets/images/snapshots/Rifas1.png"
                   alt="Streaming Platform Screenshot"
-                  class="w-[800px] object-contain"
+                  class="size-full w-[1024px] snap-center snap-always"
                 />
                 <img
-                  src="assets/images/snapshots/TOMA24.webp"
+                  src="assets/images/snapshots/TOMA24.png"
                   alt="Streaming Platform Screenshot"
-                  class="w-[800px] object-contain"
+                  class="size-full w-[1024px] snap-center snap-always"
                 />
                 <img
-                  src="assets/images/snapshots/OXBI37.webp"
+                  src="assets/images/snapshots/OXBI37.png"
                   alt="Website System Screenshot"
-                  class="w-[800px] object-contain"
+                  class="size-full w-[1024px] snap-center snap-always"
                 />
                 <img
-                  src="assets/images/snapshots/OXBI36.webp"
+                  src="assets/images/snapshots/OXBI36.png"
                   alt="Website System Screenshot"
-                  class="w-[800px] object-contain"
+                  class="size-full w-[1024px] snap-center snap-always"
                 />
                 <img
-                  src="assets/images/snapshots/Immer43.webp"
+                  src="assets/images/snapshots/Immer43.png"
                   alt="Virtual Reality Landing Page Screenshot"
-                  class="w-[800px] object-contain"
+                  class="size-full w-[1024px] snap-center snap-always"
                 />
                 <img
-                  src="assets/images/snapshots/CyberP47.webp"
+                  src="assets/images/snapshots/CyberP47.png"
                   alt="PC Part Picker Tool from CyberPuerta Screenshot"
-                  class="w-[800px] object-contain"
+                  class="size-full w-[1024px] snap-center snap-always"
                 />
                 <img
-                  src="assets/images/snapshots/CyberP46.webp"
+                  src="assets/images/snapshots/CyberP46.png"
                   alt="PC Part Picker Tool from CyberPuerta Screenshot"
-                  class="w-[800px] object-contain"
+                  class="size-full w-[1024px] snap-center snap-always"
                 />
                 <img
-                  src="assets/images/snapshots/Bike27.webp"
+                  src="assets/images/snapshots/Bike27.png"
                   alt="Dasboard Screenshot"
-                  class="w-[800px] object-contain"
+                  class="size-full w-[1024px] snap-center snap-always"
                 />
                 <img
-                  src="assets/images/snapshots/Bike28.webp"
+                  src="assets/images/snapshots/Bike28.png"
                   alt="Dasboard Screenshot"
-                  class="w-[800px] object-contain"
+                  class="size-full w-[1024px] snap-center snap-always"
                 />
                 <img
-                  src="assets/images/snapshots/Binca34.webp"
+                  src="assets/images/snapshots/Binca34.png"
                   alt="Credit Cards Landing Page Screenshot"
-                  class="w-[800px] object-contain"
+                  class="size-full w-[1024px] snap-center snap-always"
                 />
                 <img
-                  src="assets/images/snapshots/Disrupto2.webp"
+                  src="assets/images/snapshots/Disrupto2.png"
                   alt="Organization Landing Page Screenshot"
-                  class="w-[800px] object-contain"
+                  class="size-full w-[1024px] snap-center snap-always"
                 />
                 <img
-                  src="assets/images/snapshots/Disrupto3.webp"
+                  src="assets/images/snapshots/Disrupto3.png"
                   alt="Organization Landing Page Screenshot"
-                  class="w-[800px] object-contain"
+                  class="size-full w-[1024px] snap-center snap-always"
                 />
                 <img
-                  src="assets/images/snapshots/Yuni42.webp"
+                  src="assets/images/snapshots/Yuni42.png"
                   alt="Marketplace Landing Page and App Screenshot"
-                  class="w-[800px] object-contain"
+                  class="size-full w-[1024px] snap-center snap-always"
                 />
                 <img
-                  src="assets/images/snapshots/Doia14.webp"
+                  src="assets/images/snapshots/Doia14.png"
                   alt="Snapshot 1"
-                  class="w-[800px] object-contain"
+                  class="size-full w-[1024px] snap-center snap-always"
                 />
                 <img
-                  src="assets/images/snapshots/Doia38.webp"
+                  src="assets/images/snapshots/Doia38.png"
                   alt="Snapshot 1"
-                  class="w-[800px] object-contain"
+                  class="size-full w-[1024px] snap-center snap-always"
                 />
                 <img
-                  src="assets/images/snapshots/Mait40.webp"
+                  src="assets/images/snapshots/Mait42.png"
                   alt="Snapshot 1"
-                  class="w-[800px] object-contain"
+                  class="size-full w-[1024px] snap-center snap-always"
                 />
                 <img
-                  src="assets/images/snapshots/Mait41.webp"
+                  src="assets/images/snapshots/Mait41.png"
                   alt="Snapshot 1"
-                  class="w-[800px] object-contain"
+                  class="size-full w-[1024px] snap-center snap-always"
                 />
                 <img
-                  src="assets/images/snapshots/Ilum45.webp"
+                  src="assets/images/snapshots/Ilum45.png"
                   alt="Snapshot 1"
-                  class="w-[800px] object-contain"
+                  class="size-full w-[1024px] snap-center snap-always"
                 />
                 <img
-                  src="assets/images/snapshots/OXLogi30.webp"
+                  src="assets/images/snapshots/OXLogi30.png"
                   alt="Snapshot 1"
-                  class="w-[800px] object-contain"
+                  class="size-full w-[1024px] snap-center snap-always"
                 />
                 <img
-                  src="assets/images/snapshots/OXLogi31.webp"
+                  src="assets/images/snapshots/OXLogi31.png"
                   alt="Snapshot 1"
-                  class="w-[800px] object-contain"
+                  class="size-full w-[1024px] snap-center snap-always"
                 />
               </div>
             </div>
           </section>
           <!-- Web Development -->
           <section>
-            <div class="flex flex-col gap-5 lg:gap-8">
+            <div class="flex flex-col gap-4">
               <div class="flex flex-col gap-2 text-3xl">
-                <h3 class="text-3xl font-medium text-accent">
-                  Web development
-                </h3>
+                <h3 class="text-3xl text-accent">Web development</h3>
               </div>
               <div
                 class="-mx-4 flex gap-8 overflow-x-auto px-4 md:flex-wrap md:gap-10 md:overflow-visible lg:gap-11"
@@ -581,27 +511,27 @@
                     <div class="flex gap-2">
                       <img
                         src="assets/icons/white/html-white.svg"
-                        class="size-6 lg:size-7"
+                        class="size-6"
                         alt="HTML"
                       />
                       <img
                         src="assets/icons/white/css-white.svg"
-                        class="size-6 lg:size-7"
+                        class="size-6"
                         alt="CSS"
                       />
                       <img
                         src="assets/icons/white/javascript-white.svg"
-                        class="size-6 lg:size-7"
+                        class="size-6"
                         alt="JavaScript"
                       />
                       <img
                         src="assets/icons/white/tailwind-white.svg"
-                        class="size-6 lg:size-7"
+                        class="size-6"
                         alt="TailwindCSS"
                       />
                       <img
                         src="assets/icons/white/prettier-white.svg"
-                        class="size-6 lg:size-7"
+                        class="size-6"
                         alt="Prettier"
                       />
                     </div>
@@ -649,7 +579,7 @@
         </section>
         <!-- Breakpoints -->
         <div
-          class="mx-auto flex w-full flex-col gap-8 px-4 font-inter mxl:px-5 md:gap-10 md:px-8 lg:gap-20 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
+          class="mx-auto flex w-full flex-col gap-20 px-4 font-inter mxl:px-5 md:px-8 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
         >
           <!-- Background -->
           <section>
@@ -769,9 +699,9 @@
           </section>
           <!-- Certificates -->
           <section>
-            <div class="flex flex-col items-center gap-6 lg:gap-8">
+            <div class="flex flex-col gap-6 lg:items-center lg:gap-8">
               <p class="text-3xl text-accent">Certificates</p>
-              <div class="flex flex-wrap gap-20">
+              <div class="flex flex-wrap gap-6 lg:flex-nowrap lg:gap-20">
                 <a
                   href="https://www.credly.com/badges/7ea865be-3ed7-482f-bd84-8366711c70c8/public_url"
                   target="_blank"
@@ -836,7 +766,7 @@
           <!-- Technologies -->
           <section>
             <div
-              class="mb-20 flex flex-col gap-6 lg:mb-28 lg:flex-row lg:gap-10"
+              class="mb-20 flex flex-col gap-6 lg:mb-28 lg:flex-row lg:gap-20"
             >
               <div class="flex flex-col gap-2 lg:w-52 lg:text-right">
                 <h3 class="text-3xl text-accent">Technologies</h3>
