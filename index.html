@@ -34,6 +34,8 @@
     <!-- Marquee -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.rawgit.com/aamirafridi/jQuery.Marquee/master/jquery.marquee.min.js"></script>
+    <!-- i18next -->
+    <script src="https://unpkg.com/i18next@21.6.3/dist/umd/i18next.min.js"></script>
   </head>
   <body class="bg-white text-black">
     <div class="flex flex-col">
@@ -44,7 +46,7 @@
         <nav>
           <!-- Desktop Menu -->
           <div
-            class="mx-auto flex items-center justify-between px-4 py-2 mxl:px-5 md:px-8 lg:py-4 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
+            class="mx-auto flex items-center justify-between px-4 py-2 mxl:px-5 md:px-8 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
           >
             <div
               class="group flex cursor-pointer items-center gap-2"
@@ -84,11 +86,16 @@
                 Contact
               </div>
               <div
-                id=""
-                onclick=""
-                class="hidden cursor-pointer hover:text-accent hover:line-through"
+                id="btn-es"
+                class="cursor-pointer hover:text-accent hover:line-through"
               >
-                ¡en Español!
+                <a href="#" onclick="changeLanguage('es')">Español</a>
+              </div>
+              <div
+                id="btn-en"
+                class="cursor-pointer hover:text-accent hover:line-through"
+              >
+                <a href="#" onclick="changeLanguage('en')">English</a>
               </div>
             </div>
             <div class="lg:hidden">
@@ -133,7 +140,7 @@
               </div>
             </div>
             <div
-              class="flex flex-col gap-6 px-4 text-2xl mxl:px-5 mxl:text-4xl md:px-8 md:text-5xl"
+              class="flex flex-col gap-10 px-4 text-2xl mxl:px-5 mxl:text-4xl md:px-8 md:text-5xl"
             >
               <div class="flex flex-col items-center gap-6 pt-8">
                 <div
@@ -157,14 +164,14 @@
                 >
                   Contact
                 </div>
-              </div>
-              <div class="flex flex-col items-center gap-6">
-                <a
-                  href="mailto:armando_rour@outlook.com"
-                  onclick="closeMobileMenu()"
-                  class="text-accent hover:line-through"
-                  >Email me</a
-                >
+                <div>
+                  <a
+                    href="mailto:armando_rour@outlook.com"
+                    onclick="closeMobileMenu()"
+                    class="text-accent hover:line-through"
+                    >Email me</a
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -177,102 +184,102 @@
             <img
               src="assets/images/marquee/BN3.png"
               alt="Image 1"
-              class="size-auto max-h-[256px]"
+              class="size-auto h-[200px] lg:h-[256px]"
             />
             <img
               src="assets/images/marquee/BN2.png"
               alt="Image 2"
-              class="size-auto max-h-[256px]"
+              class="size-auto h-[200px] lg:h-[256px]"
             />
             <img
               src="assets/images/marquee/OX1.png"
               alt="Image 3"
-              class="size-auto max-h-[256px]"
+              class="size-auto h-[200px] lg:h-[256px]"
             />
             <img
               src="assets/images/marquee/DO1.png"
               alt="Image 4"
-              class="size-auto max-h-[256px]"
+              class="size-auto h-[200px] lg:h-[256px]"
             />
             <img
               src="assets/images/marquee/MAT1.png"
               alt="Image 5"
-              class="size-auto max-h-[256px]"
+              class="size-auto h-[200px] lg:h-[256px]"
             />
             <img
               src="assets/images/marquee/BN1.png"
               alt="Image 6"
-              class="size-auto max-h-[256px]"
+              class="size-auto h-[200px] lg:h-[256px]"
             />
             <img
               src="assets/images/marquee/MAT3.png"
               alt="Image 7"
-              class="size-auto max-h-[256px]"
+              class="size-auto h-[200px] lg:h-[256px]"
             />
             <img
               src="assets/images/marquee/ILM1.png"
               alt="Image 8"
-              class="size-auto max-h-[256px]"
+              class="size-auto h-[200px] lg:h-[256px]"
             />
             <img
               src="assets/images/marquee/YN1.png"
               alt="Image 9"
-              class="size-auto max-h-[256px]"
+              class="size-auto h-[200px] lg:h-[256px]"
             />
             <img
               src="assets/images/marquee/ZUM1.png"
               alt="Image 10"
-              class="size-auto max-h-[256px]"
+              class="size-auto h-[200px] lg:h-[256px]"
             />
             <img
               src="assets/images/marquee/DIS2.png"
               alt="Image 11"
-              class="size-auto max-h-[256px]"
+              class="size-auto h-[200px] lg:h-[256px]"
             />
             <img
               src="assets/images/marquee/NX1.png"
               alt="Image 12"
-              class="size-auto max-h-[256px]"
+              class="size-auto h-[200px] lg:h-[256px]"
             />
             <img
               src="assets/images/marquee/IMM1.png"
               alt="Image 13"
-              class="size-auto max-h-[256px]"
+              class="size-auto h-[200px] lg:h-[256px]"
             />
             <img
               src="assets/images/marquee/DIS1.png"
               alt="Image 14"
-              class="size-auto max-h-[256px]"
+              class="size-auto h-[200px] lg:h-[256px]"
             />
             <img
               src="assets/images/marquee/TMA1.png"
               alt="Image 15"
-              class="size-auto max-h-[256px]"
+              class="size-auto h-[200px] lg:h-[256px]"
             />
             <img
               src="assets/images/marquee/CP1.png"
               alt="Image 16"
-              class="size-auto max-h-[256px]"
+              class="size-auto h-[200px] lg:h-[256px]"
             />
             <img
               src="assets/images/marquee/MAT2.png"
               alt="Image 17"
-              class="size-auto max-h-[256px]"
+              class="size-auto h-[200px] lg:h-[256px]"
             />
             <img
               src="assets/images/marquee/RIF1.png"
               alt="Image 19"
-              class="size-auto max-h-[256px]"
+              class="size-auto h-[200px] lg:h-[256px]"
             />
             <img
               src="assets/images/marquee/OXB1.png"
               alt="Image 20"
-              class="size-auto max-h-[256px]"
+              class="size-auto h-[200px] lg:h-[256px]"
             />
             <img
               src="assets/images/marquee/MM1.png"
               alt="Image 21"
-              class="size-auto max-h-[256px]"
+              class="size-auto h-[200px] lg:h-[256px]"
             />
           </div>
         </div>
@@ -286,14 +293,14 @@
           <!-- Hero -->
           <section>
             <div
-              class="flex flex-col gap-10 pt-4 text-3xl font-medium mxl:text-4xl sm:text-5xl md:gap-14 md:text-6xl lg:gap-16 lg:pt-20 xl:text-7xl 2xl:gap-24 2xl:text-8xl"
+              class="flex flex-col gap-10 pt-5 text-3xl font-medium mxl:text-4xl sm:text-5xl md:gap-14 md:text-6xl lg:gap-16 lg:pt-20 xl:text-7xl 2xl:text-8xl"
             >
-              <h1 class="leading-[1.05]">
+              <h1 id="title" class="leading-[1.05]">
                 Hello! I'm Armando Rojano, a
                 <span class="font-light">multidisciplinary designer</span>
                 with over 3 years of experience.
               </h1>
-              <h2 class="leading-[1.05]">
+              <h2 id="subtitle" class="leading-[1.05]">
                 I bridge
                 <span class="font-light"
                   >design <span class="font-medium">and</span> development</span
@@ -306,15 +313,18 @@
           <section id="work">
             <div class="flex flex-col gap-4">
               <div class="flex flex-col gap-4">
-                <h3 class="text-3xl text-accent">UX research</h3>
+                <h3 id="ux-research" class="text-3xl text-accent">
+                  UX research
+                </h3>
               </div>
               <div
-                class="flex flex-wrap gap-4 lg:grid lg:grid-cols-2 lg:gap-10"
+                class="flex flex-wrap gap-6 lg:grid lg:grid-cols-2 lg:gap-10"
               >
                 <div class="flex flex-col gap-4 lg:gap-12">
                   <a
                     href="assets/images/cases/Case 1.png"
                     data-fancybox="case-studies"
+                    class="w-fit"
                   >
                     <div class="group flex flex-col gap-1">
                       <div class="relative">
@@ -330,12 +340,13 @@
                         />
                       </div>
                       <p class="font-medium">OX Logistics</p>
-                      <p class="text-primary">Web App</p>
+                      <p id="ox-logistics" class="text-primary">Web App</p>
                     </div>
                   </a>
                   <a
                     href="assets/images/cases/Case 4.png"
                     data-fancybox="case-studies"
+                    class="w-fit"
                   >
                     <div class="group flex flex-col gap-1">
                       <div class="relative">
@@ -351,14 +362,14 @@
                         />
                       </div>
                       <p class="font-medium">Yuni</p>
-                      <p class="text-primary">Mobile App</p>
+                      <p id="yuni" class="text-primary">Mobile App</p>
                     </div>
                   </a>
                 </div>
                 <div class="flex flex-col gap-4 lg:mt-20 lg:gap-28">
                   <a
                     href="assets/images/cases/Case 2.png"
-                    class="lg:justify-items-center"
+                    class="w-fit lg:justify-items-center"
                     data-fancybox="case-studies"
                   >
                     <div class="group flex flex-col gap-1">
@@ -375,12 +386,13 @@
                         />
                       </div>
                       <p class="font-medium">Mait</p>
-                      <p class="text-primary">Mobile App</p>
+                      <p id="mait" class="text-primary">Mobile App</p>
                     </div>
                   </a>
                   <a
                     href="assets/images/cases/Case 3.png"
                     data-fancybox="case-studies"
+                    class="w-fit"
                   >
                     <div class="group flex flex-col gap-1">
                       <div class="relative">
@@ -396,7 +408,7 @@
                         />
                       </div>
                       <p class="font-medium">Doia</p>
-                      <p class="text-primary">Web App</p>
+                      <p id="doia" class="text-primary">Web App</p>
                     </div>
                   </a>
                 </div>
@@ -407,19 +419,22 @@
           <section>
             <div class="flex flex-col gap-4">
               <div
-                class="flex flex-col gap-2 lg:flex-row lg:items-center lg:gap-4"
+                class="flex flex-col gap-1 lg:flex-row lg:items-center lg:gap-2"
               >
-                <h3 class="text-3xl text-accent">UX design</h3>
-                <div class="hidden gap-2 lg:flex">
+                <h3 id="ux-design" class="text-3xl text-accent">UX design</h3>
+                <div class="hidden items-center gap-1 lg:flex">
                   <img
                     class="size-7"
                     src="assets/icons/white/scroll-wheel.svg"
                   />
-                  <p class="text-primary">Hold Shift + Mouse Scroll Wheel</p>
+                  <p id="carousel" class="text-primary">
+                    Hold Shift + Mouse Scroll Wheel
+                  </p>
                 </div>
-                <div>
-                  <p class="flex text-primary lg:hidden">
-                    Drag horizontally to see more snapshots
+                <div class="flex items-center gap-1 lg:hidden">
+                  <img class="size-7" src="assets/icons/white/drag-hand.svg" />
+                  <p id="carousel-mobile" class="text-primary">
+                    Drag horizontally to see more snapshots!
                   </p>
                 </div>
               </div>
@@ -533,14 +548,16 @@
           <section>
             <div class="flex flex-col gap-4">
               <div class="flex flex-col gap-2 text-3xl">
-                <h3 class="text-3xl text-accent">Web development</h3>
+                <h3 id="web-development" class="text-3xl text-accent">
+                  Web development
+                </h3>
               </div>
               <div
                 class="-mx-4 flex gap-8 overflow-x-auto px-4 md:flex-wrap md:gap-10 md:overflow-visible lg:gap-11"
               >
                 <a href="https://github.com/r0ur/portfolio" target="_blank">
                   <div
-                    class="flex h-72 w-72 shrink-0 flex-col justify-end gap-4 bg-black p-4 text-white"
+                    class="flex h-72 w-72 shrink-0 flex-col justify-end gap-4 bg-black p-4 text-white transition-all duration-500 hover:scale-110"
                   >
                     <div class="flex flex-col gap-2">
                       <h4 class="text-4xl font-medium text-white">Portfolio</h4>
@@ -585,13 +602,15 @@
         <!-- About -->
         <section id="about" class="py-20">
           <div
-            class="flex items-center justify-center bg-tertiary py-16 font-inter text-3xl font-medium text-white"
+            class="flex items-center justify-center bg-tertiary py-16 font-inter text-3xl text-white"
           >
             <div
-              class="flex max-w-[1120px] flex-col gap-4 px-4 text-end mxl:px-5 mxl:text-4xl sm:text-5xl md:px-8 md:text-6xl xl:px-0 xl:text-7xl"
+              class="flex max-w-[1120px] flex-col gap-4 px-4 text-end text-4xl mxl:px-5 md:px-8 xl:px-0 xl:text-7xl"
             >
-              <h2 class="text-4xl font-normal">About</h2>
-              <h1 class="leading-[1.05]">
+              <h2 id="about-section" class="text-2xl font-normal lg:text-4xl">
+                About
+              </h2>
+              <h1 id="about-info" class="font-medium leading-[1.05]">
                 I work as a <span class="font-light">UX engineer</span> at
                 <a
                   class="underline hover:decoration-accent"
@@ -602,19 +621,22 @@
                 developing solutions for the ideas that emerge within the
                 company.
               </h1>
-              <p class="text-base font-normal">
-                My expertise includes
-                <span class="font-medium"
-                  >visual design, content design, motion design, and web
-                  development,</span
-                >
-                allowing me to explore the full spectrum of digital creation.
+              <h2
+                id="about-details"
+                class="text-lg font-light leading-[1.05] lg:text-2xl"
+              >
+                My expertise includes >visual design, content design, motion
+                design, and web development, allowing me to explore the full
+                spectrum of digital creation.
+              </h2>
+              <h3
+                id="about-hobbies"
+                class="text-lg font-light leading-[1.05] lg:text-2xl"
+              >
                 When I'm not designing, I enjoy exploring my passions—it fuels
-                my creativity—<span class="font-medium"
-                  >for photojournalism, novels, short-stories, movies, running,
-                  and continuous personal growth.</span
-                >
-              </p>
+                my creativity— >for photojournalism, novels, short-stories,
+                movies, running, and continuous personal growth. >
+              </h3>
             </div>
           </div>
         </section>
@@ -626,8 +648,11 @@
           <section>
             <div class="flex flex-col gap-10 lg:gap-16">
               <div class="flex flex-col gap-2">
-                <h3 class="text-3xl text-accent">Background</h3>
-                <p class="text-3xl font-medium lg:text-5xl">
+                <h3 id="background" class="text-3xl text-accent">Background</h3>
+                <p
+                  id="background-subtitle"
+                  class="max-w-prose text-3xl font-medium lg:text-5xl"
+                >
                   My curiosity, and adaptability allow me to thrive in dynamic
                   environments.
                 </p>
@@ -635,18 +660,31 @@
               <div class="flex flex-col gap-14 2xl:gap-14">
                 <div class="flex flex-col gap-2">
                   <div class="flex items-center gap-3">
-                    <div
-                      class="hidden h-5 w-5 shrink-0 rounded-full bg-accent lg:inline"
-                    ></div>
-                    <h4 class="text-3xl font-medium mxl:text-4xl">
+                    <div class="relative flex items-center justify-center">
+                      <div
+                        class="live-animation h-4 w-4 rounded-full bg-accent"
+                      ></div>
+                      <div
+                        class="pulse-animation absolute h-4 w-4 rounded-full bg-accent opacity-50"
+                      ></div>
+                    </div>
+                    <h4
+                      id="background-title-05"
+                      class="text-3xl font-medium mxl:text-4xl"
+                    >
                       UX Engineer
                       <span class="font-normal"
                         >at Ilum Prosperity Sherpas</span
                       >
                     </h4>
                   </div>
-                  <p class="md:text-lg lg:text-xl">March 2024 — Present</p>
-                  <p class="max-w-prose md:text-lg lg:text-xl">
+                  <p id="background-date-05" class="md:text-lg lg:text-xl">
+                    March 2024 — Present
+                  </p>
+                  <p
+                    id="background-description-05"
+                    class="max-w-prose md:text-lg lg:text-xl"
+                  >
                     To broaden my skillset as a digital creator, I began
                     contributing as a web developer, handling both frontend and
                     backend tasks alongside my UX design work.
@@ -654,15 +692,28 @@
                 </div>
                 <div class="flex flex-col gap-2">
                   <div class="flex items-center gap-3">
-                    <div
-                      class="hidden h-5 w-5 shrink-0 rounded-full bg-accent lg:inline"
-                    ></div>
-                    <h4 class="text-3xl font-medium mxl:text-4xl">
+                    <div class="relative flex items-center justify-center">
+                      <div
+                        class="live-animation h-4 w-4 rounded-full bg-accent"
+                      ></div>
+                      <div
+                        class="pulse-animation absolute h-4 w-4 rounded-full bg-accent opacity-50"
+                      ></div>
+                    </div>
+                    <h4
+                      id="background-title-04"
+                      class="text-3xl font-medium mxl:text-4xl"
+                    >
                       <span class="font-normal">Freelance</span> UX Designer
                     </h4>
                   </div>
-                  <p class="md:text-lg lg:text-xl">Since 2023</p>
-                  <p class="max-w-prose md:text-lg lg:text-xl">
+                  <p id="background-date-04" class="md:text-lg lg:text-xl">
+                    Since 2023
+                  </p>
+                  <p
+                    id="background-description-04"
+                    class="max-w-prose md:text-lg lg:text-xl"
+                  >
                     Returning to freelancing, I redesigned my logo mark, now
                     encompassing all my skills as a multidisciplinary designer.
                   </p>
@@ -670,38 +721,52 @@
                 <div class="flex flex-col gap-2">
                   <div class="flex items-center gap-3">
                     <div
-                      class="hidden h-5 w-5 shrink-0 rounded-full bg-secondary lg:inline"
+                      class="hidden h-4 w-4 shrink-0 rounded-full bg-secondary lg:inline"
                     ></div>
-                    <h4 class="text-3xl font-medium mxl:text-4xl">
+                    <h4
+                      id="background-title-03"
+                      class="text-3xl font-medium mxl:text-4xl"
+                    >
                       UX Designer and Researcher
                       <span class="font-normal"
                         >at Ilum Prosperity Sherpas</span
                       >
                     </h4>
                   </div>
-                  <p class="md:text-lg lg:text-xl">January 2022 — March 2024</p>
-                  <p class="max-w-prose md:text-lg lg:text-xl">
+                  <p id="background-date-03" class="md:text-lg lg:text-xl">
+                    January 2022 — March 2024
+                  </p>
+                  <p
+                    id="background-description-03"
+                    class="max-w-prose md:text-lg lg:text-xl"
+                  >
                     I took on a role as a UX designer and researcher. I began
                     handling core responsibilities while also covering
-                    additional roles as needed
+                    additional roles as needed.
                   </p>
                 </div>
                 <div class="flex flex-col gap-2">
                   <div class="flex items-center gap-3">
                     <div
-                      class="hidden h-5 w-5 shrink-0 rounded-full bg-secondary lg:inline"
+                      class="hidden h-4 w-4 shrink-0 rounded-full bg-secondary lg:inline"
                     ></div>
-                    <h4 class="text-3xl font-medium mxl:text-4xl">
+                    <h4
+                      id="background-title-02"
+                      class="text-3xl font-medium mxl:text-4xl"
+                    >
                       UX Designer
                       <span class="font-normal"
                         >at Ilum Prosperity Sherpas</span
                       >
                     </h4>
                   </div>
-                  <p class="md:text-lg lg:text-xl">
+                  <p id="background-date-02" class="md:text-lg lg:text-xl">
                     August 2021 — January 2022
                   </p>
-                  <p class="max-w-prose md:text-lg lg:text-xl">
+                  <p
+                    id="background-description-02"
+                    class="max-w-prose md:text-lg lg:text-xl"
+                  >
                     After completing my degree, I started as a user experience
                     designer, dedicating six months to designing the experience
                     for a logistics service.
@@ -710,15 +775,21 @@
                 <div class="flex flex-col gap-2">
                   <div class="flex items-center gap-3">
                     <div
-                      class="hidden h-5 w-5 shrink-0 rounded-full bg-secondary lg:inline"
+                      class="hidden h-4 w-4 shrink-0 rounded-full bg-secondary lg:inline"
                     ></div>
-                    <h4 class="text-3xl font-medium mxl:text-4xl">
+                    <h4
+                      id="background-title-01"
+                      class="text-3xl font-medium mxl:text-4xl"
+                    >
                       <span class="font-normal">Freelance</span> Graphic
                       Designer
                     </h4>
                   </div>
                   <p class="md:text-lg lg:text-xl">2018 — 2021</p>
-                  <p class="max-w-prose md:text-lg lg:text-xl">
+                  <p
+                    id="background-description-01"
+                    class="max-w-prose md:text-lg lg:text-xl"
+                  >
                     Midway through my digital arts career, I worked on visual
                     design, photography and retouching, as well as video editing
                     and production.
@@ -730,6 +801,7 @@
                   class="w-fit font-medium"
                 >
                   <h4
+                    id="resume"
                     class="text-2xl underline hover:decoration-accent mxl:text-2xl md:text-3xl lg:text-4xl"
                   >
                     Resume here.
@@ -741,19 +813,20 @@
           <!-- Certificates -->
           <section>
             <div class="flex flex-col gap-6 lg:items-center lg:gap-8">
-              <p class="text-3xl text-accent">Certificates</p>
-              <div class="flex flex-wrap gap-6 lg:flex-nowrap lg:gap-20">
+              <p id="certificates" class="text-3xl text-accent">Certificates</p>
+              <div class="flex flex-wrap gap-10 lg:flex-nowrap lg:gap-20">
                 <a
                   href="https://www.credly.com/badges/7ea865be-3ed7-482f-bd84-8366711c70c8/public_url"
                   target="_blank"
                 >
-                  <div class="group flex max-w-80 flex-col gap-2">
+                  <div class="group flex max-w-80 flex-col gap-1">
                     <img
                       src="assets/icons/google-fill.svg"
                       class="size-full h-12 w-12"
                       alt="Google"
                     />
                     <p
+                      id="certificate-01"
                       class="text-xl font-medium group-hover:text-accent group-hover:line-through mxl:text-2xl"
                     >
                       UX Design Professional Certificate
@@ -765,7 +838,7 @@
                   href="https://www.credly.com/badges/c45179d7-b68f-4841-90ec-2e69fd456ff3/public_url"
                   target="_blank"
                 >
-                  <div class="group flex max-w-80 flex-col gap-2">
+                  <div class="group flex max-w-80 flex-col gap-1">
                     <div class="h-12 w-12">
                       <img
                         src="assets/images/certiprof.png"
@@ -774,6 +847,7 @@
                       />
                     </div>
                     <p
+                      id="certificate-02"
                       class="text-xl font-medium group-hover:text-accent group-hover:line-through mxl:text-2xl"
                     >
                       Design Thinking Professional Certificate
@@ -785,7 +859,7 @@
                   href="https://www.credly.com/badges/def86223-ec15-4b8b-9fb8-c6908ce22fc8/public_url"
                   target="_blank"
                 >
-                  <div class="group flex max-w-80 flex-col gap-2">
+                  <div class="group flex max-w-80 flex-col gap-1">
                     <div class="h-12 w-12">
                       <img
                         src="assets/images/certiprof.png"
@@ -794,6 +868,7 @@
                       />
                     </div>
                     <p
+                      id="certificate-03"
                       class="text-xl font-medium group-hover:text-accent group-hover:line-through mxl:text-2xl"
                     >
                       Scrum Foundation Professional Certification
@@ -810,15 +885,20 @@
               class="mb-20 flex flex-col gap-6 lg:mb-28 lg:flex-row lg:gap-20"
             >
               <div class="flex flex-col gap-2 lg:w-52 lg:text-right">
-                <h3 class="text-3xl text-accent">Technologies</h3>
-                <p class="text-xl font-medium mxl:text-2xl md:text-3xl">
+                <h3 id="technologies" class="text-3xl text-accent">
+                  Technologies
+                </h3>
+                <p
+                  id="technologies-description"
+                  class="text-xl font-medium mxl:text-2xl md:text-3xl"
+                >
                   These are the tools I have used, but I always enjoy learning
                   new tech.
                 </p>
               </div>
               <div class="flex flex-col gap-12 md:text-lg lg:text-xl">
                 <div class="flex flex-col gap-2">
-                  <p class="font-medium">Design</p>
+                  <p id="design" class="font-medium">Design</p>
                   <ul class="flex flex-wrap items-center gap-6 lg:gap-8">
                     <li class="flex items-center gap-2">
                       <img
@@ -1049,7 +1129,7 @@
                   </ul>
                 </div>
                 <div class="hidden flex-col gap-2">
-                  <p class="font-medium">Database</p>
+                  <p id="data-base" class="font-medium">Database</p>
                   <ul class="flex flex-wrap items-center gap-6 lg:gap-8">
                     <li class="flex items-center gap-2">
                       <img
@@ -1078,7 +1158,9 @@
                   </ul>
                 </div>
                 <div class="flex flex-col gap-2">
-                  <p class="font-medium">Version Control</p>
+                  <p id="version-control" class="font-medium">
+                    Version Control
+                  </p>
                   <ul class="flex flex-wrap items-center gap-6 lg:gap-8">
                     <li class="flex items-center gap-2">
                       <img
@@ -1107,7 +1189,7 @@
                   </ul>
                 </div>
                 <div class="flex flex-col gap-2">
-                  <p class="font-medium">Others</p>
+                  <p id="others" class="font-medium">Others</p>
                   <ul class="flex flex-wrap items-center gap-6 lg:gap-8">
                     <li class="flex items-center gap-2">
                       <img
@@ -1159,11 +1241,13 @@
     </div>
     <!-- Footer -->
     <footer id="contact" class="bg-accent text-white">
-      <div class="flex flex-col gap-10 pt-10 lg:gap-20 lg:pt-20">
+      <div class="flex flex-col gap-8 pt-10 lg:gap-20 lg:pt-20">
         <div
-          class="mx-auto flex w-full flex-col items-center gap-6 px-4 font-inter mxl:px-5 md:px-8 md:text-2xl xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
+          class="mx-auto flex w-full flex-col items-center gap-6 px-4 font-inter mxl:px-5 md:px-8 md:text-2xl lg:gap-10 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
         >
-          <p class="text-3xl font-semibold lg:text-4xl">Let's connect!</p>
+          <p id="connect" class="text-3xl font-semibold lg:text-6xl">
+            Let's connect!
+          </p>
           <div
             class="flex flex-wrap justify-center gap-6 text-xl font-normal md:gap-10 lg:text-2xl"
           >
@@ -1219,7 +1303,7 @@
         </div>
         <button onclick="copyEmailToClipboard()">
           <div
-            class="marquee overflow-hidden whitespace-nowrap font-inter text-[80px] font-medium lg:text-[150px]"
+            class="marquee overflow-hidden whitespace-nowrap font-inter text-[80px] font-medium lg:text-[150px] xl:text-[200px]"
           >
             <span class="px-20"> armando_rour@outlook.com</span>
             <span class="px-20"> armando_rour@outlook.com</span>
@@ -1235,6 +1319,7 @@
           class="mx-auto flex w-full flex-col items-center gap-6 px-4 py-8 font-inter mxl:px-5 md:flex md:flex-row md:justify-between md:gap-4 md:px-8 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
         >
           <p
+            id="scroll-up"
             class="cursor-pointer font-normal hover:text-white hover:line-through md:order-last"
             onclick="scrollToTop()"
           >
@@ -1259,5 +1344,7 @@
     ></script>
     <!-- Main JS -->
     <script src="js/main.js"></script>
+    <!-- Translations -->
+    <script src="js/translations.js"></script>
   </body>
 </html>
