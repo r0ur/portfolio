@@ -86,18 +86,16 @@
                 Contact
               </div>
               <div
-                id="nav-language"
+                id="btn-es"
                 class="cursor-pointer hover:text-accent hover:line-through"
               >
-                <a href="#" onclick="changeLanguage('es')">¿Hablas Español?</a>
+                <a href="#" onclick="changeLanguage('es')">Español</a>
               </div>
               <div
-                id="nav-language"
+                id="btn-en"
                 class="cursor-pointer hover:text-accent hover:line-through"
               >
-                <a href="#" onclick="changeLanguage('en')"
-                  >You speak English?</a
-                >
+                <a href="#" onclick="changeLanguage('en')">English</a>
               </div>
             </div>
             <div class="lg:hidden">
@@ -295,7 +293,7 @@
           <!-- Hero -->
           <section>
             <div
-              class="flex flex-col gap-10 pt-5 text-3xl font-medium mxl:text-4xl sm:text-5xl md:gap-14 md:text-6xl lg:gap-16 lg:pt-20 xl:text-7xl 2xl:gap-24 2xl:text-8xl"
+              class="flex flex-col gap-10 pt-5 text-3xl font-medium mxl:text-4xl sm:text-5xl md:gap-14 md:text-6xl lg:gap-16 lg:pt-20 xl:text-7xl 2xl:text-8xl"
             >
               <h1 id="title" class="leading-[1.05]">
                 Hello! I'm Armando Rojano, a
@@ -342,7 +340,7 @@
                         />
                       </div>
                       <p class="font-medium">OX Logistics</p>
-                      <p class="text-primary">Web App</p>
+                      <p id="ox-logistics" class="text-primary">Web App</p>
                     </div>
                   </a>
                   <a
@@ -364,7 +362,7 @@
                         />
                       </div>
                       <p class="font-medium">Yuni</p>
-                      <p class="text-primary">Mobile App</p>
+                      <p id="yuni" class="text-primary">Mobile App</p>
                     </div>
                   </a>
                 </div>
@@ -388,7 +386,7 @@
                         />
                       </div>
                       <p class="font-medium">Mait</p>
-                      <p class="text-primary">Mobile App</p>
+                      <p id="mait" class="text-primary">Mobile App</p>
                     </div>
                   </a>
                   <a
@@ -410,7 +408,7 @@
                         />
                       </div>
                       <p class="font-medium">Doia</p>
-                      <p class="text-primary">Web App</p>
+                      <p id="doia" class="text-primary">Web App</p>
                     </div>
                   </a>
                 </div>
@@ -429,11 +427,13 @@
                     class="size-7"
                     src="assets/icons/white/scroll-wheel.svg"
                   />
-                  <p class="text-primary">Hold Shift + Mouse Scroll Wheel</p>
+                  <p id="carousel" class="text-primary">
+                    Hold Shift + Mouse Scroll Wheel
+                  </p>
                 </div>
                 <div class="flex items-center gap-1 lg:hidden">
                   <img class="size-7" src="assets/icons/white/drag-hand.svg" />
-                  <p class="text-primary">
+                  <p id="carousel-mobile" class="text-primary">
                     Drag horizontally to see more snapshots!
                   </p>
                 </div>
@@ -557,7 +557,7 @@
               >
                 <a href="https://github.com/r0ur/portfolio" target="_blank">
                   <div
-                    class="flex h-72 w-72 shrink-0 flex-col justify-end gap-4 bg-black p-4 text-white"
+                    class="flex h-72 w-72 shrink-0 flex-col justify-end gap-4 bg-black p-4 text-white transition-all duration-500 hover:scale-110"
                   >
                     <div class="flex flex-col gap-2">
                       <h4 class="text-4xl font-medium text-white">Portfolio</h4>
@@ -602,13 +602,15 @@
         <!-- About -->
         <section id="about" class="py-20">
           <div
-            class="flex items-center justify-center bg-tertiary py-16 font-inter text-3xl font-medium text-white"
+            class="flex items-center justify-center bg-tertiary py-16 font-inter text-3xl text-white"
           >
             <div
-              class="flex max-w-[1120px] flex-col gap-4 px-4 text-end mxl:px-5 mxl:text-4xl sm:text-5xl md:px-8 md:text-6xl xl:px-0 xl:text-7xl"
+              class="flex max-w-[1120px] flex-col gap-4 px-4 text-end text-4xl mxl:px-5 md:px-8 xl:px-0 xl:text-7xl"
             >
-              <h2 class="text-2xl font-normal lg:text-4xl">About</h2>
-              <h1 class="leading-[1.05]">
+              <h2 id="about-section" class="text-2xl font-normal lg:text-4xl">
+                About
+              </h2>
+              <h1 id="about-info" class="font-medium leading-[1.05]">
                 I work as a <span class="font-light">UX engineer</span> at
                 <a
                   class="underline hover:decoration-accent"
@@ -619,19 +621,22 @@
                 developing solutions for the ideas that emerge within the
                 company.
               </h1>
-              <p class="text-base font-normal">
-                My expertise includes
-                <span class="font-medium"
-                  >visual design, content design, motion design, and web
-                  development,</span
-                >
-                allowing me to explore the full spectrum of digital creation.
+              <h2
+                id="about-details"
+                class="text-lg font-light leading-[1.05] lg:text-2xl"
+              >
+                My expertise includes >visual design, content design, motion
+                design, and web development, allowing me to explore the full
+                spectrum of digital creation.
+              </h2>
+              <h3
+                id="about-hobbies"
+                class="text-lg font-light leading-[1.05] lg:text-2xl"
+              >
                 When I'm not designing, I enjoy exploring my passions—it fuels
-                my creativity—<span class="font-medium"
-                  >for photojournalism, novels, short-stories, movies, running,
-                  and continuous personal growth.</span
-                >
-              </p>
+                my creativity— >for photojournalism, novels, short-stories,
+                movies, running, and continuous personal growth. >
+              </h3>
             </div>
           </div>
         </section>
@@ -644,7 +649,10 @@
             <div class="flex flex-col gap-10 lg:gap-16">
               <div class="flex flex-col gap-2">
                 <h3 id="background" class="text-3xl text-accent">Background</h3>
-                <p class="text-3xl font-medium lg:text-5xl">
+                <p
+                  id="background-subtitle"
+                  class="max-w-prose text-3xl font-medium lg:text-5xl"
+                >
                   My curiosity, and adaptability allow me to thrive in dynamic
                   environments.
                 </p>
@@ -660,15 +668,23 @@
                         class="pulse-animation absolute h-4 w-4 rounded-full bg-accent opacity-50"
                       ></div>
                     </div>
-                    <h4 class="text-3xl font-medium mxl:text-4xl">
+                    <h4
+                      id="background-title-05"
+                      class="text-3xl font-medium mxl:text-4xl"
+                    >
                       UX Engineer
                       <span class="font-normal"
                         >at Ilum Prosperity Sherpas</span
                       >
                     </h4>
                   </div>
-                  <p class="md:text-lg lg:text-xl">March 2024 — Present</p>
-                  <p class="max-w-prose md:text-lg lg:text-xl">
+                  <p id="background-date-05" class="md:text-lg lg:text-xl">
+                    March 2024 — Present
+                  </p>
+                  <p
+                    id="background-description-05"
+                    class="max-w-prose md:text-lg lg:text-xl"
+                  >
                     To broaden my skillset as a digital creator, I began
                     contributing as a web developer, handling both frontend and
                     backend tasks alongside my UX design work.
@@ -684,12 +700,20 @@
                         class="pulse-animation absolute h-4 w-4 rounded-full bg-accent opacity-50"
                       ></div>
                     </div>
-                    <h4 class="text-3xl font-medium mxl:text-4xl">
+                    <h4
+                      id="background-title-04"
+                      class="text-3xl font-medium mxl:text-4xl"
+                    >
                       <span class="font-normal">Freelance</span> UX Designer
                     </h4>
                   </div>
-                  <p class="md:text-lg lg:text-xl">Since 2023</p>
-                  <p class="max-w-prose md:text-lg lg:text-xl">
+                  <p id="background-date-04" class="md:text-lg lg:text-xl">
+                    Since 2023
+                  </p>
+                  <p
+                    id="background-description-04"
+                    class="max-w-prose md:text-lg lg:text-xl"
+                  >
                     Returning to freelancing, I redesigned my logo mark, now
                     encompassing all my skills as a multidisciplinary designer.
                   </p>
@@ -699,18 +723,26 @@
                     <div
                       class="hidden h-4 w-4 shrink-0 rounded-full bg-secondary lg:inline"
                     ></div>
-                    <h4 class="text-3xl font-medium mxl:text-4xl">
+                    <h4
+                      id="background-title-03"
+                      class="text-3xl font-medium mxl:text-4xl"
+                    >
                       UX Designer and Researcher
                       <span class="font-normal"
                         >at Ilum Prosperity Sherpas</span
                       >
                     </h4>
                   </div>
-                  <p class="md:text-lg lg:text-xl">January 2022 — March 2024</p>
-                  <p class="max-w-prose md:text-lg lg:text-xl">
+                  <p id="background-date-03" class="md:text-lg lg:text-xl">
+                    January 2022 — March 2024
+                  </p>
+                  <p
+                    id="background-description-03"
+                    class="max-w-prose md:text-lg lg:text-xl"
+                  >
                     I took on a role as a UX designer and researcher. I began
                     handling core responsibilities while also covering
-                    additional roles as needed
+                    additional roles as needed.
                   </p>
                 </div>
                 <div class="flex flex-col gap-2">
@@ -718,17 +750,23 @@
                     <div
                       class="hidden h-4 w-4 shrink-0 rounded-full bg-secondary lg:inline"
                     ></div>
-                    <h4 class="text-3xl font-medium mxl:text-4xl">
+                    <h4
+                      id="background-title-02"
+                      class="text-3xl font-medium mxl:text-4xl"
+                    >
                       UX Designer
                       <span class="font-normal"
                         >at Ilum Prosperity Sherpas</span
                       >
                     </h4>
                   </div>
-                  <p class="md:text-lg lg:text-xl">
+                  <p id="background-date-02" class="md:text-lg lg:text-xl">
                     August 2021 — January 2022
                   </p>
-                  <p class="max-w-prose md:text-lg lg:text-xl">
+                  <p
+                    id="background-description-02"
+                    class="max-w-prose md:text-lg lg:text-xl"
+                  >
                     After completing my degree, I started as a user experience
                     designer, dedicating six months to designing the experience
                     for a logistics service.
@@ -739,13 +777,19 @@
                     <div
                       class="hidden h-4 w-4 shrink-0 rounded-full bg-secondary lg:inline"
                     ></div>
-                    <h4 class="text-3xl font-medium mxl:text-4xl">
+                    <h4
+                      id="background-title-01"
+                      class="text-3xl font-medium mxl:text-4xl"
+                    >
                       <span class="font-normal">Freelance</span> Graphic
                       Designer
                     </h4>
                   </div>
                   <p class="md:text-lg lg:text-xl">2018 — 2021</p>
-                  <p class="max-w-prose md:text-lg lg:text-xl">
+                  <p
+                    id="background-description-01"
+                    class="max-w-prose md:text-lg lg:text-xl"
+                  >
                     Midway through my digital arts career, I worked on visual
                     design, photography and retouching, as well as video editing
                     and production.
@@ -769,7 +813,7 @@
           <!-- Certificates -->
           <section>
             <div class="flex flex-col gap-6 lg:items-center lg:gap-8">
-              <p class="text-3xl text-accent">Certificates</p>
+              <p id="certificates" class="text-3xl text-accent">Certificates</p>
               <div class="flex flex-wrap gap-10 lg:flex-nowrap lg:gap-20">
                 <a
                   href="https://www.credly.com/badges/7ea865be-3ed7-482f-bd84-8366711c70c8/public_url"
@@ -782,6 +826,7 @@
                       alt="Google"
                     />
                     <p
+                      id="certificate-01"
                       class="text-xl font-medium group-hover:text-accent group-hover:line-through mxl:text-2xl"
                     >
                       UX Design Professional Certificate
@@ -802,6 +847,7 @@
                       />
                     </div>
                     <p
+                      id="certificate-02"
                       class="text-xl font-medium group-hover:text-accent group-hover:line-through mxl:text-2xl"
                     >
                       Design Thinking Professional Certificate
@@ -822,6 +868,7 @@
                       />
                     </div>
                     <p
+                      id="certificate-03"
                       class="text-xl font-medium group-hover:text-accent group-hover:line-through mxl:text-2xl"
                     >
                       Scrum Foundation Professional Certification
@@ -838,15 +885,20 @@
               class="mb-20 flex flex-col gap-6 lg:mb-28 lg:flex-row lg:gap-20"
             >
               <div class="flex flex-col gap-2 lg:w-52 lg:text-right">
-                <h3 class="text-3xl text-accent">Technologies</h3>
-                <p class="text-xl font-medium mxl:text-2xl md:text-3xl">
+                <h3 id="technologies" class="text-3xl text-accent">
+                  Technologies
+                </h3>
+                <p
+                  id="technologies-description"
+                  class="text-xl font-medium mxl:text-2xl md:text-3xl"
+                >
                   These are the tools I have used, but I always enjoy learning
                   new tech.
                 </p>
               </div>
               <div class="flex flex-col gap-12 md:text-lg lg:text-xl">
                 <div class="flex flex-col gap-2">
-                  <p class="font-medium">Design</p>
+                  <p id="design" class="font-medium">Design</p>
                   <ul class="flex flex-wrap items-center gap-6 lg:gap-8">
                     <li class="flex items-center gap-2">
                       <img
@@ -1077,7 +1129,7 @@
                   </ul>
                 </div>
                 <div class="hidden flex-col gap-2">
-                  <p class="font-medium">Database</p>
+                  <p id="data-base" class="font-medium">Database</p>
                   <ul class="flex flex-wrap items-center gap-6 lg:gap-8">
                     <li class="flex items-center gap-2">
                       <img
@@ -1106,7 +1158,9 @@
                   </ul>
                 </div>
                 <div class="flex flex-col gap-2">
-                  <p class="font-medium">Version Control</p>
+                  <p id="version-control" class="font-medium">
+                    Version Control
+                  </p>
                   <ul class="flex flex-wrap items-center gap-6 lg:gap-8">
                     <li class="flex items-center gap-2">
                       <img
@@ -1135,7 +1189,7 @@
                   </ul>
                 </div>
                 <div class="flex flex-col gap-2">
-                  <p class="font-medium">Others</p>
+                  <p id="others" class="font-medium">Others</p>
                   <ul class="flex flex-wrap items-center gap-6 lg:gap-8">
                     <li class="flex items-center gap-2">
                       <img
@@ -1189,9 +1243,11 @@
     <footer id="contact" class="bg-accent text-white">
       <div class="flex flex-col gap-8 pt-10 lg:gap-20 lg:pt-20">
         <div
-          class="mx-auto flex w-full flex-col items-center gap-6 px-4 font-inter mxl:px-5 md:px-8 md:text-2xl xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
+          class="mx-auto flex w-full flex-col items-center gap-6 px-4 font-inter mxl:px-5 md:px-8 md:text-2xl lg:gap-10 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
         >
-          <p class="text-3xl font-semibold lg:text-4xl">Let's connect!</p>
+          <p id="connect" class="text-3xl font-semibold lg:text-6xl">
+            Let's connect!
+          </p>
           <div
             class="flex flex-wrap justify-center gap-6 text-xl font-normal md:gap-10 lg:text-2xl"
           >
@@ -1263,6 +1319,7 @@
           class="mx-auto flex w-full flex-col items-center gap-6 px-4 py-8 font-inter mxl:px-5 md:flex md:flex-row md:justify-between md:gap-4 md:px-8 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
         >
           <p
+            id="scroll-up"
             class="cursor-pointer font-normal hover:text-white hover:line-through md:order-last"
             onclick="scrollToTop()"
           >
@@ -1285,9 +1342,9 @@
       src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"
       type="text/javascript"
     ></script>
-    <!-- Translations -->
-    <script src="js/translations.js"></script>
     <!-- Main JS -->
     <script src="js/main.js"></script>
+    <!-- Translations -->
+    <script src="js/translations.js"></script>
   </body>
 </html>
