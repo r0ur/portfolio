@@ -5,6 +5,12 @@ document.addEventListener('DOMContentLoaded', function () {
         Work: 'Work',
         About: 'About',
         Contact: 'Contact',
+        WorkMobile: 'Work',
+        AboutMobile: 'About',
+        ContactMobile: 'Contact',
+        EmailMeMobile: 'Email me',
+        MenuMobile: 'Menu',
+        CloseMobile: 'Close',
         Title:
           'Hello! I\'m Armando Rojano, a <span class="font-light">multidisciplinary designer</span> with over 3 years of experience.',
         Subtitle:
@@ -18,6 +24,9 @@ document.addEventListener('DOMContentLoaded', function () {
         Carousel: 'Hold Shift + Mouse Scroll Wheel',
         CarouselMobile: 'Drag horizontally to see more snapshots!',
         WebDevelopment: 'Web Development',
+        Portfolio: 'Portfolio',
+        PortfolioDescription:
+          'A simple, and responsive portfolio website to showcase my projects.',
         AboutSection: 'About',
         AboutInfo:
           'I work as a <span class="font-light">UX engineer</span> at <a class="underline hover:decoration-accent" href="https://www.linkedin.com/company/ilum-prosperity-sherpas/" target="_blank">Ilum Prosperity Sherpas,</a> developing solutions for the ideas that emerge within the company.',
@@ -76,6 +85,12 @@ document.addEventListener('DOMContentLoaded', function () {
         Work: 'Proyectos',
         About: 'Sobre mí',
         Contact: 'Contáctame',
+        WorkMobile: 'Proyectos',
+        AboutMobile: 'Sobre mí',
+        ContactMobile: 'Contáctame',
+        EmailMeMobile: 'Envíame un correo',
+        MenuMobile: 'Menú',
+        CloseMobile: 'Cerrar',
         Title:
           '¡Hola! Soy Armando Rojano, <span class="font-light">diseñador multidisciplinario</span> con más de 3 años de experiencia.',
         Subtitle:
@@ -90,9 +105,12 @@ document.addEventListener('DOMContentLoaded', function () {
         Carousel: 'Mantén Shift + Rueda del ratón',
         CarouselMobile: '¡Arrastra horizontalmente para ver más capturas!',
         WebDevelopment: 'Desarrollo web',
+        Portfolio: 'Portafolio',
+        PortfolioDescription:
+          'Un sitio web simple y responsivo para mostrar mis proyectos.',
         AboutSection: 'Sobre mí',
         AboutInfo:
-          'Me desempeño como <span class="font-light">ingeniero UX</span> en <a class="underline hover:decoration-accent" href="https://www.linkedin.com/company/ilum-prosperity-sherpas/" target="_blank">Ilum Prosperity Sherpas,</a> desarrollando soluciones para las ideas que surgen dentro de la empresa.',
+          'Me desempeño como <span class="font-light">UX engineer</span> en <a class="underline hover:decoration-accent" href="https://www.linkedin.com/company/ilum-prosperity-sherpas/" target="_blank">Ilum Prosperity Sherpas,</a> desarrollando soluciones para las ideas que surgen dentro de la empresa.',
         AboutDetails:
           'Mi experiencia incluye diseño visual, diseño de contenido, motion design y desarrollo web, lo que me ha permitido explorar el espectro completo del diseño digital.',
         AboutHobbies:
@@ -120,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function () {
         BackgroundDescription04:
           'Regresé al trabajo independiente, rediseñando mi logo y abarcando todas mis habilidades como diseñador multidisciplinario.',
         BackgroundTitle05:
-          'Ingeniero UX <span class="font-normal">en Ilum Prosperity Sherpas</span>',
+          'UX engineer <span class="font-normal">en Ilum Prosperity Sherpas</span>',
         BackgroundDate05: 'Marzo 2024 — Presente',
         BackgroundDescription05:
           'Para ampliar mis habilidades como diseñador, comencé a contribuir como desarrollador web, manejando tareas tanto de frontend como de backend junto con mi trabajo de diseño UX.',
@@ -167,6 +185,17 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('nav-work').innerText = i18next.t('Work');
     document.getElementById('nav-about').innerText = i18next.t('About');
     document.getElementById('nav-contact').innerText = i18next.t('Contact');
+    document.getElementById('nav-ux-research-mobile').innerText =
+      i18next.t('WorkMobile');
+    document.getElementById('nav-ux-design-mobile').innerText =
+      i18next.t('AboutMobile');
+    document.getElementById('nav-web-dev-mobile').innerText =
+      i18next.t('ContactMobile');
+    document.getElementById('nav-email-me-mobile').innerText =
+      i18next.t('EmailMeMobile');
+    document.getElementById('menu-button').innerText = i18next.t('MenuMobile');
+    document.getElementById('close-menu-button').innerText =
+      i18next.t('CloseMobile');
     document.getElementById('title').innerHTML = i18next.t('Title');
     document.getElementById('subtitle').innerHTML = i18next.t('Subtitle');
     document.getElementById('ux-research').innerText = i18next.t('UXResearch');
@@ -181,6 +210,10 @@ document.addEventListener('DOMContentLoaded', function () {
       i18next.t('CarouselMobile');
     document.getElementById('web-development').innerText =
       i18next.t('WebDevelopment');
+    document.getElementById('portfolio').innerText = i18next.t('Portfolio');
+    document.getElementById('portfolio-description').innerText = i18next.t(
+      'PortfolioDescription'
+    );
     document.getElementById('about-section').innerText =
       i18next.t('AboutSection');
     document.getElementById('about-info').innerHTML = i18next.t('AboutInfo');
@@ -249,10 +282,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const currentLanguage = i18next.language;
     if (currentLanguage === 'es') {
       document.getElementById('btn-es').style.display = 'none';
+      document.getElementById('btn-es-mobile').style.display = 'none';
       document.getElementById('btn-en').style.display = 'block';
+      document.getElementById('btn-en-mobile').style.display = 'block';
     } else {
       document.getElementById('btn-es').style.display = 'block';
+      document.getElementById('btn-es-mobile').style.display = 'block';
       document.getElementById('btn-en').style.display = 'none';
+      document.getElementById('btn-en-mobile').style.display = 'none';
     }
   }
 });
