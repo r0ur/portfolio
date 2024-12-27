@@ -652,10 +652,6 @@ video {
   height: 1rem;
 }
 
-.h-5 {
-  height: 1.25rem;
-}
-
 .h-72 {
   height: 18rem;
 }
@@ -678,10 +674,6 @@ video {
 
 .w-4 {
   width: 1rem;
-}
-
-.w-5 {
-  width: 1.25rem;
 }
 
 .w-72 {
@@ -1085,7 +1077,7 @@ video {
 @keyframes radarPulse {
   0% {
     transform: scale(1);
-    opacity: 0.5;
+    opacity: 0.7;
   }
 
   100% {

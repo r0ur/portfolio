@@ -19,7 +19,7 @@
 @keyframes radarPulse {
   0% {
     transform: scale(1);
-    opacity: 0.5;
+    opacity: 0.7;
   }
   100% {
     transform: scale(2);
