@@ -81,28 +81,60 @@ function scrollToTop() {
 }
 
 /**
- * Copies the email to the clipboard and shows a notification to the user.
+ * Copies the email address to the clipboard.
+ *
+ * This function attempts to use the Clipboard API to copy the email address.
+ * If the Clipboard API is not available, it falls back to using a temporary
+ * textarea element to copy the email address.
+ *
+ * @function
+ * @name copyEmailToClipboard
+ * @returns {void}
  */
 function copyEmailToClipboard() {
   const email = 'armando_rour@outlook.com';
-  navigator.clipboard
-    .writeText(email)
-    .then(() => {
-      const alert = document.getElementById('alert');
-      alert.classList.remove('hidden', 'opacity-0');
-      alert.classList.add('opacity-100');
 
-      setTimeout(() => {
-        alert.classList.remove('opacity-100');
-        alert.classList.add('opacity-0');
-        setTimeout(() => {
-          alert.classList.add('hidden');
-        }, 300);
-      }, 3000);
-    })
-    .catch((error) => {
+  if (navigator.clipboard) {
+    navigator.clipboard
+      .writeText(email)
+      .then(() => {
+        showCopyAlert();
+      })
+      .catch((error) => {
+        console.error('Error copying email: ', error);
+      });
+  } else {
+    const textArea = document.createElement('textarea');
+    textArea.value = email;
+    document.body.appendChild(textArea);
+    textArea.select();
+    try {
+      document.execCommand('copy');
+      showCopyAlert();
+    } catch (error) {
       console.error('Error copying email: ', error);
-    });
+    }
+    document.body.removeChild(textArea);
+  }
+}
+
+/**
+ * Displays a copy alert by removing the 'hidden' and 'opacity-0' classes and adding the 'opacity-100' class.
+ * The alert is visible for 3 seconds before it fades out by removing the 'opacity-100' class and adding the 'opacity-0' class.
+ * After the fade-out transition (300ms), the 'hidden' class is added back to the alert element.
+ */
+function showCopyAlert() {
+  const alert = document.getElementById('clipboard-alert');
+  alert.classList.remove('hidden', 'opacity-0');
+  alert.classList.add('opacity-100');
+
+  setTimeout(() => {
+    alert.classList.remove('opacity-100');
+    alert.classList.add('opacity-0');
+    setTimeout(() => {
+      alert.classList.add('hidden');
+    }, 300);
+  }, 3000);
 }
 
 $(window).on('load', function () {

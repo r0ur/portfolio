@@ -31,7 +31,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
     />
-    <!-- Marquee -->
+    <!-- JQMarquee -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.rawgit.com/aamirafridi/jQuery.Marquee/master/jquery.marquee.min.js"></script>
     <!-- i18next -->
@@ -628,7 +628,7 @@
             class="flex items-center justify-center bg-tertiary py-16 font-inter text-3xl text-white"
           >
             <div
-              class="flex max-w-[1120px] flex-col gap-4 px-4 text-end text-4xl mxl:px-5 md:px-8 xl:px-0 xl:text-7xl"
+              class="flex flex-col gap-4 px-4 text-end text-4xl mxl:px-5 md:px-8 xl:w-[1120px] xl:px-0 xl:text-7xl 2xl:w-[1500px]"
             >
               <h2 id="about-section" class="text-2xl font-normal lg:text-4xl">
                 About
@@ -674,7 +674,7 @@
                 <h3 id="background" class="text-3xl text-accent">Background</h3>
                 <p
                   id="background-subtitle"
-                  class="max-w-prose text-3xl font-medium lg:text-5xl"
+                  class="max-w-[812px] text-3xl font-medium lg:text-5xl"
                 >
                   My curiosity, and adaptability allow me to thrive in dynamic
                   environments.
@@ -683,7 +683,9 @@
               <div class="flex flex-col gap-14 2xl:gap-14">
                 <div class="flex flex-col gap-2">
                   <div class="flex items-center gap-3">
-                    <div class="relative flex items-center justify-center">
+                    <div
+                      class="relative hidden items-center justify-center lg:flex"
+                    >
                       <div
                         class="live-animation h-4 w-4 rounded-full bg-accent"
                       ></div>
@@ -715,7 +717,9 @@
                 </div>
                 <div class="flex flex-col gap-2">
                   <div class="flex items-center gap-3">
-                    <div class="relative flex items-center justify-center">
+                    <div
+                      class="relative hidden items-center justify-center lg:flex"
+                    >
                       <div
                         class="live-animation h-4 w-4 rounded-full bg-accent"
                       ></div>
@@ -1354,7 +1358,7 @@
     </footer>
     <!-- Copy to Clipboard Alert -->
     <div
-      id="alert"
+      id="clipboard-alert"
       class="fixed left-1/2 top-28 hidden -translate-x-1/2 -translate-y-1/2 rounded bg-black px-4 py-4 font-inter text-white shadow-lg transition-opacity duration-300"
     >
       Email copied to clipboard.

@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
           'A simple, and responsive portfolio website to showcase my projects.',
         AboutSection: 'About',
         AboutInfo:
-          'I work as a <span class="font-light">UX engineer</span> at <a class="underline hover:decoration-accent" href="https://www.linkedin.com/company/ilum-prosperity-sherpas/" target="_blank">Ilum Prosperity Sherpas,</a> developing solutions for the ideas that emerge within the company.',
+          'I work as a <span class="font-light">UX Engineer</span> at <a class="underline hover:decoration-accent" href="https://www.linkedin.com/company/ilum-prosperity-sherpas/" target="_blank">Ilum Prosperity Sherpas,</a> developing solutions for the ideas that emerge within the company.',
         AboutDetails:
           'My expertise includes visual design, content design, motion design, and web development, allowing me to explore the full spectrum of digital creation.',
         AboutHobbies:
@@ -78,6 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
         Others: 'Others',
         Connect: "Let's connect!",
         ScrollUp: 'Scroll up ↑',
+        ClipboardAlert: 'Email copied to clipboard.',
       },
     },
     es: {
@@ -110,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
           'Un sitio web simple y responsivo para mostrar mis proyectos.',
         AboutSection: 'Sobre mí',
         AboutInfo:
-          'Me desempeño como <span class="font-light">UX engineer</span> en <a class="underline hover:decoration-accent" href="https://www.linkedin.com/company/ilum-prosperity-sherpas/" target="_blank">Ilum Prosperity Sherpas,</a> desarrollando soluciones para las ideas que surgen dentro de la empresa.',
+          'Me desempeño como <span class="font-light">UX Engineer</span> en <a class="underline hover:decoration-accent" href="https://www.linkedin.com/company/ilum-prosperity-sherpas/" target="_blank">Ilum Prosperity Sherpas,</a> desarrollando soluciones para las ideas que surgen dentro de la empresa.',
         AboutDetails:
           'Mi experiencia incluye diseño visual, diseño de contenido, motion design y desarrollo web, lo que me ha permitido explorar el espectro completo del diseño digital.',
         AboutHobbies:
@@ -138,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function () {
         BackgroundDescription04:
           'Regresé al trabajo independiente, rediseñando mi logo y abarcando todas mis habilidades como diseñador multidisciplinario.',
         BackgroundTitle05:
-          'UX engineer <span class="font-normal">en Ilum Prosperity Sherpas</span>',
+          'UX Engineer <span class="font-normal">en Ilum Prosperity Sherpas</span>',
         BackgroundDate05: 'Marzo 2024 — Presente',
         BackgroundDescription05:
           'Para ampliar mis habilidades como diseñador, comencé a contribuir como desarrollador web, manejando tareas tanto de frontend como de backend junto con mi trabajo de diseño UX.',
@@ -159,6 +160,7 @@ document.addEventListener('DOMContentLoaded', function () {
         Others: 'Otras',
         Connect: '¡Conectemos!',
         ScrollUp: 'Regresar al inicio ↑',
+        ClipboardAlert: 'Correo copiado al portapapeles.',
       },
     },
   };
@@ -278,6 +280,8 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('others').innerText = i18next.t('Others');
     document.getElementById('connect').innerText = i18next.t('Connect');
     document.getElementById('scroll-up').innerText = i18next.t('ScrollUp');
+    document.getElementById('clipboard-alert').innerText =
+      i18next.t('ClipboardAlert');
 
     const currentLanguage = i18next.language;
     if (currentLanguage === 'es') {
