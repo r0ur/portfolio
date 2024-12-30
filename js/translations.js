@@ -19,6 +19,10 @@ document.addEventListener('DOMContentLoaded', function () {
         Yuni: 'Mobile App',
         Mait: 'Mobile App',
         Doia: 'Web App',
+        Read1: 'Read Case Study →',
+        Read2: 'Read Case Study →',
+        Read3: 'Read Case Study →',
+        Read4: 'Read Case Study →',
         UXDesign: 'UX Design',
         Carousel: 'Hold Shift + Mouse Scroll Wheel',
         CarouselMobile: 'Drag horizontally to see more snapshots!',
@@ -99,6 +103,10 @@ document.addEventListener('DOMContentLoaded', function () {
         Yuni: 'Aplicación Móvil',
         Mait: 'Aplicación Móvil',
         Doia: 'Aplicación Web',
+        Read1: 'Leer caso de estudio →',
+        Read2: 'Leer caso de estudio →',
+        Read3: 'Leer caso de estudio →',
+        Read4: 'Leer caso de estudio →',
         MobileApp: 'Aplicación Móvil',
         UXDesign: 'Diseño UX',
         Carousel: 'Mantén Shift + Rueda del ratón',
@@ -203,6 +211,10 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('yuni').innerText = i18next.t('Yuni');
     document.getElementById('mait').innerText = i18next.t('Mait');
     document.getElementById('doia').innerText = i18next.t('Doia');
+    document.getElementById('read-01').innerText = i18next.t('Read1');
+    document.getElementById('read-02').innerText = i18next.t('Read2');
+    document.getElementById('read-03').innerText = i18next.t('Read3');
+    document.getElementById('read-04').innerText = i18next.t('Read4');
     document.getElementById('ux-design').innerText = i18next.t('UXDesign');
     document.getElementById('carousel').innerText = i18next.t('Carousel');
     document.getElementById('carousel-mobile').innerText =

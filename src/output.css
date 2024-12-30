@@ -1122,6 +1122,14 @@ video {
   animation: radarPulse 2s infinite ease-out;
 }
 
+.hover\:visible:hover {
+  visibility: visible;
+}
+
+.hover\:flex:hover {
+  display: flex;
+}
+
 .hover\:scale-110:hover {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
@@ -1144,6 +1152,10 @@ video {
 
 .hover\:decoration-accent:hover {
   text-decoration-color: #0001F7;
+}
+
+.group:hover .group-hover\:flex {
+  display: flex;
 }
 
 .group:hover .group-hover\:text-accent {
