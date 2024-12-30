@@ -187,12 +187,3 @@ Fancybox.bind("[data-fancybox='case-studies']", {
   wheel: 'pan',
   groupAttr: false,
 });
-
-function updateResumeLink() {
-  const resumeLink = document.getElementById('resume');
-  if (i18next.language === 'es') {
-    resumeLink.href = '/assets/docs/UX-Designer_Armando-Rojano.pdf';
-  } else {
-    resumeLink.href = '/assets/docs/UX-Designer_Armando-Rojano_EN.pdf';
-  }
-}
