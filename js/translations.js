@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const resources = {
     en: {
       translation: {
+        Presentation: 'Armando Rojano | Designer',
         Work: 'Work',
         About: 'About',
         Contact: 'Contact',
@@ -9,8 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
         AboutMobile: 'About',
         ContactMobile: 'Contact',
         EmailMeMobile: 'Email me',
-        MenuMobile: 'Menu',
-        CloseMobile: 'Close',
         Title:
           'Hello! I\'m Armando Rojano, a <span class="font-light">multidisciplinary designer</span> with over 3 years of experience.',
         Subtitle:
@@ -83,6 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     es: {
       translation: {
+        Presentation: 'Armando Rojano | Diseñador',
         Work: 'Proyectos',
         About: 'Sobre mí',
         Contact: 'Contáctame',
@@ -90,8 +90,6 @@ document.addEventListener('DOMContentLoaded', function () {
         AboutMobile: 'Sobre mí',
         ContactMobile: 'Contáctame',
         EmailMeMobile: 'Envíame un correo',
-        MenuMobile: 'Menú',
-        CloseMobile: 'Cerrar',
         Title:
           '¡Hola! Soy Armando Rojano, <span class="font-light">diseñador multidisciplinario</span> con más de 3 años de experiencia.',
         Subtitle:
@@ -184,6 +182,8 @@ document.addEventListener('DOMContentLoaded', function () {
   };
 
   function updateContent() {
+    document.getElementById('presentation').innerText =
+      i18next.t('Presentation');
     document.getElementById('nav-work').innerText = i18next.t('Work');
     document.getElementById('nav-about').innerText = i18next.t('About');
     document.getElementById('nav-contact').innerText = i18next.t('Contact');
@@ -195,9 +195,6 @@ document.addEventListener('DOMContentLoaded', function () {
       i18next.t('ContactMobile');
     document.getElementById('nav-email-me-mobile').innerText =
       i18next.t('EmailMeMobile');
-    document.getElementById('menu-button').innerText = i18next.t('MenuMobile');
-    document.getElementById('close-menu-button').innerText =
-      i18next.t('CloseMobile');
     document.getElementById('title').innerHTML = i18next.t('Title');
     document.getElementById('subtitle').innerHTML = i18next.t('Subtitle');
     document.getElementById('ux-research').innerText = i18next.t('UXResearch');

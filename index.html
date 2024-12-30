@@ -12,7 +12,7 @@
     <meta name="robots" content="index, follow" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="theme-color" content="#121212" />
-    <title>Armando Rojano | Designer</title>
+    <title id="presentation">Armando Rojano | Designer</title>
     <link rel="icon" type="image/x-icon" href="assets/images/Favicon.ico" />
     <link href="src/output.css" rel="stylesheet" />
     <!-- Google Fonts -->
@@ -99,13 +99,13 @@
               </div>
             </div>
             <div class="lg:hidden">
-              <button
+              <img
                 id="menu-button"
-                class="text-2xl hover:line-through"
+                src="assets/icons/menu.svg"
+                class="size-8"
+                alt="Menu"
                 onclick="openMobileMenu()"
-              >
-                Menu
-              </button>
+              />
             </div>
           </div>
           <!-- Mobile Menu -->
@@ -130,13 +130,13 @@
                 </p>
               </div>
               <div class="lg:hidden">
-                <button
+                <img
                   id="close-menu-button"
-                  class="text-2xl hover:line-through"
+                  src="assets/icons/xmark.svg"
+                  class="size-10"
+                  alt="Close Menu"
                   onclick="closeMobileMenu()"
-                >
-                  Close
-                </button>
+                />
               </div>
             </div>
             <div
@@ -433,135 +433,137 @@
               </div>
             </div>
           </section>
-          <!-- UX Design -->
-          <section>
-            <div class="flex flex-col gap-4">
-              <div
-                class="flex flex-col gap-1 lg:flex-row lg:items-center lg:gap-2"
-              >
-                <h3 id="ux-design" class="text-3xl text-accent">UX design</h3>
-                <div class="hidden items-center gap-1 lg:flex">
-                  <img
-                    class="size-7"
-                    src="assets/icons/white/scroll-wheel.svg"
-                  />
-                  <p id="carousel" class="text-primary">
-                    Hold Shift + Mouse Scroll Wheel
-                  </p>
-                </div>
-                <div class="flex items-center gap-1 lg:hidden">
-                  <img class="size-7" src="assets/icons/white/drag-hand.svg" />
-                  <p id="carousel-mobile" class="text-primary">
-                    Drag horizontally to see more snapshots!
-                  </p>
-                </div>
+        </div>
+        <!-- UX Design -->
+        <section>
+          <div class="flex flex-col gap-4 py-20">
+            <div
+              class="mx-auto flex w-full flex-col gap-2 px-4 font-inter mxl:px-5 md:px-8 lg:flex-row lg:items-center lg:gap-2 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
+            >
+              <h3 id="ux-design" class="text-3xl text-accent">UX design</h3>
+              <div class="hidden items-center gap-1 lg:flex">
+                <img class="size-7" src="assets/icons/white/scroll-wheel.svg" />
+                <p id="carousel" class="text-primary">
+                  Hold Shift + Mouse Scroll Wheel
+                </p>
               </div>
-              <div
-                class="flex snap-x snap-mandatory gap-2 overflow-auto overflow-x-scroll scroll-smooth"
-              >
-                <img
-                  src="assets/images/snapshots/Rifas1.png"
-                  alt="Streaming Platform Screenshot"
-                  class="size-full w-[1024px] snap-center snap-always"
-                />
-                <img
-                  src="assets/images/snapshots/TOMA24.png"
-                  alt="Streaming Platform Screenshot"
-                  class="size-full w-[1024px] snap-center snap-always"
-                />
-                <img
-                  src="assets/images/snapshots/OXBI37.png"
-                  alt="Website System Screenshot"
-                  class="size-full w-[1024px] snap-center snap-always"
-                />
-                <img
-                  src="assets/images/snapshots/OXBI36.png"
-                  alt="Website System Screenshot"
-                  class="size-full w-[1024px] snap-center snap-always"
-                />
-                <img
-                  src="assets/images/snapshots/Immer43.png"
-                  alt="Virtual Reality Landing Page Screenshot"
-                  class="size-full w-[1024px] snap-center snap-always"
-                />
-                <img
-                  src="assets/images/snapshots/CyberP47.png"
-                  alt="PC Part Picker Tool from CyberPuerta Screenshot"
-                  class="size-full w-[1024px] snap-center snap-always"
-                />
-                <img
-                  src="assets/images/snapshots/CyberP46.png"
-                  alt="PC Part Picker Tool from CyberPuerta Screenshot"
-                  class="size-full w-[1024px] snap-center snap-always"
-                />
-                <img
-                  src="assets/images/snapshots/Bike27.png"
-                  alt="Dasboard Screenshot"
-                  class="size-full w-[1024px] snap-center snap-always"
-                />
-                <img
-                  src="assets/images/snapshots/Bike28.png"
-                  alt="Dasboard Screenshot"
-                  class="size-full w-[1024px] snap-center snap-always"
-                />
-                <img
-                  src="assets/images/snapshots/Binca34.png"
-                  alt="Credit Cards Landing Page Screenshot"
-                  class="size-full w-[1024px] snap-center snap-always"
-                />
-                <img
-                  src="assets/images/snapshots/Disrupto2.png"
-                  alt="Organization Landing Page Screenshot"
-                  class="size-full w-[1024px] snap-center snap-always"
-                />
-                <img
-                  src="assets/images/snapshots/Disrupto3.png"
-                  alt="Organization Landing Page Screenshot"
-                  class="size-full w-[1024px] snap-center snap-always"
-                />
-                <img
-                  src="assets/images/snapshots/Yuni42.png"
-                  alt="Marketplace Landing Page and App Screenshot"
-                  class="size-full w-[1024px] snap-center snap-always"
-                />
-                <img
-                  src="assets/images/snapshots/Doia14.png"
-                  alt="Snapshot 1"
-                  class="size-full w-[1024px] snap-center snap-always"
-                />
-                <img
-                  src="assets/images/snapshots/Doia38.png"
-                  alt="Snapshot 1"
-                  class="size-full w-[1024px] snap-center snap-always"
-                />
-                <img
-                  src="assets/images/snapshots/Mait42.png"
-                  alt="Snapshot 1"
-                  class="size-full w-[1024px] snap-center snap-always"
-                />
-                <img
-                  src="assets/images/snapshots/Mait41.png"
-                  alt="Snapshot 1"
-                  class="size-full w-[1024px] snap-center snap-always"
-                />
-                <img
-                  src="assets/images/snapshots/Ilum45.png"
-                  alt="Snapshot 1"
-                  class="size-full w-[1024px] snap-center snap-always"
-                />
-                <img
-                  src="assets/images/snapshots/OXLogi30.png"
-                  alt="Snapshot 1"
-                  class="size-full w-[1024px] snap-center snap-always"
-                />
-                <img
-                  src="assets/images/snapshots/OXLogi31.png"
-                  alt="Snapshot 1"
-                  class="size-full w-[1024px] snap-center snap-always"
-                />
+              <div class="flex items-center gap-1 lg:hidden">
+                <img class="size-7" src="assets/icons/white/drag-hand.svg" />
+                <p id="carousel-mobile" class="text-primary">
+                  Drag horizontally to see more snapshots!
+                </p>
               </div>
             </div>
-          </section>
+            <div
+              class="flex snap-x snap-mandatory gap-2 overflow-visible overflow-x-scroll scroll-smooth"
+            >
+              <img
+                src="assets/images/snapshots/Rifas1.png"
+                alt="Streaming Platform Screenshot"
+                class="size-full w-[1024px] snap-center snap-always"
+              />
+              <img
+                src="assets/images/snapshots/TOMA24.png"
+                alt="Streaming Platform Screenshot"
+                class="size-full w-[1024px] snap-center snap-always"
+              />
+              <img
+                src="assets/images/snapshots/OXBI37.png"
+                alt="Website System Screenshot"
+                class="size-full w-[1024px] snap-center snap-always"
+              />
+              <img
+                src="assets/images/snapshots/OXBI36.png"
+                alt="Website System Screenshot"
+                class="size-full w-[1024px] snap-center snap-always"
+              />
+              <img
+                src="assets/images/snapshots/Immer43.png"
+                alt="Virtual Reality Landing Page Screenshot"
+                class="size-full w-[1024px] snap-center snap-always"
+              />
+              <img
+                src="assets/images/snapshots/CyberP47.png"
+                alt="PC Part Picker Tool from CyberPuerta Screenshot"
+                class="size-full w-[1024px] snap-center snap-always"
+              />
+              <img
+                src="assets/images/snapshots/CyberP46.png"
+                alt="PC Part Picker Tool from CyberPuerta Screenshot"
+                class="size-full w-[1024px] snap-center snap-always"
+              />
+              <img
+                src="assets/images/snapshots/Bike27.png"
+                alt="Dasboard Screenshot"
+                class="size-full w-[1024px] snap-center snap-always"
+              />
+              <img
+                src="assets/images/snapshots/Bike28.png"
+                alt="Dasboard Screenshot"
+                class="size-full w-[1024px] snap-center snap-always"
+              />
+              <img
+                src="assets/images/snapshots/Binca34.png"
+                alt="Credit Cards Landing Page Screenshot"
+                class="size-full w-[1024px] snap-center snap-always"
+              />
+              <img
+                src="assets/images/snapshots/Disrupto2.png"
+                alt="Organization Landing Page Screenshot"
+                class="size-full w-[1024px] snap-center snap-always"
+              />
+              <img
+                src="assets/images/snapshots/Disrupto3.png"
+                alt="Organization Landing Page Screenshot"
+                class="size-full w-[1024px] snap-center snap-always"
+              />
+              <img
+                src="assets/images/snapshots/Yuni42.png"
+                alt="Marketplace Landing Page and App Screenshot"
+                class="size-full w-[1024px] snap-center snap-always"
+              />
+              <img
+                src="assets/images/snapshots/Doia14.png"
+                alt="Snapshot 1"
+                class="size-full w-[1024px] snap-center snap-always"
+              />
+              <img
+                src="assets/images/snapshots/Doia38.png"
+                alt="Snapshot 1"
+                class="size-full w-[1024px] snap-center snap-always"
+              />
+              <img
+                src="assets/images/snapshots/Mait42.png"
+                alt="Snapshot 1"
+                class="size-full w-[1024px] snap-center snap-always"
+              />
+              <img
+                src="assets/images/snapshots/Mait41.png"
+                alt="Snapshot 1"
+                class="size-full w-[1024px] snap-center snap-always"
+              />
+              <img
+                src="assets/images/snapshots/Ilum45.png"
+                alt="Snapshot 1"
+                class="size-full w-[1024px] snap-center snap-always"
+              />
+              <img
+                src="assets/images/snapshots/OXLogi30.png"
+                alt="Snapshot 1"
+                class="size-full w-[1024px] snap-center snap-always"
+              />
+              <img
+                src="assets/images/snapshots/OXLogi31.png"
+                alt="Snapshot 1"
+                class="size-full w-[1024px] snap-center snap-always"
+              />
+            </div>
+          </div>
+        </section>
+        <!-- Breakpoints -->
+        <div
+          class="mx-auto flex w-full flex-col gap-20 px-4 font-inter mxl:px-5 md:px-8 xl:w-[1120px] xl:px-0 2xl:w-[1500px]"
+        >
           <!-- Web Development -->
           <section>
             <div class="flex flex-col gap-4">
@@ -823,7 +825,7 @@
                   </p>
                 </div>
                 <a
-                  href="assets/docs/UX-Designer_Armando-Rojano_EN.pdf"
+                  href="assets/docs/UX-Designer_Armando-Rojano.pdf"
                   target="_blank"
                   class="w-fit font-medium"
                 >
