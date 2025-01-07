@@ -81,7 +81,8 @@ document.addEventListener('DOMContentLoaded', function () {
         Others: 'Others',
         Connect: "Let's connect!",
         ScrollUp: 'Scroll up ↑',
-        ClipboardAlert: 'Email copied to clipboard.',
+        ClipboardAlert:
+          '<img src="assets/icons/white/copy-white.svg" class="size-6" /> Email copied to clipboard.',
       },
     },
     es: {
@@ -89,10 +90,10 @@ document.addEventListener('DOMContentLoaded', function () {
         Presentation: 'Armando Rojano | Diseñador',
         Work: 'Proyectos',
         About: 'Sobre mí',
-        Contact: 'Contáctame',
+        Contact: 'Contacto',
         WorkMobile: 'Proyectos',
         AboutMobile: 'Sobre mí',
-        ContactMobile: 'Contáctame',
+        ContactMobile: 'Contacto',
         EmailMeMobile: 'Envíame un correo',
         Title:
           '¡Hola! Soy Armando Rojano, <span class="font-light">diseñador multidisciplinario</span> con más de 3 años de experiencia.',
@@ -111,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
         UXDesign: 'Diseño UX',
         Carousel: 'Mantén Shift + Rueda del ratón',
         CarouselMobile: '¡Arrastra horizontalmente para ver más capturas!',
-        WebDevelopment: 'Desarrollo web',
+        WebDevelopment: 'Desarrollo Web',
         Portfolio: 'Portafolio',
         PortfolioDescription:
           'Un sitio web simple y responsivo para mostrar mis proyectos.',
@@ -166,7 +167,8 @@ document.addEventListener('DOMContentLoaded', function () {
         Others: 'Otras',
         Connect: '¡Conectemos!',
         ScrollUp: 'Regresar al inicio ↑',
-        ClipboardAlert: 'Correo copiado al portapapeles.',
+        ClipboardAlert:
+          '<img src="assets/icons/white/copy-white.svg" class="size-6" /> Correo copiado al portapapeles.',
       },
     },
   };
@@ -289,10 +291,10 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('others').innerText = i18next.t('Others');
     document.getElementById('connect').innerText = i18next.t('Connect');
     document.getElementById('scroll-up').innerText = i18next.t('ScrollUp');
-    document.getElementById('clipboard-alert').innerText =
+    document.getElementById('clipboard-alert').innerHTML =
       i18next.t('ClipboardAlert');
 
-    const currentLanguage = i18next.language;
+    /*     const currentLanguage = i18next.language;
     if (currentLanguage === 'es') {
       document.getElementById('btn-es').style.display = 'none';
       document.getElementById('btn-es-mobile').style.display = 'none';
@@ -303,6 +305,6 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('btn-es-mobile').style.display = 'block';
       document.getElementById('btn-en').style.display = 'none';
       document.getElementById('btn-en-mobile').style.display = 'none';
-    }
+    } */
   }
 });

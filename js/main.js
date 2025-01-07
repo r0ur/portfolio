@@ -19,12 +19,12 @@ function scrollToSection(id) {
 
   const navItems = document.querySelectorAll('nav div[id^="nav-"]');
   navItems.forEach((item) => {
-    item.classList.remove('line-through', 'text-accent');
+    item.classList.remove('underline', 'text-accent');
   });
 
   const activeNavItem = document.getElementById(`nav-${id}`);
   if (activeNavItem) {
-    activeNavItem.classList.add('line-through', 'text-accent');
+    activeNavItem.classList.add('underline', 'text-accent');
   }
 }
 
@@ -54,13 +54,13 @@ function highlightActiveSection() {
   });
 
   navItems.forEach((item) => {
-    item.classList.remove('line-through', 'text-accent');
+    item.classList.remove('underline', 'text-accent');
   });
 
   if (activeSectionId) {
     const activeNavItem = document.getElementById(`nav-${activeSectionId}`);
     if (activeNavItem) {
-      activeNavItem.classList.add('line-through', 'text-accent');
+      activeNavItem.classList.add('underline', 'text-accent');
     }
   }
 }
@@ -126,14 +126,14 @@ function copyEmailToClipboard() {
 function showCopyAlert() {
   const alert = document.getElementById('clipboard-alert');
   alert.classList.remove('hidden', 'opacity-0');
-  alert.classList.add('opacity-100');
+  alert.classList.add('flex', 'opacity-100');
 
   setTimeout(() => {
     alert.classList.remove('opacity-100');
     alert.classList.add('opacity-0');
     setTimeout(() => {
       alert.classList.add('hidden');
-    }, 300);
+    }, 1000);
   }, 3000);
 }
 
