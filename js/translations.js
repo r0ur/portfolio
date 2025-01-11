@@ -10,10 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
         AboutMobile: 'About',
         ContactMobile: 'Contact',
         EmailMeMobile: 'Email me',
-        Title:
-          'Hello! I\'m Armando Rojano, a <span class="font-light">multidisciplinary designer</span> with over 3 years of experience.',
-        Subtitle:
-          'I bridge <span class="font-light">design <span class="font-medium">and</span> development</span> to craft intuitive and impactful digital solutions.',
         UXResearch: 'UX Research',
         OXLogistics: 'Web App',
         Yuni: 'Mobile App',
@@ -32,9 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
           'A simple, and responsive portfolio website to showcase my projects.',
         AboutSection: 'About',
         AboutInfo:
-          'I work as a <span class="font-light">UX Engineer</span> at <a class="underline hover:decoration-accent" href="https://www.linkedin.com/company/ilum-prosperity-sherpas/" target="_blank">Ilum Prosperity Sherpas,</a> developing solutions for the ideas that emerge within the company.',
-        AboutDetails:
-          'My expertise includes visual design, content design, motion design, and web development, allowing me to explore the full spectrum of digital creation.',
+          "I'm a UX designer with over 3 years of experience who cares about making beautiful things that help people.",
         AboutHobbies:
           "When I'm not designing, I enjoy exploring my passions—it fuels my creativity—for photojournalism, novels, short-stories, movies, running, and continuous personal growth.",
         Background: 'Background',
@@ -61,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
           'Returning to freelancing, I redesigned my logo mark, now encompassing all my skills as a multidisciplinary designer.',
         BackgroundTitle05:
           'UX Engineer <span class="font-normal">at Ilum Prosperity Sherpas</span>',
-        BackgroundDate05: 'March 2024 — Present',
+        BackgroundDate05: 'March 2024 — January 2025',
         BackgroundDescription05:
           'To broaden my skillset as a digital creator, I began contributing as a web developer, handling both frontend and backend tasks alongside my UX design work.',
         Resume: 'Resume here',
@@ -95,10 +89,6 @@ document.addEventListener('DOMContentLoaded', function () {
         AboutMobile: 'Sobre mí',
         ContactMobile: 'Contacto',
         EmailMeMobile: 'Envíame un correo',
-        Title:
-          '¡Hola! Soy Armando Rojano, <span class="font-light">diseñador multidisciplinario</span> con más de 3 años de experiencia.',
-        Subtitle:
-          'Creo soluciones digitales intuitivas e impactantes, combinando <span class="font-light">diseño <span class="font-medium">y</span> desarrollo.</span>',
         UXResearch: 'Investigación UX',
         OXLogistics: 'Aplicación Web',
         Yuni: 'Aplicación Móvil',
@@ -118,11 +108,9 @@ document.addEventListener('DOMContentLoaded', function () {
           'Un sitio web simple y responsivo para mostrar mis proyectos.',
         AboutSection: 'Sobre mí',
         AboutInfo:
-          'Me desempeño como <span class="font-light">UX Engineer</span> en <a class="underline hover:decoration-accent" href="https://www.linkedin.com/company/ilum-prosperity-sherpas/" target="_blank">Ilum Prosperity Sherpas,</a> desarrollando soluciones para las ideas que surgen dentro de la empresa.',
-        AboutDetails:
-          'Mi experiencia incluye diseño visual, diseño de contenido, motion design y desarrollo web, lo que me ha permitido explorar el espectro completo del diseño digital.',
+          'Soy un diseñador UX con más de 3 años de experiencia a quien le importa crear cosas hermosas que ayuden a las personas.',
         AboutHobbies:
-          'Cuando no estoy diseñando, disfruto de lo que me apasiona, ya que alimenta mi creatividad, como el fotoperiodismo, las novelas, los cuentos, las películas, el ejercicio y mi crecimiento personal.',
+          'Cuando no estoy diseñando disfruto de lo que me apasiona, ya que alimenta mi creatividad, como el fotoperiodismo, las novelas, los cuentos, las películas, el salir a correr y mi crecimiento personal.',
         Background: 'Experiencia',
         BackgroundSubtitle:
           'Mi curiosidad y adaptabilidad me han permitido progresar en entornos dinámicos.',
@@ -147,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function () {
           'Regresé al trabajo independiente, rediseñando mi logo y abarcando todas mis habilidades como diseñador multidisciplinario.',
         BackgroundTitle05:
           'UX Engineer <span class="font-normal">en Ilum Prosperity Sherpas</span>',
-        BackgroundDate05: 'Marzo 2024 — Presente',
+        BackgroundDate05: 'Marzo 2024 — Enero 2025',
         BackgroundDescription05:
           'Para ampliar mis habilidades como diseñador, comencé a contribuir como desarrollador web, manejando tareas tanto de frontend como de backend junto con mi trabajo de diseño UX.',
         Resume: 'Revisa mi CV',
@@ -205,8 +193,6 @@ document.addEventListener('DOMContentLoaded', function () {
       i18next.t('ContactMobile');
     document.getElementById('nav-email-me-mobile').innerText =
       i18next.t('EmailMeMobile');
-    document.getElementById('title').innerHTML = i18next.t('Title');
-    document.getElementById('subtitle').innerHTML = i18next.t('Subtitle');
     document.getElementById('ux-research').innerText = i18next.t('UXResearch');
     document.getElementById('ox-logistics').innerText =
       i18next.t('OXLogistics');
@@ -230,8 +216,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('about-section').innerText =
       i18next.t('AboutSection');
     document.getElementById('about-info').innerHTML = i18next.t('AboutInfo');
-    document.getElementById('about-details').innerText =
-      i18next.t('AboutDetails');
     document.getElementById('about-hobbies').innerText =
       i18next.t('AboutHobbies');
     document.getElementById('background').innerText = i18next.t('Background');
@@ -294,7 +278,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('clipboard-alert').innerHTML =
       i18next.t('ClipboardAlert');
 
-    /*     const currentLanguage = i18next.language;
+    const currentLanguage = i18next.language;
     if (currentLanguage === 'es') {
       document.getElementById('btn-es').style.display = 'none';
       document.getElementById('btn-es-mobile').style.display = 'none';
@@ -305,6 +289,6 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('btn-es-mobile').style.display = 'block';
       document.getElementById('btn-en').style.display = 'none';
       document.getElementById('btn-en-mobile').style.display = 'none';
-    } */
+    }
   }
 });
