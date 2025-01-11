@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
         AboutInfo:
           'I\'m a <span class="font-medium">UX designer</span> with over 3 years of experience who cares about making beautiful things that help people.',
         AboutHobbies:
-          "When I'm not designing, I enjoy exploring my passions—it fuels my creativity—for photojournalism, novels, short-stories, movies, running, and continuous personal growth.",
+          "When I'm not designing, I enjoy exploring my passions—it fuels my creativity—for photojournalism, novels, short-stories, movies, running, videogames, and continuous personal growth.",
         Background: 'Background',
         BackgroundSubtitle:
           'My curiosity, and adaptability allow me to thrive in dynamic environments.',
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
           'Un sitio web simple y responsivo para mostrar mis proyectos.',
         AboutSection: 'Sobre mí',
         AboutInfo:
-          'Soy un <span class="font-medium">diseñador UX</span> con más de 3 años de experiencia dedicado a crear soluciones estéticamente atractivas que impacten positivamente a las personas.',
+          'Soy un <span class="font-medium">diseñador UX</span> con más de 3 años de experiencia dedicado a crear soluciones estéticas que impacten positivamente a las personas.',
         AboutHobbies:
           'Cuando no estoy diseñando disfruto de lo que me apasiona, ya que alimenta mi creatividad, como el fotoperiodismo, las novelas, los cuentos, las películas, las caminatas y mi crecimiento personal.',
         Background: 'Experiencia',
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
           'Certificado Profesional de Fundamentos de Scrum <span class="font-normal">de</span> CertiProf',
         Technologies: 'Tecnologías',
         TechnologiesDescription:
-          'Estas son las herramientas que he utilizado, pero siempre disfruto aprender nuevas tecnologías.',
+          'Herramientas que he utilizado, pero siempre disfruto de aprender nuevas tecnologías.',
         Design: 'Diseño',
         DataBase: 'Base de Datos',
         VersionControl: 'Control de versiones',
@@ -278,7 +278,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('clipboard-alert').innerHTML =
       i18next.t('ClipboardAlert');
 
-    const currentLanguage = i18next.language;
+    /*     const currentLanguage = i18next.language;
     if (currentLanguage === 'es') {
       document.getElementById('btn-es').style.display = 'none';
       document.getElementById('btn-es-mobile').style.display = 'none';
@@ -289,6 +289,6 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('btn-es-mobile').style.display = 'block';
       document.getElementById('btn-en').style.display = 'none';
       document.getElementById('btn-en-mobile').style.display = 'none';
-    }
+    } */
   }
 });
