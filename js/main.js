@@ -159,7 +159,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.about-marquee').marquee({
-    duration: 30000,
+    duration: 80000,
     startVisible: true,
     delayBeforeStart: 0,
     direction: 'right',

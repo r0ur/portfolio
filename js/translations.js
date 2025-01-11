@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
           'A simple, and responsive portfolio website to showcase my projects.',
         AboutSection: 'About',
         AboutInfo:
-          "I'm a UX designer with over 3 years of experience who cares about making beautiful things that help people.",
+          'I\'m a <span class="font-medium">UX designer</span> with over 3 years of experience who cares about making beautiful things that help people.',
         AboutHobbies:
           "When I'm not designing, I enjoy exploring my passions—it fuels my creativity—for photojournalism, novels, short-stories, movies, running, and continuous personal growth.",
         Background: 'Background',
@@ -108,9 +108,9 @@ document.addEventListener('DOMContentLoaded', function () {
           'Un sitio web simple y responsivo para mostrar mis proyectos.',
         AboutSection: 'Sobre mí',
         AboutInfo:
-          'Soy un diseñador UX con más de 3 años de experiencia a quien le importa crear cosas hermosas que ayuden a las personas.',
+          'Soy un <span class="font-medium">diseñador UX</span> con más de 3 años de experiencia dedicado a crear soluciones estéticamente atractivas que impacten positivamente a las personas.',
         AboutHobbies:
-          'Cuando no estoy diseñando disfruto de lo que me apasiona, ya que alimenta mi creatividad, como el fotoperiodismo, las novelas, los cuentos, las películas, el salir a correr y mi crecimiento personal.',
+          'Cuando no estoy diseñando disfruto de lo que me apasiona, ya que alimenta mi creatividad, como el fotoperiodismo, las novelas, los cuentos, las películas, las caminatas y mi crecimiento personal.',
         Background: 'Experiencia',
         BackgroundSubtitle:
           'Mi curiosidad y adaptabilidad me han permitido progresar en entornos dinámicos.',
