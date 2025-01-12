@@ -23,6 +23,7 @@ module.exports = {
         inter: ['Inter', 'sans-serif'],
         mono: ['Cascadia Mono', 'monospace'],
         serif: ['Lora', 'serif'],
+        lato: ['Lato', 'sans-serif'],
       },
       screens: {
         mxl: '400px',

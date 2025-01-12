@@ -157,6 +157,16 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $('.about-marquee').marquee({
+    duration: 80000,
+    startVisible: true,
+    delayBeforeStart: 0,
+    direction: 'right',
+    duplicated: true,
+  });
+});
+
 /**
  * Opens the mobile menu by removing the 'hidden' class from the element with the
  * 'mobile-menu' ID and adds the 'overflow-hidden' class to the body to prevent
