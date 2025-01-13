@@ -969,6 +969,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -979,6 +984,14 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
+.pb-7 {
+  padding-bottom: 1.75rem;
 }
 
 .text-right {
@@ -1287,6 +1300,10 @@ video {
     gap: 1rem;
   }
 
+  .md\:gap-0 {
+    gap: 0px;
+  }
+
   .md\:overflow-visible {
     overflow: visible;
   }
@@ -1449,6 +1466,10 @@ video {
 
   .lg\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .lg\:pb-12 {
+    padding-bottom: 3rem;
   }
 
   .lg\:text-right {
