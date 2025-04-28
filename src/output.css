@@ -1499,6 +1499,10 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:flex {
+    display: flex;
+  }
+
   .xl\:w-\[1120px\] {
     width: 1120px;
   }
