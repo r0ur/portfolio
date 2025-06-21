@@ -731,10 +731,6 @@ video {
   max-width: 65ch;
 }
 
-.max-w-\[800px\] {
-  max-width: 800px;
-}
-
 .flex-none {
   flex: none;
 }
@@ -788,10 +784,6 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
-}
-
-.place-items-end {
-  place-items: end;
 }
 
 .items-center {
@@ -985,12 +977,16 @@ video {
   text-align: right;
 }
 
-.text-end {
-  text-align: end;
-}
-
 .font-inter {
   font-family: Inter, sans-serif;
+}
+
+.font-lato {
+  font-family: Lato, sans-serif;
+}
+
+.font-serif {
+  font-family: Lora, serif;
 }
 
 .text-2xl {
@@ -1017,9 +1013,9 @@ video {
   font-size: 80px;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xl {
@@ -1030,11 +1026,6 @@ video {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .font-light {
@@ -1051,6 +1042,14 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .leading-\[1\.05\] {
@@ -1199,10 +1198,6 @@ video {
 
 .hover\:line-through:hover {
   text-decoration-line: line-through;
-}
-
-.hover\:decoration-accent:hover {
-  text-decoration-color: #0001F7;
 }
 
 .group:hover .group-hover\:translate-y-0 {
@@ -1491,26 +1486,6 @@ video {
 
   .lg\:text-xl {
     font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .lg\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
-  .lg\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
-  .lg\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-
-  .lg\:text-lg {
-    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 }
