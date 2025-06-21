@@ -1,6 +1,6 @@
-# Armando Rojano | UX Designer Portfolio
+# UX Designer Portfolio
 
-A portfolio website showcasing the work of Armando Rojano, a multidisciplinary designer with over 3 years of experience in UX Design and Web Development.
+A portfolio website showcasing the work of Armando Rojano, a multidisciplinary designer with experience in UX Design and Web Development.
 
 ## Table of Contents
 
@@ -85,10 +85,8 @@ Feel free to reach out for collaborations or inquiries!
 
 - **Email:** armando_rour@outlook.com
 - **LinkedIn:** Armando Rojano Urízar
-- **GitHub:** r0ur
 - **Sixelf:** sixelf.com/rour
 
 ## License
 
 This project is open source and available under the MIT License.
-_(Note: This is a common open-source license. If you have a different license in mind, please update this section accordingly.)_
