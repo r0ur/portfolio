@@ -1040,16 +1040,6 @@ video {
   line-height: 1.05;
 }
 
-.text-\[\#6C6B69\] {
-  --tw-text-opacity: 1;
-  color: rgb(108 107 105 / var(--tw-text-opacity));
-}
-
-.text-\[\#8C8B88\] {
-  --tw-text-opacity: 1;
-  color: rgb(140 139 136 / var(--tw-text-opacity));
-}
-
 .text-accent {
   --tw-text-opacity: 1;
   color: rgb(0 1 247 / var(--tw-text-opacity));
