@@ -880,7 +880,7 @@ video {
 
 .border-primary {
   --tw-border-opacity: 1;
-  border-color: rgb(108 107 105 / var(--tw-border-opacity));
+  border-color: rgb(84 84 83 / var(--tw-border-opacity));
 }
 
 .bg-accent {
@@ -1052,7 +1052,7 @@ video {
 
 .text-primary {
   --tw-text-opacity: 1;
-  color: rgb(108 107 105 / var(--tw-text-opacity));
+  color: rgb(84 84 83 / var(--tw-text-opacity));
 }
 
 .text-white {
