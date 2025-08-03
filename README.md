@@ -27,6 +27,7 @@ This project leverages a combination of modern web technologies and design tools
   - [Fancybox](https://fancyapps.com/fancybox/v5/) (v5.0) for image lightboxes.
 - **Styling & Fonts:**
   - [Google Fonts](https://fonts.google.com/) (Inter, Lora, Lato)
+  - [Prettier](https://prettier.io/) for code formating.
 
 ## Setup and Usage
 
