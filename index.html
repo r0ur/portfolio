@@ -47,6 +47,50 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <style>
+      :root {
+        --banner-height: 0px;
+      }
+      #version-banner {
+        position: sticky;
+        top: 0;
+        z-index: 60;
+        background: #ffff7f;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+      }
+      #version-banner .banner-inner {
+        margin: 0 auto;
+        max-width: 1500px;
+        padding: 12px 16px;
+        display: flex;
+        justify-content: center;
+      }
+      #version-banner p {
+        margin: 0;
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: center;
+      }
+      @media (min-width: 768px) {
+        #version-banner p {
+          font-size: 1.125rem;
+        }
+      }
+      #version-banner a {
+        text-decoration: underline;
+        font-weight: 600;
+        color: #0e0e0e;
+      }
+      #version-banner a:hover {
+        color: rgba(14, 14, 14, 0.75);
+      }
+    </style>
     <!-- Fancybox -->
     <link
       rel="stylesheet"
@@ -59,9 +103,33 @@
   <body class="bg-white text-black">
     <!-- Content -->
     <div class="flex flex-col">
+      <div id="version-banner">
+        <div class="banner-inner">
+          <p>
+            You&rsquo;re viewing an older version of my portfolio!
+            <a href="https://armando-rojano.vercel.app/" target="_blank" rel="noreferrer"
+              >Visit the updated one ↗</a
+            >
+          </p>
+        </div>
+      </div>
+      <script>
+        (function () {
+          const banner = document.getElementById('version-banner');
+          if (!banner) return;
+          const setOffset = () => {
+            const height = banner.offsetHeight || 0;
+            document.documentElement.style.setProperty('--banner-height', `${height}px`);
+          };
+          window.addEventListener('load', setOffset);
+          window.addEventListener('resize', setOffset);
+          setOffset();
+        })();
+      </script>
       <!-- Navigation -->
       <header
         class="sticky top-0 z-50 mx-auto w-full border-b border-primary bg-white font-inter"
+        style="top: var(--banner-height, 0px)"
       >
         <nav>
           <!-- Desktop Menu -->
